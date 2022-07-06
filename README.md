@@ -2,6 +2,8 @@
 
 ## Topic:
 
+<p align="center"> <img style="border:5px solid black;" src = "Images/wordcloud.png" width ="35%" "> </p>  
+
 * Predictions of future Dogecoin value 
 
 ## Reason behind Topic

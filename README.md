@@ -4,6 +4,9 @@
 
 <p align="center"> <img style="border:5px solid black;" src = "Images/wordcloud.png" width ="35%" "> </p>  
 
+Word cloud image. Generated from collection of twitter data retrieved for sntiment analysis.
+
+
 * Predictions of future Dogecoin value 
 
 ## Reason behind Topic

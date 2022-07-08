@@ -24,3 +24,16 @@
 
 *Atleast 4 commits per member by July 17th
 
+
+
+##Current 7/7
+
+Defining problem statement
+
+other crypto and other influencer datasets (see if u guys can get all the required datasets by sat)
+
+UI design
+
+based on data understanding - what all fields are required to be stored?
+
+model to use based on defining the main problem statement

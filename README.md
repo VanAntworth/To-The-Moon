@@ -7,7 +7,13 @@
 Word cloud image. Generated from collection of twitter data retrieved for sntiment analysis.
 
 
-* Predictions of future Dogecoin value 
+* Effects of future Dogecoin value 
+
+How Elon Musks tweets 
+
+Tamara - Data Dump
+
+create model based on sentiment analysis 
 
 ## Reason behind Topic
 
@@ -40,3 +46,6 @@ UI design
 based on data understanding - what all fields are required to be stored?
 
 model to use based on defining the main problem statement
+
+
+

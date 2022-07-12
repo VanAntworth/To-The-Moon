@@ -35,7 +35,7 @@ Yahoo Finance stock data taken
 
 Whether the sentiments of elon musks tweets affects the price in the short term of crypto and stocks 
 
-How long does Elon musks tweet affect the price of the coin.
+How long does an Elon Musk tweet affect the price of the coin.
 
 
 

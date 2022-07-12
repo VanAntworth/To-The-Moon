@@ -10,7 +10,9 @@ This project will predict the Stock or Cryptocurrencys (Tesla, SpaceX, Twitter a
 
 ## Backgroud 
 
-* Tamara adding story that sparked the interest. *
+* Tamara adding story that sparked the interest. * 
+
+Dogecoin has been a hot topic because of the large and quick monetary gains that were made from a purchase of crypto done by our member Tamaras family. This topic has been very eye opening as it has made it evident that - moguls such as Elon Musk can have a huge impact on the markets(stock and crypto).
 
 * We believe that there is causation to be found in the analysis of Elon Musk and the effect his tweets have on Dogecoin.
 
@@ -50,7 +52,7 @@ How long does an Elon Musk tweet affect the price of the coin.
 
 1) Predication of DogeCoin/ Tesla/ SpaceX/ Twitter
 2) Impact of Elonmusk Tweets on DogeCoin/ Tesla/ SpaceX/ Twitter
-3) How long the impact stays in effect after the tweet on Finances
+3) How long the impact stays in effect after the tweet on the value.
 
 ## Resources
 

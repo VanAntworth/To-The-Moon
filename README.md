@@ -53,9 +53,11 @@ Whether the sentiments of elon musks tweets affects the price in the short term 
 
 How long does an Elon Musk tweet affect the price of the coin.
 
-     Prediction of DogeCoin/ Tesla/ SpaceX/ Twitter for near future after related tweets.
-     Impact of Elon Musk Tweets on DogeCoin/ Tesla/ SpaceX/ Twitter
-     How long the impact (on the value of the stock/coin) stays in effect after the tweet.
+ 1.) Prediction of DogeCoin/ Tesla/ SpaceX/ Twitter for near future after related tweets.
+ 
+ 2.) Impact of Elon Musk Tweets on DogeCoin/ Tesla/ SpaceX/ Twitter.
+ 
+ 3.) How long the impact (on the value of the stock/coin) stays in effect after the tweet.
 
 ## Resources
 

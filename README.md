@@ -29,7 +29,9 @@ Tweets scraped from Twitter
 
 Yahoo Finance stock data taken
 
-
+## Description of the Data Exploration:
+  
+Troubleshooting with different web scraping libraries while using python code in jupyter notebook to acces twitter/twitter API
 
 ## Questions we hope to answer with Data
 

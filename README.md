@@ -15,6 +15,8 @@ Tamara - Data Dump
 
 create model based on sentiment analysis 
 
+Deepa - set up SQL jobs then run python script through SQL
+
 ## Reason behind Topic
 
 * We believe that there is causation to be found in the analysis of Elon Musk and the effect his tweets have on Dogecoin. Creating a model to predict 
@@ -22,6 +24,7 @@ create model based on sentiment analysis
 ## Description of Data Source
 
 ## Questions we hope to answer with Data
+
 
 
 

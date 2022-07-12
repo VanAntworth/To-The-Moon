@@ -1,41 +1,46 @@
 # To-The-Moon
 
-## Topic: Predict Dogecoin/Tesla/Space X Trends
-
-<p align="center"> <img style="border:5px solid black;" src = "Images/wordcloud.png" width ="35%" "> </p>  
-
-Word cloud image. Generated from collection of twitter data retrieved for sntiment analysis.
+## Project Overview
 
 
-* Effects of future Dogecoin value 
+It has been observed that Elon Musk tweets have been impacting the Stocks and Cryptocurrency market. We wanted to analyze the impact of the tweets and how long the impact was holding true.
+This project will predict the Stock or Cryptocurrencys (Tesla, SpaceX, Twitter and Dogecoin data) future value, and also show the impact of tweets for respective stock/crypto.
 
-How Elon Musks tweets 
 
-Tamara - Data Dump
 
-create model based on sentiment analysis 
+## Backgroud 
 
-Deepa - set up SQL jobs then run python script through SQL
-
-## Reason behind Topic
+* Tamara adding story that sparked the interest. *
 
 * We believe that there is causation to be found in the analysis of Elon Musk and the effect his tweets have on Dogecoin.
 
-Creating a model to predict 
+## Approach:
 
-## Description of Data Source
+- Retrieving tweet data as well as stock data.
 
-Tweets scraped from Twitter
+- Display the trends and also predict the stock prices and crypto price based on yahoo financial data. 
 
-Yahoo Finance stock data taken
+- Preprocessed the data dumps to clean data and store it into postgres database. 
+
+- Used sentiment analysis to analyse the tweets as positive, negative or neutral.
+
+- Used the sentiment analysis imputs to build a model for predicting the impact of the tweets on the near future stock price.
+
+- Pull the data from database to create visualizations.
+
 
 ## Description of the Data Exploration:
   
 Troubleshooting with different web scraping libraries while using python code in jupyter notebook to acces twitter/twitter API
 
-Worked with creating different environments in temrinal 
+Worked with creating different environments in terminal 
   
-Forced to make version adjustments due to different libraries and web scraping tools requiring different versions of python.
+? (Question for Tammy and Shreha) Forced to make version adjustments due to different libraries and web scraping tools requiring different versions of python.
+
+## Project Design
+
+ER Diagram
+
   
 ## Questions we hope to answer with Data
 
@@ -43,7 +48,15 @@ Whether the sentiments of elon musks tweets affects the price in the short term 
 
 How long does an Elon Musk tweet affect the price of the coin.
 
+1) Predication of DogeCoin/ Tesla/ SpaceX/ Twitter
+2) Impact of Elonmusk Tweets on DogeCoin/ Tesla/ SpaceX/ Twitter
+3) How long the impact stays in effect after the tweet on Finances
 
+## Resources
+
+Elon Musk Tweets
+
+Yahoo Finance data
 
 
 

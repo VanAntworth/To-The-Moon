@@ -33,6 +33,10 @@ Yahoo Finance stock data taken
   
 Troubleshooting with different web scraping libraries while using python code in jupyter notebook to acces twitter/twitter API
 
+Worked with creating different environments in temrinal 
+  
+Forced to make version adjustments due to different libraries and web scraping tools requiring different versions of python.
+  
 ## Questions we hope to answer with Data
 
 Whether the sentiments of elon musks tweets affects the price in the short term of crypto and stocks 

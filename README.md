@@ -44,6 +44,8 @@ Worked with creating different environments in terminal
 
 ER Diagram
 
+![ERD_Diagram](https://user-images.githubusercontent.com/99001393/178597346-950f6185-d9a7-4ead-bb12-8c7a80fbe2df.jpg)
+
   
 ## Questions we hope to answer with Data
 

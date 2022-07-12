@@ -1,6 +1,6 @@
 # To-The-Moon
 
-## Topic:
+## Topic: Predict Dogecoin/Tesla/Space X Trends
 
 <p align="center"> <img style="border:5px solid black;" src = "Images/wordcloud.png" width ="35%" "> </p>  
 
@@ -19,36 +19,28 @@ Deepa - set up SQL jobs then run python script through SQL
 
 ## Reason behind Topic
 
-* We believe that there is causation to be found in the analysis of Elon Musk and the effect his tweets have on Dogecoin. Creating a model to predict 
+* We believe that there is causation to be found in the analysis of Elon Musk and the effect his tweets have on Dogecoin.
+
+Creating a model to predict 
 
 ## Description of Data Source
 
+Tweets scraped from Twitter
+
+Yahoo Finance stock data taken
+
+
+
 ## Questions we hope to answer with Data
 
+Whether the sentiments of elon musks tweets affects the price in the short term of crypto and stocks 
+
+How long does Elon musks tweet affect the price of the coin.
 
 
 
-## Keeping in Mind
-
-*Communication Protocals
-
-*One branch per team member
-
-*Atleast 4 commits per member by July 17th
 
 
-
-## Current 7/7
-
-Defining problem statement
-
-other crypto and other influencer datasets (see if u guys can get all the required datasets by sat)
-
-UI design
-
-based on data understanding - what all fields are required to be stored?
-
-model to use based on defining the main problem statement
 
 
 

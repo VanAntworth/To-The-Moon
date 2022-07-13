@@ -73,12 +73,23 @@ How long does an Elon Musk tweet affect the price of the coin.
 
 ## Resources
 
+### Information Resources
+
 Elon Musk Tweets
 
 Yahoo Finance data
 
+### Code Used
+
+<a name="1">[1]</a> [School Distric Analysis without Thomas High School 9th Grade](https://github.com/tamiespinosa/School_District_Analysis/blob/d230e051353b12aff7ec079be477609ec4f7bb8c/PyCitySchools_Challenge.ipynb)
 
 
+### Data Resources
 
+<a name="1">[1]</a> [Elon Tweets from Kaggle](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment1_Delivery/Data_Resources/elon_musk_kaggle)
+
+<a name="1">[1]</a> [Elon Tweets Scrapped](https://github.com/VanAntworth/To-The-Moon/blob/main/Segment1_Delivery/Data_Resources/elon_musk_kaggle/elon_tweets_2.csv)
+
+<a name="1">[1]</a> [Finance Data Scrapped](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment1_Delivery/Data_Resources/scrapped_data)
 
 

@@ -1,7 +1,17 @@
 
 # To-The-Moon
 
-## Project Overview
+
+## Table of Contents
+- [Project Overview](#OverviewProject)
+- [Background](#Background)
+- [Approach](#Approach)
+- [Description of Data Exploration](#DataExp)
+- [Project Design](#ProjectDesign)
+- [Questions We Hope to Answer with Data](#Questions)
+- [Resources](#Resources)
+
+## <a name="OverviewProject"></a> Project Overview
 
 
 It has been observed that Elon Musk tweets have been impacting the Stocks and Cryptocurrency market. We wanted to analyze the impact of the tweets and how long the impact was holding true.
@@ -9,7 +19,7 @@ This project will predict the Stock or Cryptocurrencys (Tesla, SpaceX, Twitter a
 
 
 
-## Backgroud 
+## <a name="Backgroud"></a> Backgroud 
 
 In November of 2020, Tamara's husband invested $500 into Doge Coin. At the time the coin was worth $0.002, not even one cent. In Feb 11th, at a price of %0.07, Tamara's husband decided to sell having multiplied his monitary investment 35 times. 
 
@@ -19,7 +29,7 @@ In 2020 and 2021 Twitter, Reddit and Robin Hood changed the dynamic of the stock
 
 Therefore we are embarking on a quest to find the influence Elon Musk tweet's have had over Doge Coin. In the process we are interested in understanding how the use of language by a single individual with a large following, can influence the price of stocks and coins. 
 
-## Approach:
+## <a name="Approach"></a> Approach:
 
 - Retrieving tweet data as well as stock data.
 
@@ -34,7 +44,7 @@ Therefore we are embarking on a quest to find the influence Elon Musk tweet's ha
 - Pull the data from database to create visualizations.
 
 
-## Description of the Data Exploration:
+## <a name="DataExp"></a> Description of the Data Exploration:
   
 Troubleshooting with different web scraping libraries while using python code in jupyter notebook to acces twitter/twitter API
 
@@ -42,14 +52,14 @@ Worked with creating different environments in terminal
   
 ? (Question for Tammy and Shreha) Forced to make version adjustments due to different libraries and web scraping tools requiring different versions of python.
 
-## Project Design
+## <a name="ProjectDesign"></a> Project Design
 
 ER Diagram
 
 ![ERD_Diagram](https://user-images.githubusercontent.com/99001393/178597346-950f6185-d9a7-4ead-bb12-8c7a80fbe2df.jpg)
 
   
-## Questions we hope to answer with Data
+## <a name="Questions"></a> Questions we hope to answer with Data
 
 Whether the sentiments of elon musks tweets affects the price in the short term of crypto and stocks 
 

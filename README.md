@@ -11,11 +11,13 @@ This project will predict the Stock or Cryptocurrencys (Tesla, SpaceX, Twitter a
 
 ## Backgroud 
 
-* Tamara adding story that sparked the interest. * 
+In November of 2020, Tamara's husband invested $500 into Doge Coin. At the time the coin was worth $0.002, not even one cent. In Feb 11th, at a price of %0.07, Tamara's husband decided to sell having multiplied his monitary investment 35 times. 
 
-Dogecoin has been a hot topic because of the large and quick monetary gains that were made from a purchase of crypto done by our member Tamaras family. This topic has been very eye opening as it has made it evident that - moguls such as Elon Musk can have a huge impact on the markets(stock and crypto).
+Under the influence of social media Doge Coin would continue to climb in price and reach $0.71 cents at its highest in May 6th of 2021, 355 times the price from November 2020.  The $500 could've have turned into $177,500, something most stocks couldn't do without social media. The value has since dropped close to the $0.07, the price at which Tamara's family sold the coin. 
 
-* We believe that there is causation to be found in the analysis of Elon Musk and the effect his tweets have on Dogecoin.
+In 2020 and 2021 Twitter, Reddit and Robin Hood changed the dynamic of the stock market and crypto currencies. Social media became a disruptive force in the economy. Yet Doge could've just been one of many many crypto coins that did not rise in price, if it wasn't for one person that brought notoriety to this currency, Elon Musk.  
+
+Therefore we are embarking on a quest to find the influence Elon Musk tweet's have had over Doge Coin. In the process we are interested in understanding how the use of language by a single individual with a large following, can influence the price of stocks and coins. 
 
 ## Approach:
 

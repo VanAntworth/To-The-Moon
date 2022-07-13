@@ -1,8 +1,8 @@
--- Database: ElonMusk_Twitter_Impact
+-- Database: ElonMuskTwitterImpact
 
---DROP DATABASE IF EXISTS "ElonMusk_Twitter_Impact";
+--DROP DATABASE IF EXISTS "ElonMuskTwitterImpact";
 
-CREATE DATABASE "ElonMusk_Twitter_Impact"
+CREATE DATABASE "ElonMuskTwitterImpact"
     WITH 
     OWNER = postgres
     ENCODING = 'UTF8'

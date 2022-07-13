@@ -1,20 +1,17 @@
 
 DROP TABLE IF EXISTS "Twitter_data" ;
 CREATE TABLE "Twitter_data" (
-    "ID" INT   NOT NULL,
-    "tweet_id" BIGINT   NOT NULL,
+    "ID" SERIAL  NOT NULL,
+    "Tweet_ID" BIGINT   NOT NULL,
     "Finance_Type" VARCHAR   NOT NULL,
-    "date" DATE   NOT NULL,
-    "full_text" VARCHAR   NOT NULL,
-    "reply_count" INTEGER   NOT NULL,
-    "likes_count" INTEGER   NOT NULL,
-    "retweet_count" INTEGER   NOT NULL,
+    "Date" DATE   NOT NULL,
+    "Full_Text" VARCHAR   NOT NULL,
+    "Reply_count" INTEGER ,
+    "Likes_count" INTEGER ,
+    "Retweet_count" INTEGER  ,
     CONSTRAINT "pk_Twitter_data" PRIMARY KEY (
         "ID"
-     ),
-    CONSTRAINT "uc_Twitter_data_tweet_id" UNIQUE (
-        "tweet_id"
-    )
+     )
 );
 
 DROP TABLE IF EXISTS "Finance_USD_Data" ;

@@ -21,7 +21,7 @@ This project will predict the Stock or Cryptocurrencys (Tesla, SpaceX, Twitter a
 
 ## <a name="Backgroud"></a> Backgroud 
 
-In November of 2020, Tamara's husband invested $500 into Doge Coin. At the time the coin was worth $0.002, not even one cent. In Feb 11th, at a price of %0.07, Tamara's husband decided to sell having multiplied his monitary investment 35 times. 
+In November of 2020, Tamara's husband invested $500 into Doge Coin. At the time the coin was worth $0.002, not even one cent. In Feb 11th, at a price of $0.07, Tamara's husband decided to sell having multiplied his monitary investment 35 times. 
 
 Under the influence of social media Doge Coin would continue to climb in price and reach $0.71 cents at its highest in May 6th of 2021, 355 times the price from November 2020.  The $500 could've have turned into $177,500, something most stocks couldn't do without social media. The value has since dropped close to the $0.07, the price at which Tamara's family sold the coin. 
 

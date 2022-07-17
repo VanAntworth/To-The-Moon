@@ -59,7 +59,3 @@ CREATE TABLE "PredictedValues" (
      )
 );
 
-
-ALTER TABLE "SentimentScoring" ADD CONSTRAINT "fk_SentimentScoringTwitterID" FOREIGN KEY("twitterID")
-REFERENCES "TwitterData" ("id");
-

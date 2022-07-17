@@ -5,12 +5,13 @@ from pytest import deprecated_call
 from sqlalchemy import create_engine, Table, select
 import sqlalchemy
 import pyodbc
+from config import db_Server
 
 conn = object
 engine = object 
 
 def connectionString():
-    db_string = 'mssql+pyodbc:///?odbc_connect=DRIVER={SQL Server};SERVER=LAPTOP-BOGKDVQK\SQLEXPRESS;DATABASE=ElonMuskTwitterImpact;Trusted_Connection=yes'
+    db_string = 'mssql+pyodbc:///?odbc_connect=DRIVER={SQL Server};SERVER=' + db_Server + ';DATABASE=ElonMuskTwitterImpact;Trusted_Connection=yes'
    
     return db_string
 

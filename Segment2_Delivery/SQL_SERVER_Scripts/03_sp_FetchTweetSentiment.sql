@@ -1,3 +1,5 @@
+DROP PROCEDURE IF EXISTS sp_fetchTweetSentiment
+
 -- ================================================
 -- Template generated from Template Explorer using:
 -- Create Procedure (New Menu).SQL
@@ -14,11 +16,12 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 -- =============================================
--- Author:		<Author,,Name>
--- Create date: <Create Date,,>
--- Description:	<Description,,>
+-- Author:		Deepa Gheewala
+-- Create date: 7/17/2022
+-- Description:	This Stored Procedure will fetch data from Tweeter and Finance tables 
+--              for using it to run sentiment score on it.
 -- =============================================
-CREATE PROCEDURE sp_FetchTweetSentiment
+CREATE PROCEDURE sp_fetchTweetSentiment
 	-- Add the parameters for the stored procedure here
 	@financeType varchar(10) =''
 AS
@@ -26,8 +29,8 @@ BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from
 	-- interfering with SELECT statements.
 	SET NOCOUNT ON;
-	if (@financeType = '') 
-	Begin
+	IF (@financeType = '') 
+	BEGIN
 		SELECT t.[tweetID]
 			  ,t.[financeType]
 			  ,t.[date]
@@ -37,9 +40,9 @@ BEGIN
 			  ,t.[retweetCount],
 			  f.[adjustedClose], 
 			  f.[volume] FROM TwitterData t  INNER JOIN FinanceUsdData f ON f.[date] = t.[date]
-	End
-	else
-	Begin
+	END
+	ELSE
+	BEGIN
 		SELECT t.[tweetID]
 			  ,t.[financeType]
 			  ,t.[date]
@@ -49,8 +52,8 @@ BEGIN
 			  ,t.[retweetCount],
 			  f.[adjustedClose], 
 			  f.[volume] FROM TwitterData t  INNER JOIN FinanceUsdData f ON f.[date] = t.[date]
-		where t.financeType = @financeType
-	End
+		WHERE t.financeType = @financeType
+	END
 
 END
 GO

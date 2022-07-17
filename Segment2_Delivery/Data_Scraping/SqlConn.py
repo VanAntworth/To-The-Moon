@@ -34,8 +34,15 @@ def fetchTweetSentiment():
     engine.connect()
     return pd.read_sql_query('exec sp_FetchTweetSentiment', con=engine)
 
-
-def fetchTweetSentimentForModelling():
+def fetchTweetSentimentForModelling(financeType):
     engine = sqlalchemy.create_engine(connectionString()) 
     engine.connect()
-    return pd.read_sql_query('exec sp_FetchTweetSentiment', engine)
+    sql_query = 'exec sp_fetchTweetSentimentForModelling'
+    if financeType == 'doge':
+        sql_query = sql_query + ' "doge"'
+    elif  financeType == 'tesla':
+            sql_query = sql_query + ' "tesla"'
+    elif financeType == 'twitter':
+            sql_query = sql_query + ' "twitter"'
+            
+    return pd.read_sql_query(sql_query, engine)

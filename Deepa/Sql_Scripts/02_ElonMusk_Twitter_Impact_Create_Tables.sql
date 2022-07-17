@@ -81,12 +81,12 @@ CREATE TABLE "FinanceUsdData" (
     "id" SERIAL   NOT NULL,
     "financeType" VARCHAR   NOT NULL,
     "date" DATE   NOT NULL,
-    "openAt" FLOAT   NOT NULL,
+    "open" FLOAT   NOT NULL,
     "high" FLOAT   ,
     "low" FLOAT   ,
     "close" FLOAT  ,
     "adjustedClose" FLOAT  ,
-    "volumn" BIGINT   NOT NULL,
+    "volume" BIGINT   NOT NULL,
     CONSTRAINT "pkFinanceUsdData" PRIMARY KEY (
         "id"
      )

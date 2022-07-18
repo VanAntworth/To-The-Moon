@@ -50,7 +50,6 @@ Troubleshooting with different web scraping libraries while using python code in
 
 Worked with creating different environments in terminal 
   
-? (Question for Tammy and Shreha) Forced to make version adjustments due to different libraries and web scraping tools requiring different versions of python.
 
 ## <a name="ProjectDesign"></a> Project Design
 

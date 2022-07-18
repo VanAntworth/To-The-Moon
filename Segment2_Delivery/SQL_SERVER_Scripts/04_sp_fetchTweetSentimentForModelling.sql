@@ -39,6 +39,7 @@ BEGIN
 				,t.[retweetCount]
 				,s.[sentimentScore]
 				,s.[sentiment]
+				,f.[id]
 				,f.[adjustedClose]
 				,f.[volume]
 			FROM "TwitterData" t
@@ -58,6 +59,7 @@ BEGIN
 					,t.[retweetCount],
 					s.[sentimentScore], 
 					s.[sentiment],
+					f.[id],
 					f.[adjustedClose],
 					f.[volume]
 				FROM "TwitterData" t

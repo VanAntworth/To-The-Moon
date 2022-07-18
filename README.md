@@ -7,6 +7,7 @@
 - [Background](#Background)
 - [Approach](#Approach)
 - [Description of Data Exploration](#DataExp)
+- [Training and Testing](#TrainingandTesting)
 - [Project Design](#ProjectDesign)
 - [Questions We Hope to Answer with Data](#Questions)
 - [Resources](#Resources)
@@ -19,7 +20,7 @@ This project will predict the Stock or Cryptocurrencys (Tesla, SpaceX, Twitter a
 
 
 
-## <a name="Backgroud"></a> Backgroud 
+## <a name="Background"></a> Background 
 
 In November of 2020, Tamara's husband invested $500 into Doge Coin. At the time the coin was worth $0.002, not even one cent. In Feb 11th, at a price of $0.07, Tamara's husband decided to sell having multiplied his monitary investment 35 times. 
 
@@ -46,9 +47,22 @@ Therefore we are embarking on a quest to find the influence Elon Musk tweet's ha
 
 ## <a name="DataExp"></a> Description of the Data Exploration:
   
-Troubleshooting with different web scraping libraries while using python code in jupyter notebook to acces twitter/twitter API
+- Processing raw twitter and stock data
 
-Worked with creating different environments in terminal 
+- Structure data using jupyter notebook
+
+- Data Preprocessing (join data)
+
+- EDA
+
+- Visuals and Insights
+
+
+## <a name="TrainingandTesting"></a> Training and Testing:
+
+- Data Split 
+
+- Date Range
   
 
 ## <a name="ProjectDesign"></a> Project Design
@@ -70,7 +84,7 @@ How long does an Elon Musk tweet affect the price of the coin.
  
  3.) How long the impact (on the value of the stock/coin) stays in effect after the tweet.
 
-## Resources
+## <a name="Resources"></a> Resources
 
 ### Information Resources
 

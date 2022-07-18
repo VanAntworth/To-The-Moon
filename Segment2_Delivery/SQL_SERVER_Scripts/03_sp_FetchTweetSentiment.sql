@@ -31,7 +31,7 @@ BEGIN
 	SET NOCOUNT ON;
 	IF (@financeType = '') 
 	BEGIN
-		SELECT t.[tweetID]
+		SELECT DISTINCT t.[tweetID]
 			  ,t.[financeType]
 			  ,t.[date]
 			  ,t.[fullText]
@@ -43,7 +43,7 @@ BEGIN
 	END
 	ELSE
 	BEGIN
-		SELECT t.[tweetID]
+		SELECT DISTINCT t.[tweetID]
 			  ,t.[financeType]
 			  ,t.[date]
 			  ,t.[fullText]

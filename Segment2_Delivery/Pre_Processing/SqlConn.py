@@ -30,6 +30,11 @@ def insertFinanceData(df_finance_tostore):
     engine.connect()
     df_finance_tostore.to_sql(name='FinanceUsdData',con=engine, index=False, if_exists='append',index_label="ID")  
 
+def fetchFinanceData():
+    engine = sqlalchemy.create_engine(connectionString()) 
+    engine.connect()
+    return pd.read_sql_query(name='FinanceUsdData',con=engine)
+
 def fetchTweetSentiment():
     engine = sqlalchemy.create_engine(connectionString()) 
     engine.connect()
@@ -39,6 +44,19 @@ def fetchTweetSentimentForModelling(financeType):
     engine = sqlalchemy.create_engine(connectionString()) 
     engine.connect()
     sql_query = 'exec sp_fetchTweetSentimentForModelling'
+    if financeType == 'doge':
+        sql_query = sql_query + ' "doge"'
+    elif  financeType == 'tesla':
+            sql_query = sql_query + ' "tesla"'
+    elif financeType == 'twitter':
+            sql_query = sql_query + ' "twitter"'
+            
+    return pd.read_sql_query(sql_query, engine)
+
+def fetchFinanceData(financeType):
+    engine = sqlalchemy.create_engine(connectionString()) 
+    engine.connect()
+    sql_query = 'exec sp_fetchFinanceData'
     if financeType == 'doge':
         sql_query = sql_query + ' "doge"'
     elif  financeType == 'tesla':

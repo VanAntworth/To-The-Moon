@@ -16,7 +16,7 @@
 
 
 It has been observed that Elon Musk tweets have been impacting the Stocks and Cryptocurrency market. We wanted to analyze the impact of the tweets and how long the impact was holding true.
-This project will predict the Stock or Cryptocurrencys (Tesla, SpaceX, Twitter and Dogecoin data) future value, and also show the impact of tweets for respective stock/crypto.
+This project will predict the Stock or Cryptocurrencys (Tesla, Twitter and Dogecoin data) future value, and also show the impact of tweets for respective stock/crypto.
 
 
 
@@ -78,9 +78,9 @@ Whether the sentiments of elon musks tweets affects the price in the short term 
 
 How long does an Elon Musk tweet affect the price of the coin.
 
- 1.) Prediction of DogeCoin/ Tesla/ SpaceX/ Twitter for near future after related tweets.
+ 1.) Prediction of DogeCoin/ Tesla/ Twitter for near future after related tweets.
  
- 2.) Impact of Elon Musk Tweets on DogeCoin/ Tesla/ SpaceX/ Twitter.
+ 2.) Impact of Elon Musk Tweets on DogeCoin/ Tesla/ Twitter.
  
  3.) How long the impact (on the value of the stock/coin) stays in effect after the tweet.
 
@@ -92,7 +92,9 @@ Elon Musk Tweets
 
 Yahoo Finance data
 
-### Code Used
+### Deliverable 1
+
+#### Code Used
 
 <a name="1">[1]</a> [Finance Scrapping Code](https://github.com/VanAntworth/To-The-Moon/blob/main/Segment1_Delivery/Data_Scraping/Finance_data.ipynb)
 
@@ -104,12 +106,28 @@ Yahoo Finance data
 
 <a name="5">[5]</a> [Data Base - SQL Queries](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment1_Delivery/Sql_Scripts)
 
-### Data Resources
+#### Data Resources
 
 <a name="6">[6]</a> [Elon Tweets from Kaggle](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment1_Delivery/Data_Resources/elon_musk_kaggle)
 
 <a name="7">[7]</a> [Elon Tweets Scrapped](https://github.com/VanAntworth/To-The-Moon/blob/main/Segment1_Delivery/Data_Resources/elon_musk_kaggle/elon_tweets_2.csv)
 
 <a name="8">[8]</a> [Finance Data Scrapped](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment1_Delivery/Data_Resources/scrapped_data)
+
+### Deliverable 2
+
+#### Machine Learning
+
+<a name="9">[9]</a> [Machine Learning Code](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment2_Delivery/Machine_Learning)
+
+#### Data Base
+
+<a name="10">[10]</a> [Data Base Script](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment2_Delivery/SQL_SERVER_Scripts)
+
+#### Visualization
+
+<a name="10">[10]</a> [Visualization Discussion](https://github.com/VanAntworth/To-The-Moon/blob/main/Resources/Visualizations.docx)
+
+
 
 

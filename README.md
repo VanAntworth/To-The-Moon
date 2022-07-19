@@ -116,4 +116,14 @@ Yahoo Finance data
 
 ### Deliverable 2
 
+#### Machine Learning
+
+<a name="9">[9]</a> [Machine Learning Code](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment2_Delivery/Machine_Learning)
+
+#### Data Base
+
+<a name="10">[10]</a> [Data Base Script](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment2_Delivery/SQL_SERVER_Scripts)
+
+
+
 

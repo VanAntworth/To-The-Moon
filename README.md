@@ -92,7 +92,9 @@ Elon Musk Tweets
 
 Yahoo Finance data
 
-### Code Used
+### Deliverable 1
+
+#### Code Used
 
 <a name="1">[1]</a> [Finance Scrapping Code](https://github.com/VanAntworth/To-The-Moon/blob/main/Segment1_Delivery/Data_Scraping/Finance_data.ipynb)
 
@@ -104,12 +106,14 @@ Yahoo Finance data
 
 <a name="5">[5]</a> [Data Base - SQL Queries](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment1_Delivery/Sql_Scripts)
 
-### Data Resources
+#### Data Resources
 
 <a name="6">[6]</a> [Elon Tweets from Kaggle](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment1_Delivery/Data_Resources/elon_musk_kaggle)
 
 <a name="7">[7]</a> [Elon Tweets Scrapped](https://github.com/VanAntworth/To-The-Moon/blob/main/Segment1_Delivery/Data_Resources/elon_musk_kaggle/elon_tweets_2.csv)
 
 <a name="8">[8]</a> [Finance Data Scrapped](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment1_Delivery/Data_Resources/scrapped_data)
+
+### Deliverable 2
 
 

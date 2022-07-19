@@ -124,6 +124,10 @@ Yahoo Finance data
 
 <a name="10">[10]</a> [Data Base Script](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment2_Delivery/SQL_SERVER_Scripts)
 
+#### Visualization
+
+<a name="10">[10]</a> [Visualization Discussion](https://github.com/VanAntworth/To-The-Moon/blob/main/Resources/Visualizations.docx)
+
 
 
 

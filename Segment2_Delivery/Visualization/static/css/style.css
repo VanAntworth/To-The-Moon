@@ -1,0 +1,24 @@
+/* .jumbotron {
+    background-image: url("../Images/image.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+    /* color: rgb(7, 135, 248); */
+  } */
+
+  html, body {
+
+    color: #0f0f14;
+    font-family: "Poppins";
+    font-size: 15px;
+    line-height1.5;
+    box-sizing: border-box;
+    margin: 0;
+    top: 0;
+    left: 0;
+  }
+
+  .navbar-brand{
+    font-size: 30px;
+    font-family: "Verdana" ;
+    color:red;
+  }

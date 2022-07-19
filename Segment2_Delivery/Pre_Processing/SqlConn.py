@@ -30,6 +30,17 @@ def insertFinanceData(df_finance_tostore):
     engine.connect()
     df_finance_tostore.to_sql(name='FinanceUsdData',con=engine, index=False, if_exists='append',index_label="ID")  
 
+def insertDeltas(df_deltas_tostore):
+    engine = sqlalchemy.create_engine(connectionString()) 
+    engine.connect()
+    df_deltas_tostore.to_sql(name='FinanceDeltaPercents',con=engine, index=False, if_exists='append',index_label="ID")
+
+def insertFinanceTweetForecast(df_financetweet_tostore):
+    engine = sqlalchemy.create_engine(connectionString()) 
+    engine.connect()
+    df_financetweet_tostore.to_sql(name='FinanceTweetForecast',con=engine, index=False, if_exists='append',index_label="ID")  
+
+
 def fetchFinanceData():
     engine = sqlalchemy.create_engine(connectionString()) 
     engine.connect()

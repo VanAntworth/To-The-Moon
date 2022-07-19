@@ -66,7 +66,7 @@ def fetchFinanceData(financeType):
             
     return pd.read_sql_query(sql_query, engine)
 
-def sp_fetchTweetSentimentForStandardizing(financeType):
+def fetchTweetSentimentForStandardizing(financeType):
     engine = sqlalchemy.create_engine(connectionString()) 
     engine.connect()
     sql_query = 'exec sp_fetchTweetSentimentForStandardizing'

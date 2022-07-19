@@ -31,6 +31,7 @@ BEGIN
 				  ,[close]
 				  ,[adjustedClose]
 				  ,[volume]
+				  ,[id]
 			  FROM [FinanceUsdData]
 		END
 	ELSE
@@ -43,6 +44,7 @@ BEGIN
 				  ,[close]
 				  ,[adjustedClose]
 				  ,[volume]
+				  ,[id]
 			  FROM [FinanceUsdData]
 			  WHERE [financeType]=@financeType
 		END

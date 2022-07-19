@@ -20,6 +20,8 @@ BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from
 	-- interfering with SELECT statements.
 	SET NOCOUNT ON;
+	IF @financeType=''
+	BEGIN 
 			SELECT DISTINCT t.[tweetID]
 				,t.[financeType]
 				,t.[date]
@@ -34,5 +36,23 @@ BEGIN
 			INNER JOIN "SentimentScoring" s 
 			ON t."tweetID" = s."tweetID"
 
+	END
+	ELSE
+	BEGIN
+		SELECT DISTINCT t.[tweetID]
+				,t.[financeType]
+				,t.[date]
+				,t.[fullText]
+				,t.[replyCount]
+				,t.[likesCount]
+				,t.[retweetCount]
+				,s.[sentimentScore]
+				,s.[sentiment]
+				
+			FROM "TwitterData" t
+			INNER JOIN "SentimentScoring" s 
+			ON t."tweetID" = s."tweetID"
+			AND t.[financeType] = @financeType
+	END
 
 END

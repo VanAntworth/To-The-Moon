@@ -16,7 +16,7 @@
 
 
 It has been observed that Elon Musk tweets have been impacting the Stocks and Cryptocurrency market. We wanted to analyze the impact of the tweets and how long the impact was holding true.
-This project will predict the Stock or Cryptocurrencys (Tesla, SpaceX, Twitter and Dogecoin data) future value, and also show the impact of tweets for respective stock/crypto.
+This project will predict the Stock or Cryptocurrencys (Tesla, Twitter and Dogecoin data) future value, and also show the impact of tweets for respective stock/crypto.
 
 
 

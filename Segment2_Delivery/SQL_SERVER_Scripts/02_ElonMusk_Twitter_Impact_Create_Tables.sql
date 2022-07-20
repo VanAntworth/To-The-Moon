@@ -71,7 +71,7 @@ CREATE TABLE "FinanceDeltaPercents" (
 	"sentimentScore" FLOAT   NOT NULL,
     "sentiment" VARCHAR(50)   NOT NULL,
 	"startDate" DATE   NOT NULL,
-	"weekendOrHoliday" BOOLEAN NOT NULL,
+	"weekendOrHoliday" VARCHAR NOT NULL,
     "deltaPrice_0" FLOAT   NOT NULL,
     "deltaPrice_1" FLOAT   NOT NULL,
     "deltaPrice_2" FLOAT   NOT NULL,

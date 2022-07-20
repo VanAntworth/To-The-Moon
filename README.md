@@ -60,10 +60,8 @@ Therefore we are embarking on a quest to find the influence Elon Musk tweet's ha
 
 ## <a name="TrainingandTesting"></a> Training and Testing:
 
-- Data Split 
+ <img width="1049" alt="Screen Shot 2022-07-20 at 2 50 28 PM" src="https://user-images.githubusercontent.com/99001393/180069827-8dce9ddb-bfda-4c24-a2f1-ef3b455f7e0e.png">
 
-- Date Range
-  
 
 ## <a name="ProjectDesign"></a> Project Design
 
@@ -92,7 +90,7 @@ Elon Musk Tweets
 
 Yahoo Finance data
 
-### Deliverable 1
+### <ins>Deliverable 1</ins>
 
 #### Code Used
 
@@ -114,19 +112,21 @@ Yahoo Finance data
 
 <a name="8">[8]</a> [Finance Data Scrapped](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment1_Delivery/Data_Resources/scrapped_data)
 
-### Deliverable 2
+### <ins>Deliverable 2</ins>
 
 #### Machine Learning
 
-<a name="9">[9]</a> [Machine Learning Code](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment2_Delivery/Machine_Learning)
+<a name="9">[1]</a> [Machine Learning Code](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment2_Delivery/Machine_Learning)
 
 #### Data Base
 
-<a name="10">[10]</a> [Data Base Script](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment2_Delivery/SQL_SERVER_Scripts)
+<a name="10">[2]</a> [Data Base Script](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment2_Delivery/SQL_SERVER_Scripts)
 
 #### Visualization
 
-<a name="10">[10]</a> [Visualization Discussion](https://github.com/VanAntworth/To-The-Moon/blob/main/Resources/Visualizations.docx)
+https://vanantworth.github.io/To-The-Moon/
+<a name="10">[3]</a> [Visualization Discussion](https://github.com/VanAntworth/To-The-Moon/blob/main/Resources/Visualizations.docx)  
+<a name="10">[4]</a> [Visualization Dashboard](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment2_Delivery/Visualization)
 
 
 

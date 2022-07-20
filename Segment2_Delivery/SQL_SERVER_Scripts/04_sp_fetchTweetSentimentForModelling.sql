@@ -31,22 +31,23 @@ BEGIN
 	If (@financeType = '') 
 		BEGIN
 			SELECT DISTINCT t.[tweetID]
-				,t.[financeType]
-				,t.[date]
-				,t.[fullText]
-				,t.[replyCount]
-				,t.[likesCount]
-				,t.[retweetCount]
-				,s.[sentimentScore]
-				,s.[sentiment]
-				,f.[id]
-				,f.[adjustedClose]
-				,f.[volume]
-			FROM "TwitterData" t
-			INNER JOIN "SentimentScoring" s 
-			ON t."tweetID" = s."tweetID"
-			INNER JOIN "FinanceUsdData" f
-			ON f."date" = t."date"
+					,t.[financeType]
+					,t.[date]
+					,t.[fullText]
+					,Max(t.[replyCount]) as replyCount
+					,Max(t.[likesCount]) as likesCount
+					,Max(t.[retweetCount]) as retweetCount
+					,s.[sentimentScore]
+					,s.[sentiment]
+					,f.[id]
+					,f.[adjustedClose]
+					,f.[volume]
+				FROM "TwitterData" t
+				INNER JOIN "SentimentScoring" s 
+				ON t."tweetID" = s."tweetID"
+				INNER JOIN "FinanceUsdData" f
+				ON f."date" = t."date"
+			GROUP BY t.[tweetID],t.[financeType],t.[date],t.[fullText],s.[sentimentScore],s.[sentiment],f.[id] ,f.[adjustedClose] ,f.[volume]
 		END
 	ELSE
 		BEGIN
@@ -54,9 +55,9 @@ BEGIN
 					,t.[financeType]
 					,t.[date]
 					,t.[fullText]
-					,t.[replyCount]
-					,t.[likesCount]
-					,t.[retweetCount],
+					,Max(t.[replyCount]) as replyCount
+					,Max(t.[likesCount]) as likesCount
+					,Max(t.[retweetCount]) as retweetCount,
 					s.[sentimentScore], 
 					s.[sentiment],
 					f.[id],
@@ -68,7 +69,7 @@ BEGIN
 				INNER JOIN "FinanceUsdData" f
 				ON f."date" = t."date"
 			WHERE t.financeType = @financeType
+			GROUP BY t.[tweetID],t.[financeType],t.[date],t.[fullText],s.[sentimentScore],s.[sentiment],f.[id] ,f.[adjustedClose] ,f.[volume]
 		END
-
 END
 GO

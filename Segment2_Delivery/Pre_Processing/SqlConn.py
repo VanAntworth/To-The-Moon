@@ -41,15 +41,10 @@ def insertFinanceTweetForecast(df_financetweet_tostore):
     df_financetweet_tostore.to_sql(name='FinanceTweetForecast',con=engine, index=False, if_exists='append',index_label="ID")  
 
 
-def fetchFinanceData():
+def fetchTweetFinance():
     engine = sqlalchemy.create_engine(connectionString()) 
     engine.connect()
-    return pd.read_sql_query(name='FinanceUsdData',con=engine)
-
-def fetchTweetSentiment():
-    engine = sqlalchemy.create_engine(connectionString()) 
-    engine.connect()
-    return pd.read_sql_query('exec sp_FetchTweetSentiment', con=engine)
+    return pd.read_sql_query('exec sp_FetchTweetFinance', con=engine)
 
 def fetchTweetSentimentForModelling(financeType):
     engine = sqlalchemy.create_engine(connectionString()) 

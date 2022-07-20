@@ -30,12 +30,13 @@ BEGIN
 				,Max(t.[likesCount]) as likesCount
 				,Max(t.[retweetCount]) as retweetCount
 				,s.[sentimentScore]
+				,Isnull(s.[sentiment],””) 
 
 				
 			FROM "TwitterData" t
 			INNER JOIN "SentimentScoring" s 
 			ON t."tweetID" = s."tweetID"
-			GROUP BY t.[tweetID],t.[financeType],t.[date],t.[fullText],s.[sentimentScore]
+			GROUP BY t.[tweetID],t.[financeType],t.[date],t.[fullText],s.[sentimentScore],[sentiment]
 
 	END
 	ELSE
@@ -48,11 +49,12 @@ BEGIN
 				,Max(t.[likesCount]) as likesCount
 				,Max(t.[retweetCount]) as retweetCount
 				,s.[sentimentScore]
+				,Isnull(s.[sentiment],””)
 				
 			FROM "TwitterData" t
 			INNER JOIN "SentimentScoring" s 
 			ON t."tweetID" = s."tweetID"
 			AND t.[financeType] = @financeType
-			GROUP BY t.[tweetID],t.[financeType],t.[date],t.[fullText],s.[sentimentScore]
+			GROUP BY t.[tweetID],t.[financeType],t.[date],t.[fullText],s.[sentimentScore],s.[sentiment]
 	END
 END

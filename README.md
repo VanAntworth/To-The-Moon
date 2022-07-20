@@ -92,7 +92,7 @@ Elon Musk Tweets
 
 Yahoo Finance data
 
-### Deliverable 1
+### <ins>Deliverable 1</ins>
 
 #### Code Used
 
@@ -114,7 +114,7 @@ Yahoo Finance data
 
 <a name="8">[8]</a> [Finance Data Scrapped](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment1_Delivery/Data_Resources/scrapped_data)
 
-### Deliverable 2
+### <ins>Deliverable 2</ins>
 
 #### Machine Learning
 

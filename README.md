@@ -60,10 +60,8 @@ Therefore we are embarking on a quest to find the influence Elon Musk tweet's ha
 
 ## <a name="TrainingandTesting"></a> Training and Testing:
 
-- Data Split 
+ <img width="1049" alt="Screen Shot 2022-07-20 at 2 50 28 PM" src="https://user-images.githubusercontent.com/99001393/180069827-8dce9ddb-bfda-4c24-a2f1-ef3b455f7e0e.png">
 
-- Date Range
-  
 
 ## <a name="ProjectDesign"></a> Project Design
 
@@ -126,6 +124,7 @@ Yahoo Finance data
 
 #### Visualization
 
+https://vanantworth.github.io/To-The-Moon/
 <a name="10">[3]</a> [Visualization Discussion](https://github.com/VanAntworth/To-The-Moon/blob/main/Resources/Visualizations.docx)  
 <a name="10">[4]</a> [Visualization Dashboard](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment2_Delivery/Visualization)
 

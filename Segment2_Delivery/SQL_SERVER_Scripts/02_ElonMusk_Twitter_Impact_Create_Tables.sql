@@ -6,7 +6,7 @@ CREATE TABLE "SentimentScoring" (
     "adjustedClose" FLOAT   NOT NULL,
     "volume" BIGINT   NOT NULL,
     "sentimentScore" FLOAT   NOT NULL,
-    "sentiment" VARCHAR(50)   NOT NULL,
+    "sentiment" VARCHAR(50)   
     CONSTRAINT "pkSentimentScoring" PRIMARY KEY (
         "id"
      )

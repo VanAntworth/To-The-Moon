@@ -106,7 +106,7 @@ CREATE TABLE "FinanceTweetForecast" (
     "financeType" VARCHAR(50)   NOT NULL,
 	"financeID" BIGINT NOT NULL,
     "financeDate" DATE   NOT NULL,
-    "datePosition" DATE   NOT NULL,
+    "datePosition" INTEGER   NOT NULL,
     "adjustedClose" FLOAT   NOT NULL,
     "volume" BIGINT ,
     CONSTRAINT "pkFinanceTweetForecast" PRIMARY KEY (

@@ -5,6 +5,7 @@
 ## Table of Contents
 - [Project Overview](#OverviewProject)
 - [Background](#Background)
+- [Communication Protocal] (#Communication)
 - [Approach](#Approach)
 - [Description of Data Exploration](#DataExp)
 - [Training and Testing](#TrainingandTesting)
@@ -29,6 +30,21 @@ Under the influence of social media Doge Coin would continue to climb in price a
 In 2020 and 2021 Twitter, Reddit and Robin Hood changed the dynamic of the stock market and crypto currencies. Social media became a disruptive force in the economy. Yet Doge could've just been one of many many crypto coins that did not rise in price, if it wasn't for one person that brought notoriety to this currency, Elon Musk.  
 
 Therefore we are embarking on a quest to find the influence Elon Musk tweet's have had over Doge Coin. In the process we are interested in understanding how the use of language by a single individual with a large following, can influence the price of stocks and coins. 
+
+
+## <a name="Communication"></a> Communication Propocal
+
+
+
+Deepa - Worked alongside Shreha with website, Finalizing SQL setup, Finalized ARIMA ML code
+Shreha - Developed website and worked with embedding and design, Finalized LSTM ML code
+Tamara - Linear regression ML model code Finalization, visualization dashboard
+Vanessa - Tableau visualizations, created powerpoint, readme updates
+
+All four team members met for daily check-ins to see who needed additional input or assistance to meet segment two deliverables.
+
+
+
 
 ## <a name="Approach"></a> Approach:
 

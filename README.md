@@ -34,10 +34,24 @@ Therefore we are embarking on a quest to find the influence Elon Musk tweet's ha
 
 ## <a name="Communication"></a> Communication Propocal
 
+Meetings:
+
+All four team members meet for daily check-ins to see who needs additional inputs or assistance to meet segment two deliverables.
 
 
+Slack:
 
-All four team members met for daily check-ins to see who needed additional input or assistance to meet segment two deliverables.
+Group has formed a private group chat to continuiously share ideas and updates on progress. 
+Group has regularly communicated through slack from initiation of project.
+
+Whats App:
+
+Created whats-app group to discuss topics/questions/ideas when a computer is not accessible.
+
+
+GitHub Repository:
+
+Team has merged all completions in Guthub repository so that each team member has access to all material created. 
 
 
 

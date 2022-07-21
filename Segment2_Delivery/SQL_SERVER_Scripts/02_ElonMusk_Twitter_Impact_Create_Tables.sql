@@ -68,6 +68,7 @@ CREATE TABLE "FinanceDeltaPercents" (
     "fullText" VARCHAR(max)  NOT NULL,
     "likesCount" INTEGER ,
 	"retweetCount" INTEGER  ,
+	"sentiment" VARCHAR  ,
 	"sentimentScore" FLOAT   NOT NULL,
 	"startDate" DATE   NOT NULL,
 	"datesDifference" INTEGER NOT NULL,

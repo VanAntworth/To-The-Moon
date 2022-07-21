@@ -40,9 +40,9 @@ Deepa - Worked alongside Shreha with website, Finalizing SQL setup, Finalized AR
 
 Shreha - Developed website and worked with embedding and design, Finalized LSTM ML code
 
-Tamara - Linear regression ML model code Finalization, visualization dashboard
+Tamara - Linear regression ML model code finalization, Visualization dashboard
 
-Vanessa - Tableau visualizations, created powerpoint, readme updates
+Vanessa - Tableau visualizations, powerpoint, Readme updates
 
 All four team members met for daily check-ins to see who needed additional input or assistance to meet segment two deliverables.
 

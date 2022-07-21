@@ -36,13 +36,6 @@ Therefore we are embarking on a quest to find the influence Elon Musk tweet's ha
 
 
 
-Deepa - Worked alongside Shreha with website, Finalizing SQL setup, Finalized ARIMA ML code
-
-Shreha - Developed website and worked with embedding and design, Finalized LSTM ML code
-
-Tamara - Linear regression ML model code finalization, Visualization dashboard
-
-Vanessa - Tableau visualizations, powerpoint, Readme updates
 
 All four team members met for daily check-ins to see who needed additional input or assistance to meet segment two deliverables.
 

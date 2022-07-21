@@ -1,0 +1,76 @@
+,tweetID,financeType,date,fullText,replyCount,likesCount,retweetCount,adjustedClose,volume,subjectivity,polarity,Sentiment
+456,1113009339743100928,doge,2019-04-02,Dogecoin might be my fav cryptocurrency. It’s pretty cool.,558.0,9063,2428,0.002795,60298362,0.825,0.3,Positive
+457,1113173498384441344,doge,2019-04-02,Dogecoin rulz,1732.0,138893,16539,0.002795,60298362,0.0,0.0,Neutral
+458,1113178951403180032,doge,2019-04-02,Dogecoin value may vary,1080.0,20160,1959,0.002795,60298362,0.0,0.0,Neutral
+620,1254039929333649408,doge,2020-04-25,Dogecoin Mode,124.0,2192,207,0.002142,229810398,0.0,0.0,Neutral
+663,1284290215561986048,doge,2020-07-18,"Excuse me, I only sell Doge!",416.0,15930,775,0.003473,204080851,0.525,-0.025,Negative
+713,1328771222822400000,doge,2020-11-17,Dojo/Doge,81.0,1002,62,0.002936,46631464,0.0,0.0,Neutral
+720,1340590280848908288,doge,2020-12-20,One word: Doge,11227.0,224342,26570,0.004625,508066004,0.0,0.0,Neutral
+731,1357231313376456704,doge,2021-02-04,Doge,21.0,536,25,0.053289,13040837601,0.0,0.0,Neutral
+732,1357241340313141248,doge,2021-02-04,Dogecoin is the people’s crypto,18465.0,533684,97994,0.053289,13040837601,0.0,0.0,Neutral
+733,1357244295091208192,doge,2021-02-04,"No highs, no lows, only Doge",21310.0,744715,107141,0.053289,13040837601,1.0,0.0,Neutral
+734,1357972904663687168,doge,2021-02-06,Dogecake,21.0,536,25,0.057595,5946101275,0.0,0.0,Neutral
+735,1358542364948668416,doge,2021-02-08,?? Who let the Doge out ??,87.0,3783,114,0.078825,12844375210,0.0,0.0,Neutral
+736,1358648653573992448,doge,2021-02-08,"Doge appears to be inflationary, but is not meaningfully so (fixed # of coins per unit time), whereas BTC is arguably deflationary to a fault. Transaction speed of Doge should ideally be a few orders of magnitude faster.",87.0,3783,114,0.078825,12844375210,0.15000000000000002,-0.125,Negative
+738,1359519541219500032,doge,2021-02-10,"Bought some Dogecoin for lil X, so he can be a toddler hodler",129.0,1446,106,0.072896,6785088422,0.0,0.0,Neutral
+739,1359791422711492608,doge,2021-02-11,"Frodo was the underdoge, All thought he would fail, Himself most of all.",129.0,1446,106,0.069676,3818556739,0.39999999999999997,0.0,Neutral
+741,1360007611781795840,doge,2021-02-12,Doge is underestimated,238.0,30121,2069,0.070069,4190843784,0.0,0.0,Neutral
+742,1361094185412100096,doge,2021-02-15,"If major Dogecoin holders sell most of their coins, it will get my full support. Too much concentration is the only real issue imo.",238.0,30121,2069,0.056591,4944804938,0.5083333333333333,0.21875,Positive
+743,1361096223428653056,doge,2021-02-15,An acceptable percentage. Doge is much more concentrated.,68.0,3609,200,0.056591,4944804938,0.5,0.5,Positive
+747,1363046350900785152,doge,2021-02-20,I just set up some little Doge mining rigs with my kids. It was fun.,68.0,3609,200,0.054384,3175468554,0.35,0.056249999999999994,Positive
+748,1363601164344823808,doge,2021-02-22,Dojo 4 Doge,26.0,1685,53,0.053725,3366757324,0.0,0.0,Neutral
+752,1366477626429169664,doge,2021-03-01,Doge meme shield (legendary item),26.0,1685,53,0.050599,1494427207,1.0,1.0,Positive
+754,1366668744748007424,doge,2021-03-02,2022: Dogecoin is dumb,62.0,1347,133,0.050262,1346282318,0.5,-0.375,Negative
+755,1366857632372256768,doge,2021-03-03,Very much so &amp; its leader shall be The Doge,62.0,1347,133,0.050592,1093877445,0.26,0.26,Positive
+759,1368058884837928960,doge,2021-03-06,Doge spelled backwards is Egod,134.0,5413,195,0.050984,1480482384,0.0,0.0,Neutral
+761,1370882536101056512,doge,2021-03-14,Doge day afternoon,48.0,664,30,0.058592,2752132530,0.0,0.0,Neutral
+762,1370883943143251968,doge,2021-03-14,"Origin of Doge Day Afternoon: The ancient Romans sacrificed a Dogecoin at the beginning of the Doge Days to appease the rage of Sirius, believing that the star was the cause of the hot, sultry weather.",48.0,664,30,0.058592,2752132530,0.8500000000000001,0.25,Positive
+763,1370885153262817280,doge,2021-03-14,"Why are you so dogematic, they ask",134.0,5413,195,0.058592,2752132530,0.0,0.0,Neutral
+764,1371600053039722496,doge,2021-03-16,420M Doge,770.0,20960,2570,0.058607,1393771913,0.0,0.0,Neutral
+765,1372658385896738816,doge,2021-03-19,Sometimes it’s about Doge,770.0,20960,2570,0.058328,964747809,0.0,0.0,Neutral
+770,1377567762919292928,doge,2021-04-01,SpaceX is going to put a literal Dogecoin on the literal moon,770.0,20960,2570,0.061986,5816046822,0.0,0.0,Neutral
+777,1382551451185131520,doge,2021-04-15,Doge Barking at the Moon – Miro,149.0,4013,190,0.182207,17916620386,0.0,0.0,Neutral
+778,1382552587099062272,doge,2021-04-15,Doge Barking at the Moon,237.0,1423,50,0.182207,17916620386,0.0,0.0,Neutral
+787,1387290679794089984,doge,2021-04-28,The Dogefather SNL May 8,237.0,1423,50,0.323682,14464343767,0.0,0.0,Neutral
+789,1391523807148527616,doge,2021-05-10,SpaceX launching satellite Doge-1 to the moon next year – Mission paid for in Doge – 1st crypto in space – 1st meme in space To the mooooonnn!!,149.0,4013,190,0.449964,16514521828,0.0,0.0,Neutral
+790,1392030108274159616,doge,2021-05-11,Do you want Tesla to accept Doge?,96563.0,392471,94898,0.495231,14566975476,0.0,0.0,Neutral
+793,1392974251011895296,doge,2021-05-14,Working with Doge devs to improve system transaction efficiency. Potentially promising.,96563.0,392471,94898,0.559604,20466177002,0.5,0.2,Positive
+794,1393738154889338880,doge,2021-05-16,"Ideally, Doge speeds up block time 10X, increases block size 10X &amp; drops fee 100X. Then it wins hands down.",1008.0,76197,6153,0.514895,9541552064,0.4962962962962963,0.3481481481481481,Positive
+795,1393749019478970368,doge,2021-05-16,Only if Doge can’t do it. Big pain in the neck to create another one.,2881.0,196885,16485,0.514895,9541552064,0.55,0.0,Neutral
+796,1393979913624072192,doge,2021-05-16,Obnoxious threads like this make me want to go all in on Doge,2881.0,196885,16485,0.514895,9541552064,0.0,0.0,Neutral
+800,1395328697436033024,doge,2021-05-20,How much is that Doge in the window?,954.0,23338,2666,0.400194,12415484460,0.2,0.2,Positive
+801,1395437522306490368,doge,2021-05-20,A longtime Tesla supporter gave me the Doge dollar sticker at Giga Berlin,954.0,23338,2666,0.400194,12415484460,0.0,0.0,Neutral
+803,1395438318095986688,doge,2021-05-20,"Yeah, I haven’t &amp; won’t sell any Doge",1008.0,76197,6153,0.400194,12415484460,0.0,0.0,Neutral
+804,1396916392629137408,doge,2021-05-24,"If you’d like to help develop Doge, please submit ideas on GitHub &amp;",41.0,2554,53,0.366162,6821088755,0.0,0.0,Neutral
+805,1396926365996261376,doge,2021-05-25,"Someone suggested changing Dogecoin fees based on phases of the moon, which is pretty awesome haha",77.0,2095,79,0.346302,5544552739,0.7666666666666666,0.48333333333333334,Positive
+806,1397064185222078464,doge,2021-05-25,"Doge has dogs &amp; memes, whereas the others do not",378.0,2317,88,0.346302,5544552739,0.0,0.0,Neutral
+807,1397285556954877952,doge,2021-05-26,"Please note Dogecoin has no formal organization &amp; no one reports to me, so my ability to take action is limited",3037.0,150979,13440,0.353693,3355793260,0.12142857142857143,0.01428571428571429,Positive
+823,1410519466518233088,doge,2021-07-01,Release the Doge!,41.0,2554,53,0.244549,2463946548,0.0,0.0,Neutral
+824,1410529698497630208,doge,2021-07-01,"Baby Doge, doo, doo, doo, doo, doo, Baby Doge, doo, doo, doo, doo, doo, Baby Doge, doo, doo, doo, doo, doo, Baby Doge",3037.0,150979,13440,0.244549,2463946548,0.0,0.0,Neutral
+826,1410797794630070272,doge,2021-07-02,But can I pay in Doge?,77.0,2095,79,0.245264,1321470954,0.0,0.0,Neutral
+834,1413396249546563584,doge,2021-07-09,"BTC &amp; ETH are pursuing a multilayer transaction system, but base layer transaction rate is slow &amp; transaction cost is high. There is merit imo to Doge maximizing base layer transaction rate &amp; minimizing transaction cost with exchanges acting as the de facto secondary layer.",378.0,2317,88,0.219864,3045790264,0.5399999999999999,-0.34,Negative
+835,1414774945335361536,doge,2021-07-13,"Maybe if it sees a Shiba Inu, the car renders a Dogecoin …",4429.0,113840,4658,0.200003,1035890377,0.0,0.0,Neutral
+836,1416441034469527552,doge,2021-07-17,Lil X is hodling his Doge like a champ. Literally never said the word “sell” even once!,4429.0,113840,4658,0.186125,2393120423,0.0,0.0,Neutral
+858,1429923740607909888,doge,2021-08-24,Ancient Doges,848.0,12491,1462,0.288739,3143768703,0.0,0.0,Neutral
+874,1440780474662543360,doge,2021-09-23,Super important for Doge fees to drop to make things like buying movie tix viable,2215.0,23835,4126,0.224832,1169581249,0.8333333333333333,0.3666666666666667,Positive
+882,1451623475978833920,doge,2021-10-22,*In Dogecoin,6542.0,57811,10584,0.244221,1829875043,0.0,0.0,Neutral
+883,1452334458066149376,doge,2021-10-24,"Out of curiosity, I acquired some ascii hash strings called “Bitcoin, Ethereum &amp; Doge”. That’s it. As I’ve said before, don’t bet the farm on crypto! True value is building products &amp; providing services to your fellow human beings, not money in any form.",6066.0,368095,60904,0.277048,5278760541,0.375,0.175,Positive
+884,1452348126753349632,doge,2021-10-24,Lots of people I talked to on the production lines at Tesla or building rockets at SpaceX own Doge. They aren’t financial experts or Silicon Valley technologists. That’s why I decided to support Doge – it felt like the people’s crypto.,4060.0,33219,7162,0.277048,5278760541,0.5,0.3,Positive
+890,1453418189862342656,doge,2021-10-27,"If I send you 2 Doge, will you promise to send me 1 Doge?",6066.0,368095,60904,0.23769,5022822846,0.0,0.0,Neutral
+897,1454876031232380928,doge,2021-10-31,Tuition is in Dogecoin &amp; u get a discount if u have a dog,25890.0,241960,22062,0.280244,4224104205,0.0,0.0,Neutral
+901,1455634905870786560,doge,2021-11-03,How about my lil doge Floki? He would make a great CEO! His judgment is ??.,5763.0,25497,4616,0.269407,2091380862,0.75,1.0,Positive
+913,1463085111600205824,doge,2021-11-23,Hey what’s going on with your Doge customers? Sounds shady.,4687.0,24943,3913,0.226512,1907278849,0.625,-0.25,Negative
+914,1463096278171148288,doge,2021-11-23,Doge holders using Binance should be protected from errors that are not their fault,3274.0,21846,3319,0.226512,1907278849,0.0,0.0,Neutral
+915,1463193267336581120,doge,2021-11-23,"I don’t use Binance (tried at one point, but signup was too many hoops to jump through), so no inconvenience to me personally. Just raising this issue on behalf of other Doge holders.",3518.0,19400,2386,0.226512,1907278849,0.39166666666666666,0.125,Positive
+924,1470703708677840896,doge,2021-12-14,Tesla will make some merch buyable with Doge &amp; see how it goes,49984.0,363960,53938,0.180157,6411471551,0.0,0.0,Neutral
+931,1473914193527070720,doge,2021-12-23,That’s why I’m pro Doge,4203.0,30980,6149,0.18449,1184481683,0.0,0.0,Neutral
+934,1481873421390680064,doge,2022-01-14,Tesla merch buyable with Dogecoin,38725.0,332825,51727,0.183549,5784004926,0.0,0.0,Neutral
+939,1485953263040188416,doge,2022-01-25,I will eat a happy meal on tv if accepts Dogecoin,31009.0,422498,59390,0.143049,1347567750,1.0,0.8,Positive
+962,1503222294277197824,doge,2022-03-14,"As a general principle, for those looking for advice from this thread, it is generally better to own physical things like a home or stock in companies you think make good products, than dollars when inflation is high. I still own &amp; won’t sell my Bitcoin, Ethereum or Doge fwiw.",,59330,14894,0.114048,822092169,0.6118367346938776,0.37285714285714283,Positive
+977,1512954808394731520,doge,2022-04-10,Maybe even an option to pay in Doge?,,34322,4372,0.149535,1931829669,0.0,0.0,Neutral
+1047,1529963471248449536,doge,2022-05-26,"Dogecoin Trillionaire, the Movie ??",,17427,2265,0.078252,711890873,0.0,0.0,Neutral
+1051,1530209049261658112,doge,2022-05-27,"Tesla merch can be bought with Doge, soon SpaceX merch too",,203719,19599,0.081335,1310057650,0.0,0.0,Neutral
+1059,1531696049064116224,doge,2022-05-31,And Palmer always forgets to mention that he never wrote a single line of Dogecoin code …,,3663,317,0.085865,672444588,0.21428571428571427,-0.07142857142857142,Negative
+1060,1531699416490557440,doge,2022-05-31,You’re humble bro. Billy’s sense of humor &amp; irreverence is a big part of why people love Dogecoin.,,12204,1237,0.085865,672444588,0.3666666666666667,0.09999999999999999,Positive
+1071,1538406040374595584,doge,2022-06-19,I will keep supporting Dogecoin,,396566,37467,0.060396,1166163984,0.25,0.25,Positive
+1075,1544743525585141760,doge,2022-07-06,Supporting Doge wherever possible,,10646,2085,0.068583,398926503,0.625,0.125,Positive

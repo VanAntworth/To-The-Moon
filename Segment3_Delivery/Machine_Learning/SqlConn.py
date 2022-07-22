@@ -85,15 +85,17 @@ def fetchTweetSentimentForStandardizing(financeType):
             
     return pd.read_sql_query(sql_query, engine)
 
-def fetchFinanceDeltaPercents(financeType):
+def fetchFinanceDeltaPercents():
     engine = sqlalchemy.create_engine(connectionString()) 
     engine.connect()
-    sql_query = 'exec sp_fetchFinanceDeltaPercents'
-    if financeType == 'doge':
-        sql_query = sql_query + ' "doge"'
-    elif  financeType == 'tesla':
-            sql_query = sql_query + ' "tesla"'
-    elif financeType == 'twitter':
-            sql_query = sql_query + ' "twitter"'
-            
-    return pd.read_sql_query(sql_query, engine)
+    return pd.read_sql_query('exec sp_fetchFinanceDeltaPercents', con=engine)
+
+def fetchFinanceTweetForecast():
+    engine = sqlalchemy.create_engine(connectionString()) 
+    engine.connect()
+    return pd.read_sql_query('exec sp_fetchFinanceTweetForecast', con=engine)
+
+def fetchFinanceDeltaPercentsSmall():
+    engine = sqlalchemy.create_engine(connectionString()) 
+    engine.connect()
+    return pd.read_sql_query('exec sp_fetchFinanceDeltaPercentsSmall', con=engine)

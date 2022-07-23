@@ -146,3 +146,11 @@ function init()
 
 
 init();
+
+/*Events*/
+function optionChanged(value){
+    console.log(value)
+    const label = document.getElementById("displayDateSelected");
+    label.innerHTML = value;
+    
+}

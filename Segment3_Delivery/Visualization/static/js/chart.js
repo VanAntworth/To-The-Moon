@@ -64,7 +64,18 @@ init();
 
 /*Events*/
 function optionChanged(value){
-    const label = document.getElementById("displayDateSelected");
-    label.innerHTML = value;
+    console.log(value)
+    const label = document.getElementById("financeType");
+    financeType = label.value
+
+    console.log(financeType)
+    
+}
+
+function selectorChanged(value1){
+    console.log(value1)
+    const label = document.getElementById("dateSelected");
+    dateLogged = label.value
+    console.log(dateLogged)
     
 }

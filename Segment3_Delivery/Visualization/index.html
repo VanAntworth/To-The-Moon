@@ -228,7 +228,7 @@
                   
                   <label for="financeType" class="col-sm-6"> Choose a stock / coin:</label>
                   <div class="col-sm-8">
-                    <select name="financeType" id="financeType">
+                    <select name="financeType" id="financeType" onchange="selectorChanged(this.options[this.selectedIndex].value)">
                       <option value="tesla">Tesla</option>
                       <option value="twitter">Twitter</option>
                       <option value="doge">Doge</option>

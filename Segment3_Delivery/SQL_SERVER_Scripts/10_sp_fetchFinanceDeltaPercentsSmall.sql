@@ -23,6 +23,7 @@ BEGIN
 	SELECT 
 		[tweetID]
  	    ,[date]
+		,[financeType]
 		,isnull([sentiment],'') as sentiment
 		,[sentimentScore]
 		,[startDate]

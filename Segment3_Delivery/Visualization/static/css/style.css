@@ -1,9 +1,9 @@
-/* .jumbotron {
+ .jumbotron {
     background-image: url("../Images/image.jpg");
     background-size: 100% 100%;
     text-align: center;
     /* color: rgb(7, 135, 248); */
-  } */
+  } 
 
   html, body {
 
@@ -118,4 +118,55 @@
   .img-box:after, .img-box ul, .img-box ul li
   {
     transition: all 0.5 ease-in-out 0s;
+  }
+
+  .body{
+    background:lightgrey;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+  .mytabs{
+    display: flex;
+    flex-wrap: wrap;
+   margin: 10px auto;
+  }
+
+  .mytabs input[type="radio"]{
+    display: none;
+  }
+
+  .mytabs label {
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(238, 235, 234);
+    cursor: pointer;
+    color:blue;
+    border-color: grey;
+    border-radius: 8px 8px 0 0;
+    border-width: 2px;
+    height: 1px;
+    margin-bottom: 2px;
+    
+    }
+  .mytabs .tab {
+    width: 100%;
+    background-color: white;
+    order: 1;
+    display: none;
+    border: lightgrey;
+    border-width: 1px;
+  }
+  .mytabs .tab h2{
+    font-size:3em;
+    border-width:2px;
+    border-color: grey;
+  }
+  .mytabs input[type="radio"]:checked + label + .tab{
+    display: block;
+
+  }
+
+  .mytabs input[type="radio"]:checked + label{
+    background-color: white;
+    border: grey;
   }

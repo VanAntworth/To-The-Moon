@@ -151,10 +151,11 @@
   .mytabs .tab {
     width: 100%;
     background-color: white;
-    order: 1;
     display: none;
     border: lightgrey;
     border-width: 1px;
+    order: 1;
+
   }
   .mytabs .tab h2{
     font-size:3em;
@@ -170,3 +171,5 @@
     background-color: white;
     border: grey;
   }
+
+ 

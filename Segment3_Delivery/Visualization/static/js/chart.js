@@ -43,7 +43,7 @@ var date = new Date();
 var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
 
     $('#datepicker').datepicker({
-        format: 'dd/mm/yyyy', 
+        format: 'yyyy-mm-dd', 
         autoclose: true, 
         todayHighlight: true,
         forceParse: false,
@@ -73,9 +73,43 @@ function optionChanged(value){
 }
 
 function selectorChanged(value1){
-    console.log(value1)
+    financeType1 = value1
+    console.log(financeType1)
+
     const label = document.getElementById("dateSelected");
-    dateLogged = label.value
-    console.log(dateLogged)
+    dateLogged1 = label.value
+    console.log(dateLogged1)
+
+    // fetch('/JSON_files/financeData7Days.json').then(response1 => {
+    //     return response1.json();
+    //     }).then(data1 => {
     
+    //     data1 = data1[financeType1]
+    //     filteredbyDate = data1.filter(index => index.tweetDate == dateLogged1)
+    //     console.log(filteredbyDate)
+    // })
+
+    fetch('/JSON_files/financedeltapercent.json').then(response2 => {
+        return response2.json();
+        }).then(data2 => {
+        
+        data2 = data2.filter(index => index.financeType == financeType1 )
+        // filteredDate2 = data2.filter(index => index.tweetDate ==dateLogged1)
+        console.log(data2)
+    })
+
+    fetch('/JSON_files/tweetsperDate.json').then(response3 => {
+        return response3.json();
+        }).then(data3 => {
+    
+        data3 = data3[financeType1]
+
+        filteredDate3 = data3.filter(index => index.date==dateLogged1)
+        
+        // tweetIDsperDate = filteredDate3.tweetIDs
+
+        console.log(filteredDate3)
+    })
+
+
 }

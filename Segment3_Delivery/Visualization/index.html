@@ -359,33 +359,56 @@
       <p></p>
       <!--Machine Learning-->
       <div class="row">
-        <div class="col-12" >
-          <div class="card" style="height: 500px">
+        <div class="col-12" style="height:700px">
+          <div class="card">
             <h4 class="card-title">Machine Learning Algos for prediction</h4>
             <div class="card-body">
-              <div class="mytabs">
-                <input type="radio" id="tabIntroduction" name="mytabs" checked="checked">
-                <label for="tabIntroduction">Introduction</label>
-                <div class="tab">
-                      <P> Introduction to all models </P>
+              <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#intro">Introduction</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#lr">Linear Regression</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#arima">Arima</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#lstm">LSTM</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="intro">
+                  <div class="row border g-0 rounded shadow-sm">
+                    <div class="col-6">
+                      <p>
+                        This tab pertains to the introduction of ML.
+                      </p>
+                    </div>
+                    <div class="col-auto">
+                      <img src="images/LR_graph.png" alt="LR Graph" width="500px" height="300px">
+                    </div>
+                  </div>
                 </div>
-                <input type="radio" id="tabLinearRegression" name="mytabs">
-                <label for="tabLinearRegression">Linear Regression</label>
-                <div class="tab">
-                  <h2>Linear Regression</h2>
-                  <P> graph of Linear Regression </P>
-                  <img src="images/LR_graph.png"></img>
+                <div class="tab-pane" id="lr">
+                  <div class="row border g-0 rounded shadow-sm">
+                    <div class="col-6">
+                      <p>
+                        This tab pertains to the info about Linear Regression.
+                      </p>
+                    </div>
+                    <div class="col-auto">
+                      <img src="images/LR_graph.png" alt="LR Graph" width="500px" height="300px">
+                    </div>
+                  </div>
                 </div>
-                <input type="radio" id="tabArima" name="mytabs">
-                <label for="tabArima">Arima</label>
-                <div class="tab">
-                  <h2>Arima</h2>
-                  <P> graph of ARIMA </P>
+                <div class="tab-pane" id="arima">
+                  <div class="row border g-0 rounded shadow-sm">
+                    <div class="col-6">
+                      <p>
+                        This tab pertains to the info about Arima.
+                      </p>
+                    </div>
+                    <div class="col-auto">
+                      <img src="images/LR_graph.png" alt="LR Graph" width="500px" height="300px">
+                    </div>
+                  </div>
                 </div>
-                <input type="radio" id="tabLSTM" name="mytabs">
-                <label for="tabLSTM">LSTM</label>
-                <div class="tab">
-                  <h3> Actual vs Predicted values by LSTM </h3>
+                <div class="tab-pane" id="lstm">
+                  <div class="row border g-0 rounded shadow-sm">
+                    <h3> Actual vs Predicted values by LSTM </h3>
                   <div class="container">
                   <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
@@ -420,11 +443,9 @@
                     </div> 
                   </div>
                   </div>
-
-
+                  </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

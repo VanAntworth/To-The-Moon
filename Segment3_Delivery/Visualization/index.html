@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="static/css/sentiStyle.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0/dist/chartjs-plugin-annotation.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -63,10 +64,6 @@
               <a class="nav-link" href="#teaminfo">Our Team</a>
             </li>
           </ul>
-          <!-- <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form> -->
         </div>
       </div>
     </nav>
@@ -221,8 +218,8 @@
             <div class="card-body">
               <form>
                 <div class="row form-group">
-                  <label for="date" class="col-sm-1 col-form-label">Date</label>
-                  <div class="col-sm-4">
+                  <label for="date" class="col-sm-1">Enter Date:</label>
+                  <div class="col-sm-2">
                     <div class="input-group date" id="datepicker">
                       <input type="text" class="form-control" id="dateSelected" onchange="optionChanged(this.value)">
                       <span class="input-group-append">
@@ -235,21 +232,47 @@
                         </span>
                       </span>
                     </div>
-                  </div>
-
-                  
-                  <label for="financeType" class="col-sm-6"> Choose a stock / coin:</label>
-                  <div class="col-sm-8">
+                  </div>               
+                  <div class="col-sm-4">
+                    <label for="financeType" class="col-sm-6"> Choose a stock / coin:</label>
                     <select name="financeType" id="financeType" onchange="selectorChanged(this.options[this.selectedIndex].value)">
                       <option value="tesla">Tesla</option>
                       <option value="twitter">Twitter</option>
                       <option value="doge">Doge</option>
                     </select>
                   </div>
+                  <!-- <div class="col-sm-8"> -->
+                    <!-- <label for="financeType" class="col-sm-3"> Choose a stock/coin:</label>  -->
+                    <!-- <div class="input-group mb-3">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="financeType" data-bs-toggle="dropdown">
+                        Choose a stock/coin:
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="financeType">
+                        <li><a href="#" class="dropdown-item">Tesla</a></li>
+                        <li><a href="#" class="dropdown-item">Doge</a></li>
+                        <li><a href="#" class="dropdown-item">Twitter</a></li>
+                      </ul>
+                    </div>
+                  </div>     -->
+
 
                 </div>
               </form>
               <canvas id="myChart" width="200" height="50"></canvas>
+
+              <!-- Inserting the table -->
+              <div class="col-md-9">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                          <th>Tweets</th>
+                          <!-- <th>City</th> -->
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+              </div>
+              
             </div>
             <div>
             </div>
@@ -258,9 +281,8 @@
         </div>
         <div class="col-3">
           <div class="card">
-            <h4 class="card-title">"Elon Musk Live Tweets Feeder"</h4>
+            <h4 class="card-title">Elon Musk Live Tweets Feeder</h4>
             <div class="card-body">
-<<<<<<< Updated upstream
               <label id="displayDateSelected"></label>
               <div id="tweet" tweetID="515490786800963584"></div>
           
@@ -285,9 +307,7 @@
               </script>
     
 
-=======
              
->>>>>>> Stashed changes
             </div>
           </div>
           <!-- <style>
@@ -365,8 +385,43 @@
                 <input type="radio" id="tabLSTM" name="mytabs">
                 <label for="tabLSTM">LSTM</label>
                 <div class="tab">
-                  <h2>LSTM</h2>
-                  <P> graph of LSTM </P>
+                  <h3> Actual vs Predicted values by LSTM </h3>
+                  <div class="container">
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card text-center h-100">
+                          <div class="card-img">
+                                <img class="img-fluid" alt="lstm-doge" src="images/lstm_doge.png"></img>
+                          </div>
+                          <div class="card-body">
+                            <h5>Doge-Actual vs Predicted</h5>
+                          </div>
+                        </div>  
+                    </div>
+                    <div class="col">
+                      <div class="card text-center h-100">
+                        <div class="card-img">
+                              <img class="img-fluid" alt="lstm-tesla" src="images/lstm_tesla.png"></img>
+                        </div>
+                        <div class="card-body">
+                          <h5>Tesla-Actual vs Predicted</h5>
+                        </div>
+                      </div>  
+                    </div>
+                    <div class="col">
+                      <div class="card text-center h-100">
+                        <div class="card-img">
+                            <img class="img-fluid"  alt="lstm-twitter" src="images/lstm_twitter.png"></img>
+                        </div>
+                        <div class="card-body">
+                           <h5>Twitter-Actual vs Predicted</h5>
+                        </div>
+                      </div>  
+                    </div> 
+                  </div>
+                  </div>
+
+
                 </div>
               </div>
 
@@ -486,8 +541,8 @@
   </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-  <script src="static/js/app.js"></script>
   <script src="static/js/chart.js"></script>
+  <!-- <script src="static/js/build_table.js"></script> -->
   <script src="static/js/SentimentChart.js"></script>
 </body>
 

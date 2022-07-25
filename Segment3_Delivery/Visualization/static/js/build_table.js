@@ -1,4 +1,5 @@
 function buildTweet7Day(){
+    console.log("in 7days")
     const ctx = document.getElementById('myChart').getContext('2d');
     const myChart = new Chart(ctx, {
         type: 'bar',
@@ -38,10 +39,10 @@ function buildTweet7Day(){
 }
 
 function buildDateControl(){
-
+console.log("in date")
 var date = new Date();
 var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
-
+console.log(today)
     $('#datepicker').datepicker({
         format: 'yyyy-mm-dd', 
         autoclose: true, 
@@ -66,6 +67,7 @@ init();
 function optionChanged(value){
     
     dateLogged = value
+    console.log("in function")
     console.log(dateLogged)
 
     const label = document.getElementById("financeType");

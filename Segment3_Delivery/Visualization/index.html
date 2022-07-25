@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="static/css/style.css">
   <link rel="stylesheet" href="static/css/sentiStyle.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0/dist/chartjs-plugin-annotation.min.js"></script>
 </head>
 
 <body>
@@ -131,7 +132,7 @@
       <h1>Visualizations</h1>
       <div class="row">
         <!-- Embedding Tableau  -->
-        <div class="col-8" style="height=450px">
+        <div class="col-8" style="height:450px">
           <div class="card">
             <!-- <h4 class="card-title">"Elon Musk Tweets Trends</h4>-->
             <div class="card-body">
@@ -259,6 +260,7 @@
           <div class="card">
             <h4 class="card-title">"Elon Musk Live Tweets Feeder"</h4>
             <div class="card-body">
+<<<<<<< Updated upstream
               <label id="displayDateSelected"></label>
               <div id="tweet" tweetID="515490786800963584"></div>
           
@@ -283,6 +285,9 @@
               </script>
     
 
+=======
+             
+>>>>>>> Stashed changes
             </div>
           </div>
           <!-- <style>
@@ -302,7 +307,7 @@
       <!--Sentiment Adjustclose relation-->
       <div class="row">
         <div class="col-12" >
-          <div class="card" style="height:480px">
+          <div class="card" style="height:600px">
             <h4 class="card-title">"Adjusted Close value of Doge vs Sentiment Score"</h4>
             <div class="card-body">
               <div class="sentitabs">
@@ -345,14 +350,14 @@
                       <P> Introduction to all models </P>
                 </div>
                 <input type="radio" id="tabLinearRegression" name="mytabs">
-                <label for="tabLinearRegression">Tesla</label>
+                <label for="tabLinearRegression">Linear Regression</label>
                 <div class="tab">
                   <h2>Linear Regression</h2>
                   <P> graph of Linear Regression </P>
                   <img src="images/LR_graph.png"></img>
                 </div>
                 <input type="radio" id="tabArima" name="mytabs">
-                <label for="tabArima">Twitter</label>
+                <label for="tabArima">Arima</label>
                 <div class="tab">
                   <h2>Arima</h2>
                   <P> graph of ARIMA </P>
@@ -481,8 +486,6 @@
   </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-  <script type="text/javascript" src="utility.js"></script>
-  <script type="text/javascript" src="script.js"></script>
   <script src="static/js/app.js"></script>
   <script src="static/js/chart.js"></script>
   <script src="static/js/SentimentChart.js"></script>

@@ -146,6 +146,7 @@
     border-width: 2px;
     height: 1px;
     margin-bottom: 2px;
+    vertical-align:center;
     
     }
   .mytabs .tab {
@@ -170,6 +171,7 @@
   .mytabs input[type="radio"]:checked + label{
     background-color: white;
     border: grey;
+    vertical-align: center;
   }
 
  

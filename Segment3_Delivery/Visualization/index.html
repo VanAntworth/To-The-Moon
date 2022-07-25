@@ -260,9 +260,32 @@
             <h4 class="card-title">"Elon Musk Live Tweets Feeder"</h4>
             <div class="card-body">
               <label id="displayDateSelected"></label>
+              <div id="tweet" tweetID="515490786800963584"></div>
+          
+              <script sync src="https://platform.twitter.com/widgets.js"></script>
+              
+              <script>
+                window.onload = function () {
+                  var tweet = document.getElementById('tweet');
+                  var id = tweet.getAttribute('tweetID');
+              
+                  twttr.widgets
+                    .createTweet(id, tweet, {
+                      conversation: 'none', // or all
+                      cards: 'hidden', // or visible
+                      linkColor: '#cc0000', // default is blue
+                      theme: 'light', // or dark
+                    })
+                    .then(function (el) {
+                      el.contentDocument.querySelector('.footer').style.display = 'none';
+                    });
+                };
+              </script>
+    
+
             </div>
           </div>
-          <style>
+          <!-- <style>
             #tweet {
               width: 400px !important;
             }
@@ -271,29 +294,8 @@
               border: none !important;
               box-shadow: none !important;
             }
-          </style>
+          </style> -->
           
-          <div id="tweet" tweetID="515490786800963584"></div>
-          
-          <script sync src="https://platform.twitter.com/widgets.js"></script>
-          
-          <script>
-            window.onload = function () {
-              var tweet = document.getElementById('tweet');
-              var id = tweet.getAttribute('tweetID');
-          
-              twttr.widgets
-                .createTweet(id, tweet, {
-                  conversation: 'none', // or all
-                  cards: 'hidden', // or visible
-                  linkColor: '#cc0000', // default is blue
-                  theme: 'light', // or dark
-                })
-                .then(function (el) {
-                  el.contentDocument.querySelector('.footer').style.display = 'none';
-                });
-            };
-          </script>
         </div>
       </div>
       <p></p>

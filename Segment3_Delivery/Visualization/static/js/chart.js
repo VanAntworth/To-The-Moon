@@ -145,17 +145,17 @@ function optionChanged(value){
                 if(data2_oc[i].date== dateLogged) {
                     // console.log(data2[i])
                     
-                    percentPrice0_oc = data2[i].percentPrice_0
-                    percentPrice1_oc = data2[i].percentPrice_1
-                    percentPrice2_oc = data2[i].percentPrice_2
-                    percentPrice3_oc = data2[i].percentPrice_3
-                    percentPrice4_oc = data2[i].percentPrice_4
+                    percentPrice0_oc = data2_oc[i].percentPrice_0
+                    percentPrice1_oc = data2_oc[i].percentPrice_1
+                    percentPrice2_oc = data2_oc[i].percentPrice_2
+                    percentPrice3_oc = data2_oc[i].percentPrice_3
+                    percentPrice4_oc = data2_oc[i].percentPrice_4
 
-                    percentVol0_oc = data2[i].percentVol_0
-                    percentVol1_oc = data2[i].percentVol_1
-                    percentVol2_oc = data2[i].percentVol_2
-                    percentVol3_oc = data2[i].percentVol_3
-                    percentVol4_oc = data2[i].percentVol_4
+                    percentVol0_oc = data2_oc[i].percentVol_0
+                    percentVol1_oc = data2_oc[i].percentVol_1
+                    percentVol2_oc = data2_oc[i].percentVol_2
+                    percentVol3_oc = data2_oc[i].percentVol_3
+                    percentVol4_oc = data2_oc[i].percentVol_4
                 }
             }      
 

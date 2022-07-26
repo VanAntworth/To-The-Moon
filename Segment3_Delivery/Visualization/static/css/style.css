@@ -234,6 +234,10 @@ h1,
    vertical-align: top;
 
  }
+ .header1{
+  height:120px;
+ }
+
  .btn-bgstroke {
    font-size: 20px;
    display: inline-block;

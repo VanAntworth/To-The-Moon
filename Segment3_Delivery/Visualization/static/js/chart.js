@@ -94,27 +94,27 @@ init();
 /*Events*/
 
 function optionChanged(value){
-    const display = document.getElementById("displayDateSelected");
-    const ele1 = document.getElementById("tweeter-timeline");
-    const ele = document.getElementById("selected-tweet");
-    const tweeEle = document.getElementById("tweet");
-    if (ele.style.display == "block") {
-        tweeEle.setAttribute("tweetID","1538406040374595584");
+    // const display = document.getElementById("displayDateSelected");
+    // const ele1 = document.getElementById("tweeter-timeline");
+    // const ele = document.getElementById("selected-tweet");
+    // const tweeEle = document.getElementById("tweet");
+    // if (ele.style.display == "block") {
+    //     tweeEle.setAttribute("tweetID","1538406040374595584");
 
-        ele.style.display = "none";
+    //     ele.style.display = "none";
 
-        ele1.style.display = "block";
-        display.innerHTML = "show";
-    }
-    else {
-        tweeEle.setAttribute("tweetID", "1544743525585141760");
-        ele.style.display = "block";
-        ele1.style.display = "none";
-        display.innerHTML = "hide";
-    }
-    tweetInfo();
-    console.log(ele.style.display);
-    console.log(ele1.style.display);
+    //     ele1.style.display = "block";
+    //     display.innerHTML = "show";
+    // }
+    // else {
+    //     tweeEle.setAttribute("tweetID", "1544743525585141760");
+    //     ele.style.display = "block";
+    //     ele1.style.display = "none";
+    //     display.innerHTML = "hide";
+    // }
+    // tweetInfo();
+    // console.log(ele.style.display);
+    // console.log(ele1.style.display);
     dateLogged = value
     console.log(dateLogged)
 

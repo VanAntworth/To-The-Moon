@@ -92,7 +92,7 @@ function init()
 init();
 
 /*Events*/
-function optionChanged(value){/*Events*/
+
 function optionChanged(value){
     
     dateLogged = value
@@ -217,7 +217,7 @@ function selectorChanged(value1){
 
             ctx = document.getElementById('myChart').getContext('2d');
 
-            buildTweet7Day(ctx,financeDates,volume,adjustedClosed)
+            buildTweet7Day(ctx,financeDates,volumes,adjustedClosed)
         });
 
         fetch('/JSON_files/financedeltapercent.json').then(response2 => {

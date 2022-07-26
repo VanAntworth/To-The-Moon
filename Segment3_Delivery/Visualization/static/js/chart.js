@@ -69,22 +69,112 @@ function buildTweet7Day(ctx1,financeDates,volume,adjustedClosed){
 function buildDateControl(){
 
 var date = new Date();
-var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+var date_init = new Date('2022-05-31');
 console.log("test")
     $('#datepicker').datepicker({
         format: 'yyyy-mm-dd', 
         autoclose: true, 
         todayHighlight: true,
         forceParse: false,
-        setDate: today
+        setDate: date_init,
+        value:date_init,
+        startDate:"2010-01-01",
+        endDate: new Date()
     });
+    $('#datepicker').datepicker('setDate', date_init);
 }
 
+
+function catchDefaultDateData(){
+    date_init = '2022-05-31'
+    const label = document.getElementById("financeType");
+    financeType_init = label.value
+
+    console.log(financeType_init)
+
+    /* Data Fetching */
+
+    try {
+
+        fetch('/JSON_files/financeData7Days.json').then(response1 => {
+            return response1.json();
+            }).then(data1_init => {
+        
+            data1_init = data1_init[financeType_init]
+            
+            // console.log(data1)
+
+            Object.entries(data1_init).forEach(([key, value]) => {
+                if(value.tweetDate == date_init){
+                    // console.log(key, value);
+                    financeDates_init = value.financeDates
+                    volumes_init = value.volumes
+                    adjustedClosed_init = value.adjustedClosed
+                }
+            });
+            
+            console.log(financeDates_init)
+            console.log(volumes_init)
+            console.log(adjustedClosed_init)
+
+            ctx = document.getElementById('myChart').getContext('2d');
+
+            buildTweet7Day(ctx,financeDates_init,volumes_init,adjustedClosed_init)
+        });
+
+        fetch('/JSON_files/financedeltapercent.json').then(response2 => {
+            return response2.json();
+            }).then(data2_init => {
+            
+            data2_init = data2_init.filter(index => index.financeType == financeType_init )
+            
+            // console.log(data2)
+
+            for(var i=0; i < data2_init.length; i++){ 
+                if(data2_init[i].date== date_init) {
+                    // console.log(data2[i])
+                    
+                    percentPrice0_init = data2_init[i].percentPrice_0
+                    percentPrice1_init = data2_init[i].percentPrice_1
+                    percentPrice2_init = data2_init[i].percentPrice_2
+                    percentPrice3_init = data2_init[i].percentPrice_3
+                    percentPrice4_init = data2_init[i].percentPrice_4
+
+                    percentVol0_init = data2_init[i].percentVol_0
+                    percentVol1_init = data2_init[i].percentVol_1
+                    percentVol2_init = data2_init[i].percentVol_2
+                    percentVol3_init = data2_init[i].percentVol_3
+                    percentVol4_init = data2_init[i].percentVol_4
+                }
+            }      
+
+            console.log(percentPrice0_init)
+            console.log(percentVol0_init)
+            
+        })
+
+        fetch('/JSON_files/tweetsperDate.json').then(response3 => {
+            return response3.json();
+            }).then(data3_init => {
+        
+            data3_init = data3_init[financeType_init]
+
+            filteredDate3_init = data3_init.filter(index => index.date==date_init)
+            
+            tweetIDsperDate_init = filteredDate3_init[0].tweetIDs
+
+            console.log(tweetIDsperDate_init)
+    }) }
+
+    catch(err) {console.log('No record exists')}
+
+
+}
 
 function init()
 {
     buildDateControl();
-    // buildTweet7Day();
+    catchDefaultDateData();
 
 }
 
@@ -148,6 +238,13 @@ function optionChanged(value){
             console.log(volumes_oc)
             console.log(adjustedClosed_oc)
 
+            // JS - Destroy exiting Chart Instance to reuse <canvas> element
+            let chartStatus = Chart.getChart("myChart"); // <canvas> id
+            if (chartStatus != undefined) {
+            chartStatus.destroy();
+            }
+            //-- End of chart destroy   
+
             ctx = document.getElementById('myChart').getContext('2d');
 
             buildTweet7Day(ctx,financeDates_oc,volumes_oc,adjustedClosed_oc)
@@ -197,7 +294,7 @@ function optionChanged(value){
             console.log(tweetIDsperDate_oc)
     }) }
 
-    catch(err) {console.log('No record exhists')}
+    catch(err) {console.log('No record exists')}
 
 }
 
@@ -234,6 +331,13 @@ function selectorChanged(value1){
             console.log(financeDates)
             console.log(volumes)
             console.log(adjustedClosed)
+
+            // JS - Destroy exiting Chart Instance to reuse <canvas> element
+            let chartStatus = Chart.getChart("myChart"); // <canvas> id
+            if (chartStatus != undefined) {
+            chartStatus.destroy();
+            }
+            //-- End of chart destroy   
 
             ctx = document.getElementById('myChart').getContext('2d');
 

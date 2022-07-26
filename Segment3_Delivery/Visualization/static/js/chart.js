@@ -41,7 +41,7 @@ function buildDateControl(){
 
 var date = new Date();
 var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
-
+console.log("test")
     $('#datepicker').datepicker({
         format: 'yyyy-mm-dd', 
         autoclose: true, 
@@ -64,7 +64,25 @@ init();
 
 /*Events*/
 function optionChanged(value){
-    
+    const display = document.getElementById("displayDateSelected");
+    const ele1 = document.getElementById("tweeter-timeline");
+    const ele = document.getElementById("selected-tweet");
+    if (ele.style.display == "block") {
+        ele.setAttribute("tweetID","1538406040374595584");
+        ele.style.display = "none";
+
+        ele1.style.display = "block";
+        display.innerHTML = "show";
+    }
+    else {
+        ele.setAttribute("tweetID", "1544743525585141760");
+        ele.style.display = "block";
+        ele1.style.display = "none";
+        display.innerHTML = "hide";
+    }
+
+    console.log(ele.style.display);
+    console.log(ele1.style.display);
     dateLogged = value
     console.log(dateLogged)
 

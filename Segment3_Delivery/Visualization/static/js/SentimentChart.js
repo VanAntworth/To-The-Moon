@@ -183,7 +183,6 @@ function buildSentimentFinanceChart(ctx1, dateData, adjustedClose, sentimentScor
 
     });
 
-    console.log(chart.options.plugins.annotation.annotations.line1.value);
 }
 
 function init() {

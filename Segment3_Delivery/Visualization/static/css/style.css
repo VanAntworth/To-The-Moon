@@ -8,7 +8,7 @@
   html, body {
 
     color: #0f0f14;
-    font-family: "Poppins";
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     line-height:normal;
     box-sizing: border-box;
@@ -32,7 +32,7 @@
     text-align: center;
     font-weight: bold;
     letter-spacing: 2px;
-    color: #333;
+    color: whitesmoke;
     padding-bottom: 10px;
   }
   h1:after
@@ -121,9 +121,10 @@
   }
 
   .body{
-    background:lightgrey;
+    background:blue;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-
+margin: 100px;
+padding: 100px;
   }
   .mytabs{
     display: flex;
@@ -183,3 +184,34 @@
  .card-img:hover img{
   transform: scale(1.2);
  }
+.main{
+  min-height: 100vh;
+  background:linear-gradient(to right top,);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.glass{
+  background:white;
+  min-height: 20vh;
+  width:80%;
+  align-self: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255,255,255,0.7),
+    rgba(255,255,255,0.3)
+  );
+  border:lightgray
+}
+
+.cardblur {
+  backdrop-filter: blur(40px) saturate(160%);
+  -webkit-backdrop-filter: blur(40px) saturate(160%);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.1);
+}
+
+.scroll {
+  overflow-y: auto;
+}

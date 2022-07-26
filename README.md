@@ -10,13 +10,15 @@
 - [Training and Testing](#TrainingandTesting)
 - [Project Design](#ProjectDesign)
 - [Questions We Hope to Answer with Data](#Questions)
+- [Technologies](#Technologies)
 - [Resources](#Resources)
 
 ## <a name="OverviewProject"></a> Project Overview
 
 
 It has been observed that Elon Musk tweets have been impacting the Stocks and Cryptocurrency market. We wanted to analyze the impact of the tweets and how long the impact was holding true.
-This project will predict the Stock or Cryptocurrencys (Tesla, Twitter and Dogecoin data) future value, and also show the impact of tweets for respective stock/crypto.
+This project will predict the Stock or Cryptocurrencys (Tesla, Twitter and Dogecoin data) future value, and also show the impact of tweets for respective stock/crypto.<img width="286" alt="image" src="https://user-images.githubusercontent.com/99001393/180900031-df0bf7ef-0514-4a9e-b3b6-b15b57f989d1.png">
+
 
 
 
@@ -84,6 +86,54 @@ How long does an Elon Musk tweet affect the price of the coin.
  2.) Impact of Elon Musk Tweets on DogeCoin/ Tesla/ Twitter.
  
  3.) How long the impact (on the value of the stock/coin) stays in effect after the tweet.
+ 
+ 
+ ## <a name="Technologies"></a> Technologies
+ 
+**Machine Learning**
+
+- Scikit learn
+
+**API’s**
+
+- Tweepy
+- Yahoo Finance
+- Tableau 
+- Twitter API
+
+**Tools** 
+
+- VSC
+- Tableau
+- Jupyter Notebook
+
+**Data Format**
+
+- Csv
+- Json
+- Sql Tables
+
+**Languages**
+
+- Python
+- Javascript
+- SQL
+- HTML
+- CSS
+
+**Database**
+
+- SQL Server Express
+(Queries, tables, stored procedures)
+
+**Libraries**
+
+- Pandas
+- Numpy
+- Bootstrap 5.0, 5.2
+- Chartjs
+
+
 
 ## <a name="Resources"></a> Resources
 

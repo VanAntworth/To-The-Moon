@@ -19,7 +19,8 @@
   <link rel="stylesheet" href="static/css/style.css">
   <link rel="stylesheet" href="static/css/modelStyle.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0/dist/chartjs-plugin-annotation.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0/dist/chartjs-plugin-annotation.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
@@ -72,74 +73,80 @@
 
   <!-- TradingView Widget BEGIN -->
 
-  <div class="tradingview-widget-container" style="height:60px">
-    <div class="tradingview-widget-container__widget"></div>
-    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener"
-        target="_blank"><span class="blue-text">Markets</span></a> by TradingView</div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
-      async>
+
+  <div class="tradingview-widget-copyright" style="height:56px"><a href="https://www.tradingview.com" rel="noopener"
+      target="_blank"></a> </div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+      "symbols": [
         {
-          "symbols": [
-            {
-              "description": "DogeCoin",
-              "proName": "COINBASE:DOGEUSD"
-            },
-            {
-              "description": "Twitter",
-              "proName": "NYSE:TWTR"
-            },
-            {
-              "description": "Tesla",
-              "proName": "NASDAQ:TSLA"
-            }
-          ],
-            "showSymbolLogo": true,
-              "colorTheme": "light",
-                "isTransparent": false,
-                  "displayMode": "adaptive",
-                    "locale": "en"
-        };
-      </script>
+          "description": "DogeCoin",
+          "proName": "COINBASE:DOGEUSD"
+        },
+        {
+          "description": "Twitter",
+          "proName": "NYSE:TWTR"
+        },
+        {
+          "description": "Tesla",
+          "proName": "NASDAQ:TSLA"
+        }
+      ],
+        "showSymbolLogo": true,
+          "colorTheme": "light",
+            "isTransparent": true,
+              "showSymbolLogo": true,
+                "displayMode": "adaptive",
+                  "locale": "en"
+    }
+  </script>
   </div>
   <!-- TradingView Widget END -->
+
 
   <!-- About Section  -->
   <section class="about">
     <!--First section-->
-  <div class="container-fluid" style="background-image: url('images/banner.jpeg'); background-size: cover; height:380px; padding-top:1.5%;padding-left:25%">
-   <div class="row card cardblur"  style="width: 70%">
-    <div class="col-md-12 card-title text-center" >
-      <p style="font-size:38px; color: whitesmoke;"><b>ABOUT</b></p>
-      <div class="card-body">
-      <p style=" color: rgb(217, 207, 207);"><b><i>Elon Musk</i></b> tweets have been impacting the Stocks and Cryptocurrency
-        market. 
-        <p style=" color: rgb(217, 207, 207);">TRUE  or   FALSE <b style="font-size:25px">?</b></p>
-        <p style=" color: rgb(203, 186, 186);">An Attempt to -- </br>
-        * Analyze the impact of the tweets and how long the impact was holding true.</br>
-        * Predict the Stock or Cryptocurrencys (Tesla, Twitter and Dogecoin data) future value, and
-        also show the impact of tweets for respective stock/crypto.</br>
-        * Embarking on a quest to find the influence Elon Musk tweet's have had over Doge Coin.</br>
-        * Understand how the use of language by a single individual with a large following, can influence the price of stocks and coins.
-      </p>
-      </p>
+    <div class="container-fluid"
+      style="background-image: url('images/banner.jpeg'); background-size: cover; height:380px; padding-top:1.5%;padding-left:25%">
+      <div class="row card cardblur" style="width: 70%">
+        <div class="col-md-12 card-title text-center">
+          <p style="font-size:38px; color: whitesmoke;"><b>ABOUT</b></p>
+          <div class="card-body">
+            <p style=" color: rgb(217, 207, 207);"><b><i>Elon Musk</i></b> tweets have been impacting the Stocks and
+              Cryptocurrency
+              market.
+            <p style=" color: rgb(217, 207, 207);">TRUE or FALSE <b style="font-size:25px">?</b></p>
+            <p style=" color: rgb(203, 186, 186);">An Attempt to -- </br>
+              * Analyze the impact of the tweets and how long the impact was holding true.</br>
+              * Predict the Stock or Cryptocurrencys (Tesla, Twitter and Dogecoin data) future value, and
+              also show the impact of tweets for respective stock/crypto.</br>
+              * Embarking on a quest to find the influence Elon Musk tweet's have had over Doge Coin.</br>
+              * Understand how the use of language by a single individual with a large following, can influence the
+              price of stocks and coins.
+            </p>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-  </div>
-  </div>
-    <div class="container" >
+    <div class="container">
       <div style="background-image:images\lstm_doge.png; width:100%">
-     
-    </div>
+
+      </div>
     </div>
   </section>
 
 
   <section class="Charts">
     <div class="container-fluid">
-      <h1>Visualizations</h1>
+      <h2>Story: </h2>
       <div class="row">
-        <h2>Elon Musk Story with the Tableau view</h2>
-        <p>adfkjasdfhadsjfhs</p>
+        <section class="header">
+          <h1>Stocks/Crypto Effected by Elon Musk Tweets</h1>
+          <p style=" font-size: 1em; font-weight: 100; letter-spacing: 5px; vertical-align: top;">Tableau Visualizations</p>
+        </section>
+        <p></p>
         <!-- Embedding Tableau  -->
         <div class="col-8" style="height:450px">
           <div class="card">
@@ -223,6 +230,11 @@
       </div>
       <!--Tweet 7 day range data -->
       <div class="row">
+        <section class="header">
+          <h1>Elon Musk Tweets</h1>
+          <p style=" font-size: 1em; font-weight: 100; letter-spacing: 5px; vertical-align: top;">7 Day Impact</p>
+        </section>
+      <p></p>
         <div class="col-9">
           <div class="card">
             <h4 class="card-title">Elon Musk 7 day impact</h4>
@@ -244,18 +256,19 @@
                         </span>
                       </span>
                     </div>
-                  </div>               
+                  </div>
                   <div class="col-sm-4">
                     <label for="financeType" class="col-sm-6"> Choose a stock / coin:</label>
-                    <select name="financeType" id="financeType" onchange="selectorChanged(this.options[this.selectedIndex].value)">
+                    <select name="financeType" id="financeType"
+                      onchange="selectorChanged(this.options[this.selectedIndex].value)">
                       <option value="tesla">Tesla</option>
                       <option value="twitter">Twitter</option>
                       <option value="doge">Doge</option>
                     </select>
                   </div>
                   <!-- <div class="col-sm-8"> -->
-                    <!-- <label for="financeType" class="col-sm-3"> Choose a stock/coin:</label>  -->
-                    <!-- <div class="input-group mb-3">
+                  <!-- <label for="financeType" class="col-sm-3"> Choose a stock/coin:</label>  -->
+                  <!-- <div class="input-group mb-3">
                       <button class="btn btn-secondary dropdown-toggle" type="button" id="financeType" data-bs-toggle="dropdown">
                         Choose a stock/coin:
                       </button>
@@ -275,16 +288,16 @@
               <!-- Inserting the table -->
               <div class="col-md-9">
                 <table class="table table-striped">
-                    <thead>
-                        <tr>
-                          <th>Tweets</th>
-                          <!-- <th>City</th> -->
-                        </tr>
-                    </thead>
-                    <tbody></tbody>
+                  <thead>
+                    <tr>
+                      <th>Tweets</th>
+                      <!-- <th>City</th> -->
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
                 </table>
               </div>
-              
+
             </div>
             <div>
             </div>
@@ -296,48 +309,25 @@
             <h4 class="card-title">Elon Musk Live Tweets Feeder</h4>
             <div class="card-body ">
               <label id="displayDateSelected"></label>
-                <a class="twitter-timeline" href="https://twitter.com/elonmusk?ref_src=twsrc%5Etfw">Tweets by elonmusk</a> 
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+              <a class="twitter-timeline" href="https://twitter.com/elonmusk?ref_src=twsrc%5Etfw">Tweets by elonmusk</a>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
 
-                </script>
-              <!-- <div id="tweet" tweetID="515490786800963584"></div>
-          
-              <script sync src="https://platform.twitter.com/widgets.js"></script>
-              
-              <script>
-                window.onload = function () {
-                  var tweet = document.getElementById('tweet');
-                  var id = tweet.getAttribute('tweetID');
-              
-                  twttr.widgets
-                    .createTweet(id, tweet, {
-                      conversation: 'none', // or all
-                      cards: 'hidden', // or visible
-                      linkColor: '#cc0000', // default is blue
-                      theme: 'light', // or dark
-                    })
-                    .then(function (el) {
-                      el.contentDocument.querySelector('.footer').style.display = 'none';
-                    });
-                };
-              </script> -->
-    
+              </script>
 
-             
             </div>
           </div>
           <div class="card scroll" id="selected-tweet" style="height:450px;display:none;">
             <h4 class="card-title">Selected Tweet</h4>
             <div class="card-body ">
-             <div id="tweet" tweetID="515490786800963584" ></div>
-          
+              <div id="tweet" tweetID=""></div>
+
               <script sync src="https://platform.twitter.com/widgets.js"></script>
-              
+
               <script>
-                window.onload = function tweetInfo () {
+                window.onload = function tweetInfo() {
                   var tweet = document.getElementById('tweet');
                   var id = tweet.getAttribute('tweetID');
-              
+
                   twttr.widgets
                     .createTweet(id, tweet, {
                       conversation: 'none', // or all
@@ -345,14 +335,14 @@
                       linkColor: '#cc0000', // default is blue
                       theme: 'light', // or dark
                     })
-                    // .then(function (el) {
-                    //   el.contentDocument.querySelector('.footer').style.display = 'none';
-                    // });
+                  // .then(function (el) {
+                  //   el.contentDocument.querySelector('.footer').style.display = 'none';
+                  // });
                 };
               </script> -->
-    
 
-             
+
+
             </div>
           </div>
           <!-- <style>
@@ -365,13 +355,13 @@
               box-shadow: none !important;
             }
           </style> -->
-          
+
         </div>
       </div>
       <p></p>
       <!--Sentiment Adjustclose relation-->
       <div class="row">
-        <div class="col-12" >
+        <div class="col-12">
           <div class="card" style="height:600px">
             <h4 class="card-title">"Adjusted Close value of Doge vs Sentiment Score"</h4>
             <div class="card-body">
@@ -404,6 +394,11 @@
       <p></p>
       <!--Machine Learning-->
       <div class="row">
+        <section class="header">
+          <h1>Machine Learning Visualized</h1>
+          <p style=" font-size: 1em; font-weight: 100; letter-spacing: 5px; vertical-align: top;">Model Predictions</p>
+      </section>
+      <p></p>
         <div class="col-12" style="height:700px">
           <div class="card">
             <h4 class="card-title">Machine Learning Algos for prediction</h4>
@@ -454,40 +449,40 @@
                 <div class="tab-pane" id="lstm">
                   <div class="row border g-0 rounded shadow-sm">
                     <h3> Actual vs Predicted values by LSTM </h3>
-                  <div class="container">
-                  <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card text-center h-100">
-                          <div class="card-img">
-                                <img class="img-fluid" alt="lstm-doge" src="images/lstm_doge.png"></img>
+                    <div class="container">
+                      <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                          <div class="card text-center h-100">
+                            <div class="card-img">
+                              <img class="img-fluid" alt="lstm-doge" src="images/lstm_doge.png"></img>
+                            </div>
+                            <div class="card-body">
+                              <h5>Doge-Actual vs Predicted</h5>
+                            </div>
                           </div>
-                          <div class="card-body">
-                            <h5>Doge-Actual vs Predicted</h5>
-                          </div>
-                        </div>  
-                    </div>
-                    <div class="col">
-                      <div class="card text-center h-100">
-                        <div class="card-img">
+                        </div>
+                        <div class="col">
+                          <div class="card text-center h-100">
+                            <div class="card-img">
                               <img class="img-fluid" alt="lstm-tesla" src="images/lstm_tesla.png"></img>
+                            </div>
+                            <div class="card-body">
+                              <h5>Tesla-Actual vs Predicted</h5>
+                            </div>
+                          </div>
                         </div>
-                        <div class="card-body">
-                          <h5>Tesla-Actual vs Predicted</h5>
+                        <div class="col">
+                          <div class="card text-center h-100">
+                            <div class="card-img">
+                              <img class="img-fluid" alt="lstm-twitter" src="images/lstm_twitter.png"></img>
+                            </div>
+                            <div class="card-body">
+                              <h5>Twitter-Actual vs Predicted</h5>
+                            </div>
+                          </div>
                         </div>
-                      </div>  
+                      </div>
                     </div>
-                    <div class="col">
-                      <div class="card text-center h-100">
-                        <div class="card-img">
-                            <img class="img-fluid"  alt="lstm-twitter" src="images/lstm_twitter.png"></img>
-                        </div>
-                        <div class="card-body">
-                           <h5>Twitter-Actual vs Predicted</h5>
-                        </div>
-                      </div>  
-                    </div> 
-                  </div>
-                  </div>
                   </div>
                 </div>
               </div>
@@ -502,7 +497,7 @@
 
 
   <!-- Our Team section -->
-  <section class="team" id="teaminfo">
+  <section class="team header" id="teaminfo">
     <div class="container">
       <h1>Our Team</h1>
       <div class="row">

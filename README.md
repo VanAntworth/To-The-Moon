@@ -7,9 +7,11 @@
 - [Background](#Background)
 - [Approach](#Approach)
 - [Description of Data Exploration](#DataExp)
+- [Analysis Phase](#Analysis)
 - [Training and Testing](#TrainingandTesting)
 - [Project Design](#ProjectDesign)
 - [Questions We Hope to Answer with Data](#Questions)
+- [Machine Learning Model](#ML)
 - [Technologies](#Technologies)
 - [Resources](#Resources)
 
@@ -17,9 +19,7 @@
 
 
 It has been observed that Elon Musk tweets have been impacting the Stocks and Cryptocurrency market. We wanted to analyze the impact of the tweets and how long the impact was holding true.
-This project will predict the Stock or Cryptocurrencys (Tesla, Twitter and Dogecoin data) future value, and also show the impact of tweets for respective stock/crypto.<img width="286" alt="image" src="https://user-images.githubusercontent.com/99001393/180900031-df0bf7ef-0514-4a9e-b3b6-b15b57f989d1.png">
-
-
+This project will predict the Stock or Cryptocurrencys (Tesla, Twitter and Dogecoin data) future value, and also show the impact of tweets for respective stock/crypto.
 
 
 ## <a name="Background"></a> Background 
@@ -63,9 +63,24 @@ Therefore we are embarking on a quest to find the influence Elon Musk tweet's ha
 - Visuals and Insights
 
 
+## <a name="Analysis"></a> Analysis Phase
+
+
 ## <a name="TrainingandTesting"></a> Training and Testing:
 
  <img width="1049" alt="Screen Shot 2022-07-20 at 2 50 28 PM" src="https://user-images.githubusercontent.com/99001393/180069827-8dce9ddb-bfda-4c24-a2f1-ef3b455f7e0e.png">
+
+
+## <a name="ML"></a> Machine Learning Model
+
+
+### Explanation of model choice, including limitations and benefits
+
+### Explanation of changes in model choice (if changes occurred between the Segment 2)
+
+### Additional Traning that will take place,
+
+### Current Accuracy Score
 
 
 ## <a name="ProjectDesign"></a> Project Design

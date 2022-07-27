@@ -87,7 +87,8 @@ Therefore we are embarking on a quest to find the influence Elon Musk tweet's ha
 
 ER Diagram
 
-![ERD_Diagram](https://user-images.githubusercontent.com/99001393/178597346-950f6185-d9a7-4ead-bb12-8c7a80fbe2df.jpg)
+![Untitled](https://user-images.githubusercontent.com/99001393/181388585-9ed62abe-432c-4ac3-a351-27729ef3de2c.png)
+
 
   
 ## <a name="Questions"></a> Questions we hope to answer with Data

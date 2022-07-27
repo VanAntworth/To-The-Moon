@@ -25,10 +25,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <script>
- 
+
   // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function() {scrollFunction()};
-  
+  window.onscroll = function () { scrollFunction() };
+
   function scrollFunction() {
     var mybutton = document.getElementById("myBtn");
 
@@ -38,13 +38,14 @@
       mybutton.style.display = "none";
     }
   }
-  
+
   // When the user clicks on the button, scroll to the top of the document
   function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
-  </script>
+</script>
+
 <body>
   <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
   <header class="header1">
@@ -66,11 +67,11 @@
             <li class="nav-item">
               <a class="nav-link" href="#Tableau">Stocks/Cryto</a>
             </li>
-      
-              <a class="nav-link" href="#7dayimpact">
-                Elon Musk Tweets Impact
-              </a>
-              
+
+            <a class="nav-link" href="#7dayimpact">
+              Elon Musk Tweets Impact
+            </a>
+
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#machinelearning">Machine Learning</a>
@@ -86,52 +87,57 @@
     <!-- TradingView Widget BEGIN -->
 
 
-  <div class="tradingview-widget-copyright" style="height:56px"><a href="https://www.tradingview.com" rel="noopener"
-    target="_blank"></a> </div>
-<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-  {
-    "symbols": [
-      {
-        "description": "DogeCoin",
-        "proName": "COINBASE:DOGEUSD"
-      },
-      {
-        "description": "Twitter",
-        "proName": "NYSE:TWTR"
-      },
-      {
-        "description": "Tesla",
-        "proName": "NASDAQ:TSLA"
-      }
-    ],
-      "showSymbolLogo": true,
-        "colorTheme": "light",
-          "isTransparent": true,
+    <div class="tradingview-widget-copyright" style="height:56px"><a href="https://www.tradingview.com" rel="noopener"
+        target="_blank"></a> </div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+      async>
+        {
+          "symbols": [
+            {
+              "description": "DogeCoin",
+              "proName": "COINBASE:DOGEUSD"
+            },
+            {
+              "description": "Twitter",
+              "proName": "NYSE:TWTR"
+            },
+            {
+              "description": "Tesla",
+              "proName": "NASDAQ:TSLA"
+            }
+          ],
             "showSymbolLogo": true,
-              "displayMode": "adaptive",
-                "locale": "en"
-  }
-</script>
-</div>
-<!-- TradingView Widget END -->
+              "colorTheme": "light",
+                "isTransparent": true,
+                  "showSymbolLogo": true,
+                    "displayMode": "adaptive",
+                      "locale": "en"
+        }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
   </header>
 
-  
+
 
 
   <!-- About Section  -->
   <section class="about">
     <!--First section-->
     <div class="container-fluid"
-      style="background-image: url('images/banner.jpeg'); background-size: cover; height:380px; padding-top:4.5%;padding-left:25%">
+      style="vertical-align:middle;background: url('images/banner.jpeg'); background-size: cover; height:465px; padding-top:3.8%;padding-left:25%">
       <div class="row card cardblur" style="width: 70%">
         <div class="col-md-12 card-title text-center">
           <!-- <p style="font-size:38px; color: whitesmoke;"><b>ABOUT</b></p> -->
-          <div class="card-body" style=" color: rgb(217, 207, 207);">
-            <p  style="font-size:20px; font-family: Verdana, Geneva, Tahoma, sans-serif;"><b style="font-size:38px">Elon Musk</b><br> tweets have been impacting the Stocks and
-              Cryptocurrency market.
+          <div class="card-body" style=" color: rgb(240, 235, 235);">
+            <p style="font-size:20px; font-family: Verdana, Geneva, Tahoma, sans-serif;"><b style="color:white; font-size:38px">Elon
+                Musk</b><br> tweets have the power to impact/sway the market.
             <p><br></p>
-            <p style="font-size:28px; font-family: Verdana, Geneva, Tahoma, sans-serif;">TRUE or FALSE <b style="font-size:45px">?</b></p>
+            <p style="font-size:28px; font-family: Verdana, Geneva, Tahoma, sans-serif;">True or False <b
+                style="font-size:45px">?</b></p>
+            <p style="padding:20px">
+              Do you think one person can change the way the market trends?<br>
+              Does Elon Musk have the ability to sway certain stock and crypto in his favor?</p>
             <!-- <p style=" color: rgb(203, 186, 186);">An Attempt to -- </br>
               * Analyze the impact of the tweets and how long the impact was holding true.</br>
               * Predict the Stock or Cryptocurrencys (Tesla, Twitter and Dogecoin data) future value, and
@@ -155,11 +161,21 @@
 
   <section class="Charts">
     <div class="container-fluid">
-      <h2>Story: </h2>
+      <h2> </h2>
+      <p>It is undoubtable that Elon Musk is a globally know celebrity. Our story starts with one of our team members
+        making financial gains through following the tweeted advice of Elon Musk.
+
+        It is a crazy thought that social media and specifically twitter could have the power to sway a nation.<br><br>
+        <b style="padding-left:20%;"><i>Do you believe his tweets could have an effect on stock value or are the trends that have been seen a
+        coincidence?</i></b><br>
+        This Project is an attempt to figure out if his tweeted words can in fact have an impact on the market or not? .
+        Through NLP we have worked to predict the power that his words (on the social media platform like Twitter) have
+        on near future values of the stocks and cryptocurrency we relate him to.</p>
       <div class="row">
         <section class="header" id="Tableau">
           <h1>Stocks/Crypto Effected by Elon Musk Tweets</h1>
-          <p style=" font-size: 1em; font-weight: 100; letter-spacing: 5px; vertical-align: top;">Tableau Visualizations</p>
+          <p style=" font-size: 1em; font-weight: 100; letter-spacing: 5px; vertical-align: top;">Tableau Visualizations
+          </p>
         </section>
         <p></p>
         <!-- Embedding Tableau  -->
@@ -249,7 +265,7 @@
           <h1>Elon Musk Tweets</h1>
           <p style=" font-size: 1em; font-weight: 100; letter-spacing: 5px; vertical-align: top;">7 Day Impact</p>
         </section>
-      <p></p>
+        <p></p>
         <div class="col-9">
           <div class="card">
             <h4 class="card-title">Elon Musk 7 day impact</h4>
@@ -300,7 +316,7 @@
               </form>
               <div id="myChartContent">
                 <canvas id="myChart" width="200" height="50"></canvas>
-              </div>  
+              </div>
               <!-- Inserting the table -->
               <div class="col-md-9">
                 <table class="table table-striped">
@@ -356,7 +372,7 @@
                   //   el.contentDocument.querySelector('.footer').style.display = 'none';
                   // });
                 };
-              </script> 
+              </script>
 
 
 
@@ -414,8 +430,8 @@
         <section class="ML header" id="machinelearning">
           <h1>Machine Learning Visualized</h1>
           <p style=" font-size: 1em; font-weight: 100; letter-spacing: 5px; vertical-align: top;">Model Predictions</p>
-      </section>
-      <p></p>
+        </section>
+        <p></p>
         <div class="col-12" style="height:700px">
           <div class="card">
             <h4 class="card-title">Machine Learning Algos for prediction</h4>

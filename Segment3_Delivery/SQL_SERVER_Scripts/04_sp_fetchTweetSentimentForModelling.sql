@@ -47,6 +47,7 @@ BEGIN
 				ON t."tweetID" = s."tweetID"
 				INNER JOIN "FinanceUsdData" f
 				ON f."date" = t."date"
+				AND t.[financeType] = f.[financeType]
 			GROUP BY t.[tweetID],t.[financeType],t.[date],t.[fullText],s.[sentimentScore],s.[sentiment],f.[id] ,f.[adjustedClose] ,f.[volume]
 		END
 	ELSE

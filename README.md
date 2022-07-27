@@ -105,48 +105,10 @@ How long does an Elon Musk tweet affect the price of the coin.
  
  ## <a name="Technologies"></a> Technologies
  
-**Machine Learning**
+ 
+ 
+<img width="745" alt="Screen Shot 2022-07-27 at 2 32 14 PM" src="https://user-images.githubusercontent.com/99001393/181356685-026f4361-dc5b-4ec6-a7e9-216ba3e09f22.png">
 
-- Scikit learn
-
-**API’s**
-
-- Tweepy
-- Yahoo Finance
-- Tableau 
-- Twitter API
-
-**Tools** 
-
-- VSC
-- Tableau
-- Jupyter Notebook
-
-**Data Format**
-
-- Csv
-- Json
-- Sql Tables
-
-**Languages**
-
-- Python
-- Javascript
-- SQL
-- HTML
-- CSS
-
-**Database**
-
-- SQL Server Express
-(Queries, tables, stored procedures)
-
-**Libraries**
-
-- Pandas
-- Numpy
-- Bootstrap 5.0, 5.2
-- Chartjs
 
 
 

@@ -148,11 +148,17 @@ function update7Tweets(dateLogged,financeType){
 
             tweetIDsperDate_oc = filteredDate3_oc[0].tweetIDs
             console.log(tweetIDsperDate_oc)
+
             ele.style.display = "block";
             ele1.style.display = "none";
-            var_tweet = tweetIDsperDate_oc[0]
-            console.log(var_tweet)
-            tweetInfo(var_tweet)
+            document.getElementById("tweet").innerHTML = " "
+
+            var_tweet = " "
+            for (let i = 0; i < tweetIDsperDate_oc.length; i++) {
+                var_tweet = tweetIDsperDate_oc[i]
+                console.log(var_tweet)
+                tweetInfo(var_tweet)
+              }
     
         } else {console.log('Error reading tweet IDs')}
 

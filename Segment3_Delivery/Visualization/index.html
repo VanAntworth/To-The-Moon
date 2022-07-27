@@ -173,7 +173,7 @@
         on near future values of the stocks and cryptocurrency we relate him to.</p>
       <div class="row">
         <section class="header" id="Tableau">
-          <h1>Stocks/Crypto Effected by Elon Musk Tweets</h1>
+          <h1>Stocks/Crypto Affected by Elon Musk Tweets</h1>
           <p style=" font-size: 1em; font-weight: 100; letter-spacing: 5px; vertical-align: top;">Tableau Visualizations
           </p>
         </section>
@@ -224,7 +224,7 @@
         </div>
         <div class="col-4">
           <div class="card height=400px">
-            <h4 class="card-title">"Elon Musk Tweets Story"</h4>
+            <h4 class="card-title">Elon Musk Tweets Story</h4>
             <img src="images/financeChart.jpg" class="img-responsive">
             <div class="card-body">
             </div>
@@ -232,7 +232,7 @@
           </div>
           <p></p>
           <div class="card" id="card-pie">
-            <h4 class="card-title">"Stocks & Crypto influenced by Elon Musk Tweets"</h4>
+            <h4 class="card-title">Stocks & Crypto influenced by Elon Musk Tweets</h4>
             <div class="">
               <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
                 We have decided to use data from three stocks/coin that we have found relation to with Elon Musk
@@ -317,19 +317,6 @@
               <div id="myChartContent">
                 <canvas id="myChart" width="200" height="50"></canvas>
               </div>
-              <!-- Inserting the table -->
-              <div class="col-md-9">
-                <table class="table table-striped">
-                  <thead>
-                    <tr>
-                      <th>Tweets</th>
-                      <!-- <th>City</th> -->
-                    </tr>
-                  </thead>
-                  <tbody></tbody>
-                </table>
-              </div>
-
             </div>
             <div>
             </div>
@@ -349,7 +336,7 @@
             </div>
           </div>
           <div class="card scroll" id="selected-tweet" style="height:450px;display:none;">
-            <h4 class="card-title">Selected Tweet</h4>
+            <h4 class="card-title text-center">Selected Tweet</h4>
             <div class="card-body ">
               <div id="tweet" tweetID=""></div>
 
@@ -358,7 +345,6 @@
               <script>
                 function tweetInfo(tweet_id) {
                   var tweet = document.getElementById('tweet');
-                  // var id = tweet.getAttribute('tweetID');
                   var id = tweet_id;
 
                   twttr.widgets
@@ -368,9 +354,6 @@
                       linkColor: '#cc0000', // default is blue
                       theme: 'light', // or dark
                     })
-                  // .then(function (el) {
-                  //   el.contentDocument.querySelector('.footer').style.display = 'none';
-                  // });
                 };
               </script>
 
@@ -378,53 +361,46 @@
 
             </div>
           </div>
-          <!-- <style>
-            #tweet {
-              width: 400px !important;
-            }
-          
-            #tweet iframe {
-              border: none !important;
-              box-shadow: none !important;
-            }
-          </style> -->
 
         </div>
       </div>
       <p></p>
       <!--Sentiment Adjustclose relation-->
       <div class="row">
-        <div class="col-12">
-          <div class="card" style="height:600px">
-            <h4 class="card-title">"Adjusted Close value of Doge vs Sentiment Score"</h4>
+        <div class="col-12" style="height:700px">
+          <div class="card">
+            <h4 class="card-title">Adjusted Close value of Doge vs Sentiment Score</h4>
             <div class="card-body">
-              <div class="sentitabs">
-                <input type="radio" id="tabDoge" name="sentitabs" checked="checked">
-                <label for="tabDoge">Doge</label>
-                <div class="tab">
-                  <canvas id="dogeChart" width="200" height="50"> dfdsf</canvas>
+              <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#tabDoge">Doge</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tabTesla">Tesla</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tabTwitter">Twitter</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="tabDoge">
+                  <div class="row border g-0 rounded shadow-sm">
+                    <canvas id="dogeChart" width="200" height="50"> dfdsf</canvas>
+                  </div>
                 </div>
-                <input type="radio" id="tabTesla" name="sentitabs">
-                <label for="tabTesla">Tesla</label>
-                <div class="tab">
-                  <h2>Tesla</h2>
-                  <canvas id="teslaChart" width="200" height="50"> dfdsf</canvas>
-                </div>
-                <input type="radio" id="tabTwitter" name="sentitabs">
-                <label for="tabTwitter">Twitter</label>
-                <div class="tab">
-                  <h2>Twitter</h2>
-                  <canvas id="twitterChart" width="200" height="50"> dfdsf</canvas>
-                </div>
+                <div class="tab-pane" id="tabTesla">
+                  <div class="row border g-0 rounded shadow-sm">
+                    <canvas id="teslaChart" width="200" height="50"> dfdsf</canvas>
+                  </div>
+                </div>  
+                <div class="tab-pane" id="tabTwitter">
+                  <div class="row border g-0 rounded shadow-sm">
+                    <canvas id="twitterChart" width="200" height="50"> dfdsf</canvas>
+                  </div>
+                </div>  
               </div>
             </div>
-          </div>
-
+          </div>        
         </div>
-      </div>
-
+      </div>  
       <p></p>
       <p></p>
+     
+      
       <!--Machine Learning-->
       <div class="row">
         <section class="ML header" id="machinelearning">
@@ -636,7 +612,6 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="static/js/chart.js"></script>
-  <!-- <script src="static/js/build_table.js"></script> -->
   <script src="static/js/SentimentChart.js"></script>
 </body>
 

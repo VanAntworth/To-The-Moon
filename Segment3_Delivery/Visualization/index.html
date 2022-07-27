@@ -318,9 +318,10 @@
               <script sync src="https://platform.twitter.com/widgets.js"></script>
 
               <script>
-                window.onload = function tweetInfo() {
+                function tweetInfo(tweet_id) {
                   var tweet = document.getElementById('tweet');
-                  var id = tweet.getAttribute('tweetID');
+                  // var id = tweet.getAttribute('tweetID');
+                  var id = tweet_id;
 
                   twttr.widgets
                     .createTweet(id, tweet, {
@@ -333,7 +334,7 @@
                   //   el.contentDocument.querySelector('.footer').style.display = 'none';
                   // });
                 };
-              </script> -->
+              </script> 
 
 
 

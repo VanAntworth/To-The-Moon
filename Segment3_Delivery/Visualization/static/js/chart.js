@@ -70,7 +70,7 @@ function buildTweet7Day(ctx1,financeDates,volume,adjustedClosed){
 
 function update7DayChart(dateLogged,financeType){
 
-    fetch('/JSON_files/financeData7Days.json').then(response1 => {
+    fetch('JSON_files/financeData7Days.json').then(response1 => {
         return response1.json();
         }).then(data1_oc => {
     
@@ -128,7 +128,7 @@ function update7Tweets(dateLogged,financeType){
     const ele = document.getElementById("selected-tweet");
     const tweeEle = document.getElementById("tweet");
 
-    fetch('/JSON_files/tweetsperDate.json').then(response3 => {
+    fetch('JSON_files/tweetsperDate.json').then(response3 => {
         return response3.json();
         }).then(data3_oc => {
     
@@ -140,27 +140,20 @@ function update7Tweets(dateLogged,financeType){
 
             console.log('No tweetID records for date')
 
-    // if (ele.style.display == "block") {
-    //     tweeEle.setAttribute("tweetID","1538406040374595584");
+            ele.style.display = "none";
 
-    //     ele.style.display = "none";
-
-    //     ele1.style.display = "block";
-    //     display.innerHTML = "show";
-    // }
+            ele1.style.display = "block";   
 
         } else if (filteredDate3_oc.length > 0) {
 
             tweetIDsperDate_oc = filteredDate3_oc[0].tweetIDs
             console.log(tweetIDsperDate_oc)
-
-    // else {
-    //     tweeEle.setAttribute("tweetID", "1544743525585141760");
-    //     ele.style.display = "block";
-    //     ele1.style.display = "none";
-    //     display.innerHTML = "hide";
-    // }
-
+            ele.style.display = "block";
+            ele1.style.display = "none";
+            var_tweet = tweetIDsperDate_oc[0]
+            console.log(var_tweet)
+            tweetInfo(var_tweet)
+    
         } else {console.log('Error reading tweet IDs')}
 
     }) 
@@ -173,7 +166,7 @@ function update7Tweets(dateLogged,financeType){
 
 function update7Percentages(dateLogged,financeType){
     
-    fetch('/JSON_files/financedeltapercent.json').then(response2 => {
+    fetch('JSON_files/financedeltapercent.json').then(response2 => {
         return response2.json();
         }).then(data2_oc => {
         

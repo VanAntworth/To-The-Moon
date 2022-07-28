@@ -44,21 +44,6 @@ CREATE TABLE "FinanceUsdData" (
 );
 
 
-DROP TABLE IF EXISTS "PredictedValues" ;
-CREATE TABLE "PredictedValues" (
-    "id" BIGINT  IDENTITY(1,1),
-    "modelName" VARCHAR   NOT NULL,
-    "accuracy" FLOAT   NOT NULL,
-	"results" VARCHAR,
-    "predicatedDogecoinValue" FLOAT   NOT NULL,
-    "date" DATE   NOT NULL,
-    "actualValue" FLOAT   NOT NULL,
-	"model" varbinary(max) ,
-    CONSTRAINT "pkPredictedValues" PRIMARY KEY (
-        "id"
-     )
-);
-
 DROP TABLE IF EXISTS "FinanceDeltaPercents" ;
 CREATE TABLE "FinanceDeltaPercents" (
     "id" BIGINT  IDENTITY(1,1),
@@ -78,21 +63,33 @@ CREATE TABLE "FinanceDeltaPercents" (
     "deltaPrice_2" FLOAT   NOT NULL,
     "deltaPrice_3" FLOAT   NOT NULL,
     "deltaPrice_4" FLOAT   NOT NULL,
+	"deltaPrice_5" FLOAT   NOT NULL,
+    "deltaPrice_6" FLOAT   NOT NULL,
+    "deltaPrice_7" FLOAT   NOT NULL,
     "percentPrice_0" FLOAT   NOT NULL,
     "percentPrice_1" FLOAT   NOT NULL,
     "percentPrice_2" FLOAT   NOT NULL,
     "percentPrice_3" FLOAT   NOT NULL,
     "percentPrice_4" FLOAT   NOT NULL,
+	"percentPrice_5" FLOAT   NOT NULL,
+    "percentPrice_6" FLOAT   NOT NULL,
+    "percentPrice_7" FLOAT   NOT NULL,
     "deltaVol_0" FLOAT   NOT NULL,
     "deltaVol_1" FLOAT   NOT NULL,
     "deltaVol_2" FLOAT   NOT NULL,
     "deltaVol_3" FLOAT   NOT NULL,
     "deltaVol_4" FLOAT   NOT NULL,
+	"deltaVol_5" FLOAT   NOT NULL,
+    "deltaVol_6" FLOAT   NOT NULL,
+    "deltaVol_7" FLOAT   NOT NULL,
     "percentVol_0" FLOAT   NOT NULL,
     "percentVol_1" FLOAT   NOT NULL,
     "percentVol_2" FLOAT   NOT NULL,
     "percentVol_3" FLOAT   NOT NULL,
     "percentVol_4" FLOAT   NOT NULL,
+	"percentVol_5" FLOAT   NOT NULL,
+    "percentVol_6" FLOAT   NOT NULL,
+    "percentVol_7" FLOAT   NOT NULL,
 
     CONSTRAINT "pkFinanceDeltaPercents" PRIMARY KEY (
         "id"

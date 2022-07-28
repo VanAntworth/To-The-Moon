@@ -239,7 +239,7 @@ console.log("test")
 
 
 function catchDefaultDateData(){
-    date_init = '2022-05-31'
+    date_init = '2022-05-30'
     const label = document.getElementById("financeType");
     financeType_init = label.value
 

@@ -139,6 +139,11 @@ function update7Percentages(dateLogged,financeType, financeDates){
             console.log('No percentage records for date')
             var tbody = d3.select("tbody");
             tbody.html("");
+            let row1 = tbody.append("tr");
+
+            let row2 = tbody.append("tr");
+            
+            let cell1_1 = row2.append("tr").text('      Elon did not tweet about this Coin / Stock on this date.')
 
         } else if (percentPrice0_oc !== null) {
 

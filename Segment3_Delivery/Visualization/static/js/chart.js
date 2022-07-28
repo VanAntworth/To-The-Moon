@@ -138,18 +138,32 @@ function update7Percentages(dateLogged,financeType, financeDates){
 
             console.log('No percentage records for date')
             var tbody = d3.select("tbody");
+            var thead = d3.select("thead"); 
+            thead.html("");
             tbody.html("");
-            let row1 = tbody.append("tr");
+
+            let head0 = thead.append("tr");
+            head_row = head0.append("th").text("No Record Message")
 
             let row2 = tbody.append("tr");
             
-            let cell1_1 = row2.append("tr").text('      Elon did not tweet about this Coin / Stock on this date.')
+            let cell1_1 = row2.append("tr").text('Elon did not tweet about this Coin / Stock on this date.')
 
         } else if (percentPrice0_oc !== null) {
 
             console.log(percentPrice0_oc)
             console.log(percentVol0_oc)
 
+            var thead = d3.select("thead")
+            row_head = thead.append('tr')
+            head1 = row_head.append("th").text("Start Date")
+            head2 = row_head.append("th").text("Day 1")
+            head3 = row_head.append("th").text("Day 2")
+            head4 = row_head.append("th").text("Day 3")
+            head5 = row_head.append("th").text("Day 4")
+            head6 = row_head.append("th").text("Day 5")
+            head7 = row_head.append("th").text("Day 6")
+            head8 = row_head.append("th").text("Day 7")
 
             var tbody = d3.select("tbody");
             

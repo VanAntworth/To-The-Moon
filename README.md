@@ -1,7 +1,6 @@
 
 # To-The-Moon
-<img width="745" height="300" src="images/banner_for_Readme.jpg">
-
+<img src="Images/banner_for_Readme.jpg"  align="center" height="200" width="600">
 
 ## Table of Contents
 - [Project Overview](#OverviewProject)

@@ -159,6 +159,23 @@ function update7Percentages(dateLogged,financeType, financeDates){
                 cell.text(val);
                 });
 
+            if(financeDates.length<8 && financeDates.length >= 6){
+                for(let i = 0; i < 2; i++){
+                    let cell_temp = row0.append("td");
+                    cell_temp.text('Null')
+                }
+            } else if (financeDates.length<8 && financeDates.length >= 5){
+                for(let i = 0; i < 3; i++){
+                    let cell_temp = row0.append("td");
+                    cell_temp.text('Null')
+                }
+            } else if  (financeDates.length<8 && financeDates.length >= 4) {
+                for(let i = 0; i < 4; i++){
+                    let cell_temp = row0.append("td");
+                    cell_temp.text('Null')
+                }
+            }
+                
             let row1 = tbody.append("tr");
             
             let cell1_1 = row1.append("th").text('Price Change %')
@@ -170,8 +187,7 @@ function update7Percentages(dateLogged,financeType, financeDates){
             let cell1_6 = row1.append("td").text(percentPrice4_oc.toFixed(3))
             let cell1_7 = row1.append("td").text(percentPrice5_oc.toFixed(3))
             let cell1_8 = row1.append("td").text(percentPrice6_oc.toFixed(3))
-            let cell1_9 = row1.append("td").text(percentPrice7_oc.toFixed(3))                
-                
+                 
             let row2 = tbody.append("tr");
             
             let cell2_1 = row2.append("th").text('Volume Change %')
@@ -183,7 +199,6 @@ function update7Percentages(dateLogged,financeType, financeDates){
             let cell2_6 = row2.append("td").text(percentVol4_oc.toFixed(3))
             let cell2_7 = row2.append("td").text(percentVol5_oc.toFixed(3))
             let cell2_8 = row2.append("td").text(percentVol6_oc.toFixed(3))
-            let cell2_9 = row2.append("td").text(percentVol7_oc.toFixed(3))                
 
         } else {
 

@@ -1,6 +1,6 @@
 
 # To-The-Moon
-<img src="Images/banner_for_Readme.jpg"  align="center" height="300" width="1200">
+<img src="Images/banner_for_Readme.jpg"  align="center" height="200" width="600">
 
 ## Table of Contents
 - [Project Overview](#OverviewProject)
@@ -21,6 +21,10 @@
 It has been observed that Elon Musk tweets have been impacting the Stocks and Cryptocurrency market. We wanted to analyze the impact of the tweets and how long the impact was holding true.
 This project will predict the Stock or Cryptocurrencys (Tesla, Twitter and Dogecoin data) future value, and also show the impact of tweets for respective stock/crypto.
 
+### Questions To Answer
+
+Does Elon Musk have the ability to sway the market in his favor?
+
 
 ## <a name="Background"></a> Background 
 
@@ -30,7 +34,7 @@ Under the influence of social media Doge Coin would continue to climb in price a
 
 In 2020 and 2021 Twitter, Reddit and Robin Hood changed the dynamic of the stock market and crypto currencies. Social media became a disruptive force in the economy. Yet Doge could've just been one of many many crypto coins that did not rise in price, if it wasn't for one person that brought notoriety to this currency, Elon Musk.  
 
-Therefore we are embarking on a quest to find the influence Elon Musk tweet's have had over Doge Coin. In the process we are interested in understanding how the use of language by a single individual with a large following, can influence the price of stocks and coins. 
+Therefore we are embarking on a quest to find the influence Elon Musk tweet's have had over Dogecoin, Tesla stock, and Twitter stock. In the process we are interested in understanding how the use of language by a single individual with a large following, can influence the price of stocks and coins. 
 
 
 
@@ -87,7 +91,8 @@ Therefore we are embarking on a quest to find the influence Elon Musk tweet's ha
 
 ER Diagram
 
-![Untitled](https://user-images.githubusercontent.com/99001393/181388585-9ed62abe-432c-4ac3-a351-27729ef3de2c.png)
+
+![Untitled](https://user-images.githubusercontent.com/99001393/181631644-e8c89cb9-a3a0-46db-9bfe-7e0e28094dfa.png)
 
 
   

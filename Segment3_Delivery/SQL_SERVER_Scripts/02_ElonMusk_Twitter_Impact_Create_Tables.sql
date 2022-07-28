@@ -15,7 +15,7 @@ CREATE TABLE "SentimentScoring" (
 DROP TABLE IF EXISTS "TwitterData" ;
 CREATE TABLE "TwitterData" (
     "id" BIGINT  IDENTITY(1,1),
-    "tweetID" BIGINT   NOT NULL,
+    "tweetID" VARCHAR(50)   NOT NULL,
     "financeType" VARCHAR(50)   NOT NULL,
     "date" DATE   NOT NULL,
     "fullText" VARCHAR(max)  NOT NULL,

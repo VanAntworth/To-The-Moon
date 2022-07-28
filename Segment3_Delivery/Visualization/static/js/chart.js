@@ -82,122 +82,7 @@ function buildTweet7Day(ctx1,date,financeDates,volume,adjustedClosed){
 
 /*Update Functions*/
 
-function update7DayChart(dateLogged,financeType){
-
-    fetch('JSON_files/financeData7Days.json').then(response1 => {
-        return response1.json();
-        }).then(data1_oc => {
-    
-        data1_oc = data1_oc[financeType]
-        
-        // console.log(data1)
-
-        financeDates_oc = []
-        volumes_oc = []
-        adjustedClosed_oc = []
-
-        Object.entries(data1_oc).forEach(([key, value]) => {
-            if(value.tweetDate == dateLogged){
-                // console.log(key, value);
-                financeDates_oc = value.financeDates
-                volumes_oc = value.volumes
-                adjustedClosed_oc = value.adjustedClosed
-
-                // financeDates = []
-                
-                // Object.entries(financeDates_oc).forEach((value) => {                  
-
-                //     var parts = value.split('-');
-                //     // Please pay attention to the month (parts[1]); JavaScript counts months from 0:
-                //     // January - 0, February - 1, etc.
-                //     var mydate = new Date(parts[0], parts[1] - 1, parts[2]); 
-
-                //     financeDates.push(new Date (mydate));
-                // }
-                // )
-            }
-        });
-            
-        if (financeDates_oc.length == 0){
-            let chartStatus1 = Chart.getChart("myChart");
-            chartStatus1.clear()
-            console.log('No Fincancial Records for date')
-
-        } else if (financeDates_oc.length > 0) {
-            console.log(financeDates_oc)
-            // console.log(financeDates)
-            console.log(volumes_oc)
-            console.log(adjustedClosed_oc)
-    
-            // JS - Destroy exiting Chart Instance to reuse <canvas> element
-            let chartStatus = Chart.getChart("myChart"); // <canvas> id
-            if (chartStatus != undefined) {
-            chartStatus.destroy();
-            }
-            //-- End of chart destroy   
-
-            ctx = document.getElementById('myChart').getContext('2d');
-
-            buildTweet7Day(ctx,dateLogged,financeDates_oc,volumes_oc,adjustedClosed_oc)
-            
-        } else {
-            console.log('Error reading financial records')
-        } 
-        
-    })
-
-}
-
-function update7Tweets(dateLogged,financeType){
-
-    const display = document.getElementById("displayDateSelected");
-    const ele1 = document.getElementById("tweeter-timeline");
-    const ele = document.getElementById("selected-tweet");
-    const tweeEle = document.getElementById("tweet");
-
-    fetch('JSON_files/tweetsperDate.json').then(response3 => {
-        return response3.json();
-        }).then(data3_oc => {
-    
-        data3_oc = data3_oc[financeType]
-
-        filteredDate3_oc = data3_oc.filter(index => index.date==dateLogged)
-        
-        if (filteredDate3_oc.length == 0){
-
-            console.log('No tweetID records for date')
-
-            ele.style.display = "none";
-
-            ele1.style.display = "block";   
-
-        } else if (filteredDate3_oc.length > 0) {
-
-            tweetIDsperDate_oc = filteredDate3_oc[0].tweetIDs
-            console.log(tweetIDsperDate_oc)
-
-            ele.style.display = "block";
-            ele1.style.display = "none";
-            document.getElementById("tweet").innerHTML = " "
-
-            var_tweet = " "
-            for (let i = 0; i < tweetIDsperDate_oc.length; i++) {
-                var_tweet = tweetIDsperDate_oc[i]
-                console.log(var_tweet)
-                tweetInfo(var_tweet)
-              }
-    
-        } else {console.log('Error reading tweet IDs')}
-
-    }) 
-
-    // tweetInfo();
-    // console.log(ele.style.display);
-    // console.log(ele1.style.display);
-
-}
-
-function update7Percentages(dateLogged,financeType){
+function update7Percentages(dateLogged,financeType, financeDates){
     
     fetch('JSON_files/financedeltapercent.json').then(response2 => {
         return response2.json();
@@ -269,11 +154,14 @@ function update7Percentages(dateLogged,financeType){
             // Append a row to the table body
             let row0 = tbody.append("tr");
 
-            // let cell0_1 = row0.append("td").text(dateLogged)
+            Object.values(financeDates).forEach((val) => {
+                let cell = row0.append("td");
+                cell.text(val);
+                });
 
             let row1 = tbody.append("tr");
             
-            let cell1_1 = row1.append("th").text('Price Change')
+            let cell1_1 = row1.append("th").text('Price Change %')
             
             let cell1_2 = row1.append("td").text(percentPrice0_oc.toFixed(3))
             let cell1_3 = row1.append("td").text(percentPrice1_oc.toFixed(3))
@@ -286,7 +174,7 @@ function update7Percentages(dateLogged,financeType){
                 
             let row2 = tbody.append("tr");
             
-            let cell2_1 = row2.append("th").text('Volume Change')
+            let cell2_1 = row2.append("th").text('Volume Change %')
             
             let cell2_2 = row2.append("td").text(percentVol0_oc.toFixed(3))
             let cell2_3 = row2.append("td").text(percentVol1_oc.toFixed(3))
@@ -304,6 +192,123 @@ function update7Percentages(dateLogged,financeType){
 
         
     })
+}
+
+function update7DayChart(dateLogged,financeType){
+
+    fetch('JSON_files/financeData7Days.json').then(response1 => {
+        return response1.json();
+        }).then(data1_oc => {
+    
+        data1_oc = data1_oc[financeType]
+        
+        // console.log(data1)
+
+        financeDates_oc = []
+        volumes_oc = []
+        adjustedClosed_oc = []
+
+        Object.entries(data1_oc).forEach(([key, value]) => {
+            if(value.tweetDate == dateLogged){
+                // console.log(key, value);
+                financeDates_oc = value.financeDates
+                volumes_oc = value.volumes
+                adjustedClosed_oc = value.adjustedClosed
+
+                // financeDates = []
+                
+                // Object.entries(financeDates_oc).forEach((value) => {                  
+
+                //     var parts = value.split('-');
+                //     // Please pay attention to the month (parts[1]); JavaScript counts months from 0:
+                //     // January - 0, February - 1, etc.
+                //     var mydate = new Date(parts[0], parts[1] - 1, parts[2]); 
+
+                //     financeDates.push(new Date (mydate));
+                // }
+                // )
+            }
+        });
+            
+        if (financeDates_oc.length == 0){
+            let chartStatus1 = Chart.getChart("myChart");
+            chartStatus1.clear()
+            console.log('No Fincancial Records for date')
+
+        } else if (financeDates_oc.length > 0) {
+            console.log(financeDates_oc)
+            // console.log(financeDates)
+            console.log(volumes_oc)
+            console.log(adjustedClosed_oc)
+    
+            // JS - Destroy exiting Chart Instance to reuse <canvas> element
+            let chartStatus = Chart.getChart("myChart"); // <canvas> id
+            if (chartStatus != undefined) {
+            chartStatus.destroy();
+            }
+            //-- End of chart destroy   
+
+            ctx = document.getElementById('myChart').getContext('2d');
+
+            buildTweet7Day(ctx,dateLogged,financeDates_oc,volumes_oc,adjustedClosed_oc)
+            
+        } else {
+            console.log('Error reading financial records')
+        } 
+        
+        update7Percentages(dateLogged,financeType, financeDates_oc)
+        
+    })
+
+}
+
+function update7Tweets(dateLogged,financeType){
+
+    const display = document.getElementById("displayDateSelected");
+    const ele1 = document.getElementById("tweeter-timeline");
+    const ele = document.getElementById("selected-tweet");
+    const tweeEle = document.getElementById("tweet");
+
+    fetch('JSON_files/tweetsperDate.json').then(response3 => {
+        return response3.json();
+        }).then(data3_oc => {
+    
+        data3_oc = data3_oc[financeType]
+
+        filteredDate3_oc = data3_oc.filter(index => index.date==dateLogged)
+        
+        if (filteredDate3_oc.length == 0){
+
+            console.log('No tweetID records for date')
+
+            ele.style.display = "none";
+
+            ele1.style.display = "block";   
+
+        } else if (filteredDate3_oc.length > 0) {
+
+            tweetIDsperDate_oc = filteredDate3_oc[0].tweetIDs
+            console.log(tweetIDsperDate_oc)
+
+            ele.style.display = "block";
+            ele1.style.display = "none";
+            document.getElementById("tweet").innerHTML = " "
+
+            var_tweet = " "
+            for (let i = 0; i < tweetIDsperDate_oc.length; i++) {
+                var_tweet = tweetIDsperDate_oc[i]
+                console.log(var_tweet)
+                tweetInfo(var_tweet)
+              }
+    
+        } else {console.log('Error reading tweet IDs')}
+
+    }) 
+
+    // tweetInfo();
+    // console.log(ele.style.display);
+    // console.log(ele1.style.display);
+
 }
 
 /* Initiate Finctions*/
@@ -338,7 +343,7 @@ function catchDefaultDateData(){
 
     update7DayChart(date_init, financeType_init)
     update7Tweets(date_init, financeType_init)
-    update7Percentages(date_init, financeType_init)
+    // update7Percentages(date_init, financeType_init)
 }
 
 function init()
@@ -368,7 +373,7 @@ function optionChanged(value){
 
     update7DayChart(dateLogged, financeType)
     update7Tweets(dateLogged,financeType)
-    update7Percentages(dateLogged,financeType)
+    // update7Percentages(dateLogged,financeType)
 
 }
 
@@ -385,6 +390,6 @@ function selectorChanged(value1){
 
     update7DayChart(dateLogged1, financeType1)
     update7Tweets(dateLogged1,financeType1)
-    update7Percentages(dateLogged1,financeType1)
+    // update7Percentages(dateLogged1,financeType1)
 
 }

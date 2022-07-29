@@ -130,7 +130,8 @@
         <div class="col-md-12 card-title text-center">
           <!-- <p style="font-size:38px; color: whitesmoke;"><b>ABOUT</b></p> -->
           <div class="card-body" style=" color: rgb(240, 235, 235);">
-            <p style="font-size:20px; font-family: Verdana, Geneva, Tahoma, sans-serif;"><b style="color:white; font-size:38px">Elon
+            <p style="font-size:20px; font-family: Verdana, Geneva, Tahoma, sans-serif;"><b
+                style="color:white; font-size:38px">Elon
                 Musk</b><br> tweets have the influence to impact/sway the market.
             <p><br></p>
             <p style="font-size:28px; font-family: Verdana, Geneva, Tahoma, sans-serif;">True or False <b
@@ -166,11 +167,13 @@
         making financial gains through following the tweeted advice of Elon Musk.
 
         It is a crazy thought that social media and specifically twitter could have the power to sway a nation.<br><br>
-        <b style="padding-left:20%;"><i>Do you believe his tweets could have an effect on stock value or are the trends that have been seen a
-        coincidence?</i></b><br>
+        <b style="padding-left:20%;"><i>Do you believe his tweets could have an effect on stock value or are the trends
+            that have been seen a
+            coincidence?</i></b><br>
         This Project is an attempt to figure out if his tweeted words can in fact have an impact on the market or not? .
         Through NLP we have worked to predict the power that his words (on the social media platform like Twitter) have
-        on near future values of the stocks and cryptocurrency we relate him to.</p>
+        on near future values of the stocks and cryptocurrency we relate him to.
+      </p>
       <div class="row">
         <section class="header" id="Tableau">
           <h1>Stocks/Crypto Influenced by Elon Musk Tweets</h1>
@@ -179,7 +182,7 @@
         </section>
         <p></p>
         <!-- Embedding Tableau  -->
-        <div class="col-8" style="height:450px">
+        <div class="col-8" style="height:430px">
           <div class="card">
             <!-- <h4 class="card-title">"Elon Musk Tweets Trends</h4>-->
             <div class="card-body">
@@ -223,11 +226,11 @@
 
         </div>
         <div class="col-4">
-          <div class="card height=400px">
-            <div class="card-header">
-            <h4>Stock & Cryptocurrency Trends</h4>
+          <div class="card">
+            <div class="card-title card-header">
+              <h4>Stock & Cryptocurrency Trends</h4>
             </div>
-            
+
             <img src="images/financeChart.jpg" class="img-responsive">
             <div class="card-body">
             </div>
@@ -235,23 +238,28 @@
           </div>
           <p></p>
           <div class="card" id="card-pie">
-            <div class="card-header">
+            <div class="card-title card-header">
               <h4>Stocks & Crypto influenced by Elon Musk Tweets</h4>
-              </div>
-    
+            </div>
+
             <div class="">
               <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
                 We have chosen three stocks/coin that we find relation to with Elon Musk.
                 The three are:
               <p style="color:rgb(18, 71, 68); font-family: Verdana, Geneva, Tahoma, sans-serif;">Dogecoin
                 (Cryptocurrency) - An insignificant crypto currency that grew to fame in April 2019, Musk tweeted
-                <b>“Dogecoin might be my fav cryptocurrency. It’s pretty cool.”</b> The cryptocurrency gained immense traction
-                as Musk continued to endorse and hype it on social media.</p>
-              <p style="color:rgb(18, 71, 68); font-family: Verdana, Geneva, Tahoma, sans-serif;">Tesla (Stock)-Tesla is best known for designing and
+                <b>“Dogecoin might be my fav cryptocurrency. It’s pretty cool.”</b> The cryptocurrency gained immense
+                traction
+                as Musk continued to endorse and hype it on social media.
+              </p>
+              <p style="color:rgb(18, 71, 68); font-family: Verdana, Geneva, Tahoma, sans-serif;">Tesla (Stock)-Tesla is
+                best known for designing and
                 manufacturing electric vehicles. The company was created by Elon Musk and he currently
                 owns <b>17</b> percent of the company.</p>
-              <p style="color:rgb(18, 71, 68); font-family: Verdana, Geneva, Tahoma, sans-serif;">Twitter (Stock) On April 25,
-                Twitter’s board of directors  accepted Musk’s buyout offer of <b>$44 billion</b>. On July 8, Musk announced that he 
+              <p style="color:rgb(18, 71, 68); font-family: Verdana, Geneva, Tahoma, sans-serif;">Twitter (Stock) On
+                April 25,
+                Twitter’s board of directors accepted Musk’s buyout offer of <b>$44 billion</b>. On July 8, Musk
+                announced that he
                 intended to terminate the proposed acquisition.
               </p>
               </p>
@@ -261,6 +269,8 @@
           </div>
         </div>
         <p></p>
+        <p></p>
+        </p>
         <!-- End of Embedding Tableau  -->
       </div>
       <!--Tweet 7 day range data -->
@@ -271,13 +281,13 @@
         </section>
         <p></p>
         <div class="col-9">
-          <div class="card">
-            
+          <div class="card" style="height: 730px;">
+
 
             <div class="card-header">
               <h4>Elon Musk 7 day impact</h4>
-              </div>
-           
+            </div>
+
 
             <div class="card-body">
               <form>
@@ -326,6 +336,16 @@
               <div id="myChartContent">
                 <canvas id="myChart" width="200" height="50"></canvas>
               </div>
+              <div style="padding-top:20px">
+                <h6 style="font-style:inherit; box-sizing: border-box; font-weight:bold;">Stock Price and Volume Percent
+                  Change</h6>
+                <table id="percentsTable" class="table table-striped" style="border-style: groove;">
+                  <tr></tr>
+                  <thead>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
             </div>
             <div>
             </div>
@@ -334,10 +354,10 @@
         </div>
 
         <div class="col-3">
-          <div class="card scroll" id="tweeter-timeline" style="height:450px;display:block">
+          <div class="card scroll" id="tweeter-timeline" style="height: 730px;display:block">
 
-            
-            <h4 class="card-title">Elon Musk Live Tweets Feeder</h4>
+
+            <h4 class="card-title card-header">Elon Musk Live Tweets Feeder</h4>
             <div class="card-body ">
               <label id="displayDateSelected"></label>
               <a class="twitter-timeline" href="https://twitter.com/elonmusk?ref_src=twsrc%5Etfw">Tweets by elonmusk</a>
@@ -347,11 +367,11 @@
 
             </div>
           </div>
-          <div class="card scroll" id="selected-tweet" style="height:450px;display:none;">
-           
-            <div class="card-header">
+          <div class="card scroll" id="selected-tweet" style="height: 730px;display:none;">
+
+            <div class="card title card-header">
               <h4>Selected Tweet</h4>
-              </div>
+            </div>
             <div class="card-body ">
               <div id="tweet" tweetID=""></div>
 
@@ -377,34 +397,20 @@
             </div>
           </div>
 
-          
-        </div>
-        <div class="col-9">
-          <div class="card">
-            <div class="card-header">
-              <h4 class="card-title">Stock Price and Volume Percent Change</h4>
-            </div> 
-              <table id="percentsTable" class="table table-striped">
-                <tr></tr>
-                <thead>
-                </thead>
-                <tbody></tbody>
-              </table>
 
-          </div>
         </div>
 
       </div>
       <p></p>
       <!--Sentiment Adjustclose relation-->
       <div class="row">
-        <div class="col-12" style="height:700px">
+        <div class="col-12" style="height:550px">
           <div class="card">
 
             <div class="card-header">
               <h4>Adjusted Close value of Doge vs Sentiment Score</h4>
-              </div>
-              
+            </div>
+
             <div class="card-body">
               <ul class="nav nav-tabs">
                 <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#tabDoge">Doge</a></li>
@@ -421,21 +427,18 @@
                   <div class="row border g-0 rounded shadow-sm">
                     <canvas id="teslaChart" width="200" height="50"> dfdsf</canvas>
                   </div>
-                </div>  
+                </div>
                 <div class="tab-pane" id="tabTwitter">
                   <div class="row border g-0 rounded shadow-sm">
                     <canvas id="twitterChart" width="200" height="50"> dfdsf</canvas>
                   </div>
-                </div>  
+                </div>
               </div>
             </div>
-          </div>        
+          </div>
         </div>
-      </div>  
-      <p></p>
-      <p></p>
-     
-      
+      </div>
+
       <!--Machine Learning-->
       <div class="row">
         <section class="ML header" id="machinelearning">
@@ -447,7 +450,7 @@
           <div class="card">
             <div class="card-header">
               <h4>Machine Learning Algos for Prediction</h4>
-              </div>
+            </div>
             <div class="card-body">
               <ul class="nav nav-tabs">
                 <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#intro">Introduction</a></li>

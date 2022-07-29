@@ -1,5 +1,43 @@
 function buildTweet7Day(ctx1,date,financeDates,volume,adjustedClosed){
     console.log("test")
+    console.log(date)
+    var date_tweet =new Date(date)
+
+    // var date_0 = financeDates[0]
+    console.log(date_tweet)
+    // console.log(date_0)
+    // date_labels = []
+    // date_labels.push(date_0)
+
+    // var volume_transformed = []
+
+    // for (var i=0; i<financeDates.length; i++){
+    //     volume_transformed.push({t:financeDates[i], dollar:volume[i]})
+    // }
+    
+    // var adjustedC_transformed = []
+
+    // for (var i=0; i<financeDates.length; i++){
+    //     adjustedC_transformed.push({t:financeDates[i], y:adjustedClosed[i]})
+    // }
+
+    // console.log(volume_transformed)
+    // console.log(adjustedC_transformed)
+
+    // for(var i=1; i < 8; i++){
+
+    //     Date.prototype.addDays = function (days) {
+    //         const date = new Date(this.valueOf());
+    //         date.setDate(date.getDate() + days);
+    //         return date;
+    //     };
+    //     var date_2 = new Date()
+    //     date_2 = date_0.addDays(i)
+    //     date_labels.push(date_2)
+    // }
+
+    // console.log(date_labels)
+
     const dataset = {
         labels: financeDates,
         datasets: [{
@@ -45,6 +83,18 @@ function buildTweet7Day(ctx1,date,financeDates,volume,adjustedClosed){
         data: dataset,
         options: {
             scales: {
+                x: {
+                    display: true,
+                    type: 'time',
+                    time: {
+                      unit: 'day',
+                      displayFormats: {
+                        'day': 'MM/DD/YYYY'
+                      }
+                      }
+                    }
+                  }
+                ,               
                 y: {
                     beginAtZero: false,
                     title:{
@@ -64,20 +114,26 @@ function buildTweet7Day(ctx1,date,financeDates,volume,adjustedClosed){
             plugins: {
                 autocolors:false,
                 annotation:{
-                    annotations:[{
-                        type: 'line', 
-                        scaleID: 'x', 
-                        value: date,
-                        borderWidth: 2, 
-                        borderColor: 'magenta'  
-                    },
-                ]
-                }
+                    drawTime: 'afterDatasetsDraw',
+                    annotations: [{
+                      type: 'line',
+                      mode: 'vertical',
+                      scaleID: 'x',
+                      value: date_tweet,
+                      borderColor: 'red',
+                      borderWidth: 1,
+                      label: {
+                        enabled: true,
+                        position: "top",
+                        content: "somelabel"
+                      }
+                    }]
+                  }
             }
 
         }
        
-    });
+    );
 }
 
 /*Update Functions*/
@@ -282,18 +338,20 @@ function update7DayChart(dateLogged,financeType){
                 volumes_oc = value.volumes
                 adjustedClosed_oc = value.adjustedClosed
 
-                // financeDates = []
-                
-                // Object.entries(financeDates_oc).forEach((value) => {                  
+                financeDates = []
 
-                //     var parts = value.split('-');
-                //     // Please pay attention to the month (parts[1]); JavaScript counts months from 0:
-                //     // January - 0, February - 1, etc.
-                //     var mydate = new Date(parts[0], parts[1] - 1, parts[2]); 
-
-                //     financeDates.push(new Date (mydate));
-                // }
-                // )
+                for (let i = 0; i < financeDates_oc.length; i++) {
+                    value = financeDates_oc[i]
+                    // console.log(value)
+                    var parts = value.toString().split('-');
+                    // Please pay attention to the month (parts[1]); JavaScript counts months from 0:
+                     // January - 0, February - 1, etc.
+                    // console.log(parts)
+                    var mydate = new Date(parts[0], parts[1] - 1, parts[2],0,0,1)
+                    // console.log(mydate)
+                    financeDates.push(mydate);
+                    
+                  }
             }
         });
             
@@ -304,7 +362,7 @@ function update7DayChart(dateLogged,financeType){
 
         } else if (financeDates_oc.length > 0) {
             console.log(financeDates_oc)
-            // console.log(financeDates)
+            console.log(financeDates)
             console.log(volumes_oc)
             console.log(adjustedClosed_oc)
     
@@ -317,7 +375,7 @@ function update7DayChart(dateLogged,financeType){
 
             ctx = document.getElementById('myChart').getContext('2d');
 
-            buildTweet7Day(ctx,dateLogged,financeDates_oc,volumes_oc,adjustedClosed_oc)
+            buildTweet7Day(ctx,dateLogged,financeDates,volumes_oc,adjustedClosed_oc)
             
         } else {
             console.log('Error reading financial records')

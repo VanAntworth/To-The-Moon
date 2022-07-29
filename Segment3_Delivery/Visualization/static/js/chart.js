@@ -109,6 +109,9 @@ function update7Percentages(dateLogged,financeType, financeDates){
         percentVol5_oc = null
         percentVol6_oc = null
         percentVol7_oc = null
+        
+        percentPrices = []
+        percentVolumes = []
 
         for(var i=0; i < data2_oc.length; i++){ 
             if(data2_oc[i].date == dateLogged) {
@@ -131,6 +134,9 @@ function update7Percentages(dateLogged,financeType, financeDates){
                 percentVol5_oc = data2_oc[i].percentVol_5
                 percentVol6_oc = data2_oc[i].percentVol_6
                 percentVol7_oc = data2_oc[i].percentVol_7
+
+                percentPrices = [percentPrice0_oc, percentPrice1_oc,percentPrice2_oc, percentPrice3_oc, percentPrice4_oc, percentPrice5_oc, percentPrice6_oc, percentPrice7_oc]
+                percentVolumes = [percentVol0_oc, percentVol1_oc, percentVol2_oc, percentVol3_oc, percentVol4_oc, percentVol5_oc, percentVol6_oc, percentVol7_oc]
             } 
         }      
 
@@ -154,23 +160,11 @@ function update7Percentages(dateLogged,financeType, financeDates){
             console.log(percentPrice0_oc)
             console.log(percentVol0_oc)
 
-            var thead = d3.select("thead")
-            row_head = thead.append('tr')
-            head1 = row_head.append("th").text("Start Date")
-            head2 = row_head.append("th").text("Day 1")
-            head3 = row_head.append("th").text("Day 2")
-            head4 = row_head.append("th").text("Day 3")
-            head5 = row_head.append("th").text("Day 4")
-            head6 = row_head.append("th").text("Day 5")
-            head7 = row_head.append("th").text("Day 6")
-            head8 = row_head.append("th").text("Day 7")
-
+            var thead = d3.select("thead");
+            thead.html("");
             var tbody = d3.select("tbody");
-            
-            // First, clear out any existing data
             tbody.html("");
-            
-            // Append a row to the table body
+
             let row0 = tbody.append("tr");
 
             Object.values(financeDates).forEach((val) => {
@@ -178,46 +172,85 @@ function update7Percentages(dateLogged,financeType, financeDates){
                 cell.text(val);
                 });
 
-            if(financeDates.length<8 && financeDates.length >= 6){
-                for(let i = 0; i < 2; i++){
-                    let cell_temp = row0.append("td");
-                    cell_temp.text('Null')
-                }
-            } else if (financeDates.length<8 && financeDates.length >= 5){
-                for(let i = 0; i < 3; i++){
-                    let cell_temp = row0.append("td");
-                    cell_temp.text('Null')
-                }
-            } else if  (financeDates.length<8 && financeDates.length >= 4) {
-                for(let i = 0; i < 4; i++){
-                    let cell_temp = row0.append("td");
-                    cell_temp.text('Null')
+            function insertPercentsTable() {
+                let row1 = tbody.append("tr");
+                let cell1_1 = row1.append("th").text('Price Change %')
+                let row2 = tbody.append("tr");
+                let cell2_1 = row2.append("th").text('Volume Change %')
+
+                var i = 0;
+                while(i < (financeDates.length - 1)) {
+                    let cell1 = row1.append("td");
+                    cell1.text(percentPrices[i].toFixed(3))
+                    let cell2 = row2.append("td");
+                    cell2.text(percentVolumes[i].toFixed(3))
+                    i++
                 }
             }
+
+            if (financeDates.length==8){
+                row_head = thead.append('tr')
+                head1 = row_head.append("th").text("Start Date")
+                head2 = row_head.append("th").text("Day 1")
+                head3 = row_head.append("th").text("Day 2")
+                head4 = row_head.append("th").text("Day 3")
+                head5 = row_head.append("th").text("Day 4")
+                head6 = row_head.append("th").text("Day 5")
+                head7 = row_head.append("th").text("Day 6")
+                head8 = row_head.append("th").text("Day 7")
+
+                insertPercentsTable()
                 
-            let row1 = tbody.append("tr");
-            
-            let cell1_1 = row1.append("th").text('Price Change %')
-            
-            let cell1_2 = row1.append("td").text(percentPrice0_oc.toFixed(3))
-            let cell1_3 = row1.append("td").text(percentPrice1_oc.toFixed(3))
-            let cell1_4 = row1.append("td").text(percentPrice2_oc.toFixed(3))
-            let cell1_5 = row1.append("td").text(percentPrice3_oc.toFixed(3))
-            let cell1_6 = row1.append("td").text(percentPrice4_oc.toFixed(3))
-            let cell1_7 = row1.append("td").text(percentPrice5_oc.toFixed(3))
-            let cell1_8 = row1.append("td").text(percentPrice6_oc.toFixed(3))
-                 
-            let row2 = tbody.append("tr");
-            
-            let cell2_1 = row2.append("th").text('Volume Change %')
-            
-            let cell2_2 = row2.append("td").text(percentVol0_oc.toFixed(3))
-            let cell2_3 = row2.append("td").text(percentVol1_oc.toFixed(3))
-            let cell2_4 = row2.append("td").text(percentVol2_oc.toFixed(3))
-            let cell2_5 = row2.append("td").text(percentVol3_oc.toFixed(3))
-            let cell2_6 = row2.append("td").text(percentVol4_oc.toFixed(3))
-            let cell2_7 = row2.append("td").text(percentVol5_oc.toFixed(3))
-            let cell2_8 = row2.append("td").text(percentVol6_oc.toFixed(3))
+            } else if (financeDates.length==7){
+                row_head = thead.append('tr')
+                head1 = row_head.append("th").text("Start Date")
+                head2 = row_head.append("th").text("Day 1")
+                head3 = row_head.append("th").text("Day 2")
+                head4 = row_head.append("th").text("Day 3")
+                head5 = row_head.append("th").text("Day 4")
+                head6 = row_head.append("th").text("Day 5")
+                head7 = row_head.append("th").text("Day 6")
+
+                insertPercentsTable()
+
+            } else if (financeDates.length==6){
+                row_head = thead.append('tr')
+                head1 = row_head.append("th").text("Start Date")
+                head2 = row_head.append("th").text("Day 1")
+                head3 = row_head.append("th").text("Day 2")
+                head4 = row_head.append("th").text("Day 3")
+                head5 = row_head.append("th").text("Day 4")
+                head6 = row_head.append("th").text("Day 5")
+
+                insertPercentsTable()
+
+            } else if (financeDates.length==5){
+                row_head = thead.append('tr')
+                head1 = row_head.append("th").text("Start Date")
+                head2 = row_head.append("th").text("Day 1")
+                head3 = row_head.append("th").text("Day 2")
+                head4 = row_head.append("th").text("Day 3")
+                head5 = row_head.append("th").text("Day 4")
+
+                insertPercentsTable()
+           
+            } else if (financeDates.length==3){
+                row_head = thead.append('tr')
+                head1 = row_head.append("th").text("Start Date")
+                head2 = row_head.append("th").text("Day 1")
+                head3 = row_head.append("th").text("Day 2")
+                head4 = row_head.append("th").text("Day 3")
+
+                insertPercentsTable()
+                
+            } else {
+                let head0 = thead.append("tr");
+                head_row = head0.append("th").text("Record Message")
+    
+                let row2 = tbody.append("tr");
+                
+                let cell1_1 = row2.append("tr").text('Not sufficient stock data to display calculations.')
+            }                
 
         } else {
 

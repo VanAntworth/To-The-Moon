@@ -69,6 +69,9 @@ Therefore we are embarking on a quest to find the influence Elon Musk tweet's ha
 
 ## <a name="Analysis"></a> Analysis Phase
 
+After retrieving raw data we processed and retrieved data that was necessary for proper analysis. We explored the twitter data (tweets) as well and finance data (retrieved from yahoo finace). We then began preproccessing the data using jupyter notebook and then SQL. With this data we created tables, files, graphs and charts. We then analysed the data to 
+
+
 
 ## <a name="TrainingandTesting"></a> Training and Testing:
 

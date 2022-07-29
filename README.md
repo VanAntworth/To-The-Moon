@@ -76,7 +76,11 @@ After retrieving raw data from Yahoo finance as well as twitter.com using the Tw
 **One of the charts created in tableau to show sentiment scoring as well as the respective tweet(stacked tweets indicate multiple tweets on that particular day).**
 
 
-<img width="746" alt="Sentiment Scoring Chart" src="https://user-images.githubusercontent.com/99001393/181669377-cfe15b37-d7bd-45b5-9cdf-66f51e5fbe46.png">
+
+<img width="1016" alt="Screen Shot 2022-07-29 at 2 25 08 PM" src="https://user-images.githubusercontent.com/99001393/181830431-c160ec05-cde4-4994-9e00-40160578de0d.png">
+
+
+
 
 ## <a name="TrainingandTesting"></a> Training and Testing:
 

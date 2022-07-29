@@ -5,6 +5,9 @@ function buildDogeSentimentChart() {
         return response.json();
     }).then(data => {
         // Work with JSON data here
+        const mark1 = 45
+        const mark2 = 34
+        const mark3 = 62
         const dateData = data.map(
             function (index) {
                 return index.date;
@@ -23,7 +26,7 @@ function buildDogeSentimentChart() {
         //  console.log(adjustedClose);
         //  console.log(sentimentScore);
         const ctx1 = document.getElementById('dogeChart').getContext('2d');
-        buildSentimentFinanceChart(ctx1, dateData, adjustedClose, sentimentScore)
+        buildSentimentFinanceChart(ctx1, dateData, adjustedClose, sentimentScore, mark1, mark2, mark3)
 
      
     }).catch(err => {
@@ -37,6 +40,9 @@ function buildTwitterSentimentChart() {
         return response.json();
     }).then(data => {
         // Work with JSON data here
+        const mark1 = 35
+        const mark2 = 56
+        const mark3 = 100
         const dateData = data.map(
             function (index) {
                 return index.date;
@@ -55,7 +61,7 @@ function buildTwitterSentimentChart() {
         //  console.log(adjustedClose);
         //  console.log(sentimentScore);
         const ctx1 = document.getElementById('twitterChart').getContext('2d');
-        buildSentimentFinanceChart(ctx1, dateData, adjustedClose, sentimentScore)
+        buildSentimentFinanceChart(ctx1, dateData, adjustedClose, sentimentScore, mark1, mark2, mark3)
 
     }).catch(err => {
         console.log(err);
@@ -67,7 +73,10 @@ function buildTeslaSentimentChart() {
 
         return response.json();
     }).then(data => {
-        data = data.filter(index => new Date(index.date) > new Date('2020/01/01'))
+        data = data.filter(index => new Date(index.date) > new Date('2021/01/01'))
+        const mark1 = 50
+        const mark2 = 125
+        const mark3 = 100
         // Work with JSON data here
         const dateData = data.map(
             function (index) {
@@ -84,44 +93,32 @@ function buildTeslaSentimentChart() {
                 return index.sentimentScore;
             }
         )
+        const tweetText = data.map(
+            function (index) {
+                return index.fullText;
+            }
+        )
         //  console.log(adjustedClose);
         //  console.log(sentimentScore);
         const ctx1 = document.getElementById('teslaChart').getContext('2d');
-        buildSentimentFinanceChart(ctx1, dateData, adjustedClose, sentimentScore)
+        buildSentimentFinanceChart(ctx1, dateData, adjustedClose, sentimentScore, tweetText, mark1, mark2, mark3)
 
     }).catch(err => {
         console.log(err);
     });
 }
 // Common function for plotting chart
-function buildSentimentFinanceChart(ctx1, dateData, adjustedClose, sentimentScore) {
+function buildSentimentFinanceChart(ctx1, dateData, adjustedClose, sentimentScore, tweetText, mark1, mark2, mark3) {
    
     const dataset = {
         labels: dateData,
-        datasets: [{
-            label: 'Adjusted Close',
-            data: adjustedClose,
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-
-            ],
-            tension: 0.5,
-            width:0.5,
-            pointHoverBorderColor: 'white',
-            pointHoverBorderColor: 'rgba(255,99,132,1)',
-            pointHoverBorderWidth: 3,
-            pointHoverRadius: 10
-        },
+        datasets: [
         {
             label: 'Sentiment Score',
             data: sentimentScore,
             backgroundColor: [
 
-                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.5)',
 
             ],
             borderColor: [
@@ -130,16 +127,36 @@ function buildSentimentFinanceChart(ctx1, dateData, adjustedClose, sentimentScor
 
             ],
             tension: 0.5,
+            width:0.5,
             pointHoverBorderColor: 'white',
             pointHoverBorderColor: 'rgba(54, 162, 235, 1)',
             pointHoverBorderWidth: 3,
             pointHoverRadius: 10,
+            
+            type:'line',
             yAxisID: 'dollar'
+        },{
+            label: 'Adjusted Close',
+            data: adjustedClose,
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.6)',
+
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1.5)',
+
+            ],
+            tension: 0.5,
+            width:0.5,
+            pointHoverBorderColor: 'white',
+            pointHoverBorderColor: 'rgba(255,99,132,1)',
+            pointHoverBorderWidth: 3,
+            pointHoverRadius: 10
         }]
     }
 
     const chart = new Chart(ctx1, {
-        type: 'line',
+        type: 'bar',
         data: dataset,
         options: {
             scales: {
@@ -165,17 +182,24 @@ function buildSentimentFinanceChart(ctx1, dateData, adjustedClose, sentimentScor
                     annotations:[{
                         type: 'line', 
                         scaleID: 'x', 
-                        value: 35,
+                        value: mark2,
+                        borderWidth: 2, 
+                        borderColor: 'black'
+                    },
+                    {
+                        type: 'line', 
+                        scaleID: 'x', 
+                        value: mark1,
                         borderWidth: 2, 
                         borderColor: 'black' 
                     },
                     {
                         type: 'line', 
                         scaleID: 'x', 
-                        value: 37,
+                        value: mark3,
                         borderWidth: 2, 
-                        borderColor: 'magenta' 
-                    }
+                        borderColor: 'black' 
+                    },
                 ]
                 }
             }

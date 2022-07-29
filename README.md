@@ -69,7 +69,9 @@ Therefore we are embarking on a quest to find the influence Elon Musk tweet's ha
 
 ## <a name="Analysis"></a> Analysis Phase
 
-After retrieving raw data we processed and retrieved data that was necessary for proper analysis. We explored the twitter data (tweets) as well and finance data (retrieved from yahoo finace). We then began preproccessing the data using jupyter notebook and then SQL. With this data we created tables, files, graphs and charts. We then analysed the data to 
+
+
+After retrieving raw data from Yahoo finance as well as twitter.com using the Twitter API we processed the data using jupyter notebook and then SQL and scaled it. We thentook the Twitter data and performed NLP on a scale from negative one to one to rate it a negative or positive tweet. This was done for every tweet that included the words of the stocks and cryptocurrency we chose to analyze (dogecoin, Tesla, Twitter) We also processed the finance date to see current and past market trends. We then chose three machine learning models to run this data with. We fit our models to predict future market values of the respective stock and cryptocurrency that we chose being dogecoin Tesla and Twitter. This was done by imputing the scores that generated from the Twitter data and running them against the previous day market value.
 
 
 

@@ -92,11 +92,11 @@ function buildTweet7Day(ctx1,date,financeDates,volume,adjustedClosed){
                       value: date_tweet,
                       borderColor: 'magenta',
                       borderWidth: 2,
-                      label: {
-                        enabled: true,
-                        position: "top",
-                        content: "Tweet Date"
-                      }
+                    //   label: {
+                    //     enabled: true,
+                    //     position: "bottom",
+                    //     content: "Tweet Date"
+                    //   }
                     }]
                   }
             }
@@ -330,13 +330,20 @@ function update7DayChart(dateLogged,financeType){
             chartStatus1.clear()
             console.log('No Fincancial Records for date')
 
+            errorMessage = document.getElementById('errorMessage').innerHTML="Elon did not tweet about this Stock / Coin on this date.";
+
         } else if (financeDates_oc.length > 0) {
             // console.log(financeDates_oc)
             console.log(financeDates)
             console.log(volumes_oc)
             console.log(adjustedClosed_oc)
-    
+            
+            
+            clearErrorMessage = document.getElementById('errorMessage').innerHTML=""
+            
             // JS - Destroy exiting Chart Instance to reuse <canvas> element
+
+
             let chartStatus = Chart.getChart("myChart"); // <canvas> id
             if (chartStatus != undefined) {
             chartStatus.destroy();

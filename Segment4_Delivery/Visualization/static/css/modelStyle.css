@@ -1,0 +1,52 @@
+.body{
+  background:lightgrey;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.sentitabs{
+  display: flex;
+  flex-wrap: wrap;
+ margin: 10px auto;
+}
+
+.sentitabs input[type="radio"]{
+  display: none;
+}
+
+.sentitabs label {
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: rgb(238, 235, 234);
+  cursor: pointer;
+  color:blue;
+  border-color: grey;
+  border-radius: 8px 8px 0 0;
+  border-width: 2px;
+  height: 1px;
+  margin-bottom: 2px;
+  
+  }
+.sentitabs .tab {
+  width: 100%;
+  background-color: white;
+  display: none;
+  border: lightgrey;
+  border-width: 1px;
+  order: 1;
+
+}
+.sentitabs .tab h2{
+  font-size:3em;
+  border-width:2px;
+  border-color: grey;
+}
+.sentitabs input[type="radio"]:checked + label + .tab{
+  display: block;
+
+}
+
+.sentitabs input[type="radio"]:checked + label{
+  background-color: white;
+  border: grey;
+}
+

@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To The Moon</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link hr ef="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/modelStyle.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.1/chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0/dist/chartjs-plugin-annotation.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@^2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@^1"></script>
+
+</head>
+<script>
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+    var mybutton = document.getElementById("myBtn");
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+  <header class="header1">
+
+    <!-- Navigation section  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">To the Moon <img width="110px" height="55px" src="images/rocket.png"
+            alt="rocket"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Tableau">Stocks/Cryto</a>
+            </li>
+
+            <a class="nav-link" href="#7dayimpact">
+              Elon Musk Tweets Impact
+            </a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#machinelearning">Machine Learning</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#teaminfo">Our Team</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navigation section  -->
+    <!-- TradingView Widget BEGIN -->
+
+
+    <div class="tradingview-widget-copyright" style="height:56px"><a href="https://www.tradingview.com" rel="noopener"
+        target="_blank"></a> </div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+      async>
+        {
+          "symbols": [
+            {
+              "description": "DogeCoin",
+              "proName": "COINBASE:DOGEUSD"
+            },
+            {
+              "description": "Twitter",
+              "proName": "NYSE:TWTR"
+            },
+            {
+              "description": "Tesla",
+              "proName": "NASDAQ:TSLA"
+            }
+          ],
+            "showSymbolLogo": true,
+              "colorTheme": "light",
+                "isTransparent": true,
+                  "showSymbolLogo": true,
+                    "displayMode": "adaptive",
+                      "locale": "en"
+        }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+  </header>
+
+
+
+
+  <!-- About Section  -->
+  <section class="about">
+    <!--First section-->
+    <div class="container-fluid"
+      style="vertical-align:middle;background: url('images/banner.jpeg'); background-size: cover; height:465px; padding-top:3.8%;padding-left:25%">
+      <div class="row card cardblur" style="width: 70%">
+        <div class="col-md-12 card-title text-center">
+          <!-- <p style="font-size:38px; color: whitesmoke;"><b>ABOUT</b></p> -->
+          <div class="card-body" style=" color: rgb(240, 235, 235);">
+            <p style="font-size:20px; font-family: Verdana, Geneva, Tahoma, sans-serif;"><b
+                style="color:white; font-size:38px">Elon
+                Musk</b><br> tweets have the influence to impact/sway the market.
+            <p><br></p>
+            <p style="font-size:28px; font-family: Verdana, Geneva, Tahoma, sans-serif;">True or False <b
+                style="font-size:45px">?</b></p>
+            <p style="padding:20px">
+              Do you think one person can change the way the market trends?<br>
+              Does Elon Musk have the ability to sway certain stock and crypto in his favor?</p>
+            <!-- <p style=" color: rgb(203, 186, 186);">An Attempt to -- </br>
+              * Analyze the impact of the tweets and how long the impact was holding true.</br>
+              * Predict the Stock or Cryptocurrencys (Tesla, Twitter and Dogecoin data) future value, and
+              also show the impact of tweets for respective stock/crypto.</br>
+              * Embarking on a quest to find the influence Elon Musk tweet's have had over Doge Coin.</br>
+              * Understand how the use of language by a single individual with a large following, can influence the
+              price of stocks and coins.
+            </p> -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div style="background-image:images\lstm_doge.png; width:100%">
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="Charts">
+    <div class="container-fluid">
+      <h2> </h2>
+      <p>It is undoubtable that Elon Musk is a globally know celebrity. Our story starts with one of our team members
+        making financial gains through following the tweeted advice of Elon Musk.
+
+        It is a crazy thought that social media and specifically twitter could have the power to sway a nation.<br><br>
+        <b style="padding-left:20%;"><i>Do you believe his tweets could have an effect on stock value or are the trends
+            that have been seen a
+            coincidence?</i></b><br>
+        This Project is an attempt to figure out if his tweeted words can in fact have an impact on the market or not? .
+        Through NLP we have worked to predict the power that his words (on the social media platform like Twitter) have
+        on near future values of the stocks and cryptocurrency we relate him to.
+      </p>
+      <div class="row">
+        <section class="header" id="Tableau">
+          <h1>Stocks/Crypto Influenced by Elon Musk Tweets</h1>
+          <p style=" font-size: 1em; font-weight: 100; letter-spacing: 5px; vertical-align: top;">Tableau Visualizations
+          </p>
+        </section>
+        <p></p>
+        <!-- Embedding Tableau  -->
+        <div class="col-8" style="height:430px">
+          <div class="card">
+            <!-- <h4 class="card-title">"Elon Musk Tweets Trends</h4>-->
+            <div class="card-body">
+              <div class='tableauPlaceholder' id='viz1658587980072' style='position: relative; align:center'>
+                <noscript>
+                  <a href='#'><img alt=' '
+                      src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Do&#47;Doge-to-the-Moon&#47;Story1&#47;1_rss.png'
+                      style='border: none' />
+                  </a>
+                </noscript><object class='tableauViz' style='display:none;'>
+                  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                  <param name='embed_code_version' value='3' />
+                  <param name='site_root' value='' />
+                  <param name='name' value='Doge-to-the-Moon&#47;Story1' />
+                  <param name='tabs' value='yes' />
+                  <param name='toolbar' value='yes' />
+                  <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Do&#47;Doge-to-the-Moon&#47;Story1&#47;1.png' />
+                  <param name='animate_transition' value='yes' />
+                  <param name='display_static_image' value='yes' />
+                  <param name='display_spinner' value='yes' />
+                  <param name='display_overlay' value='yes' />
+                  <param name='display_count' value='yes' />
+                  <param name='tabs' value='no' />
+                  <param name='language' value='en-US' />
+                  <param name='showShareOptions' value='false' />
+                  <param name='filter' value=':original_view=yes' />
+                </object>
+              </div>
+              <script type='text/javascript'>
+                var divElement = document.getElementById('viz1658587980072');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '1016px';
+                vizElement.style.height = '1014px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+              </script>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <div class="card-title card-header">
+              <h4>Stock & Cryptocurrency Trends</h4>
+            </div>
+
+            <img src="images/financeChart.jpg" class="img-responsive">
+            <div class="card-body">
+            </div>
+
+          </div>
+          <p></p>
+          <div class="card" id="card-pie">
+            <div class="card-title card-header">
+              <h4>Stocks & Crypto influenced by Elon Musk Tweets</h4>
+            </div>
+
+            <div class="">
+              <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                We have chosen three stocks/coin that we find relation to with Elon Musk.
+                The three are:
+              <p style="color:rgb(18, 71, 68); font-family: Verdana, Geneva, Tahoma, sans-serif;">Dogecoin
+                (Cryptocurrency) - An insignificant crypto currency that grew to fame in April 2019, Musk tweeted
+                <b>“Dogecoin might be my fav cryptocurrency. It’s pretty cool.”</b> The cryptocurrency gained immense
+                traction
+                as Musk continued to endorse and hype it on social media.
+              </p>
+              <p style="color:rgb(18, 71, 68); font-family: Verdana, Geneva, Tahoma, sans-serif;">Tesla (Stock)-Tesla is
+                best known for designing and
+                manufacturing electric vehicles. The company was created by Elon Musk and he currently
+                owns <b>17</b> percent of the company.</p>
+              <p style="color:rgb(18, 71, 68); font-family: Verdana, Geneva, Tahoma, sans-serif;">Twitter (Stock) On
+                April 25,
+                Twitter’s board of directors accepted Musk’s buyout offer of <b>$44 billion</b>. On July 8, Musk
+                announced that he
+                intended to terminate the proposed acquisition.
+              </p>
+              </p>
+            </div>
+            <div class="card-body">
+            </div>
+          </div>
+        </div>
+        <p></p>
+        <p></p>
+        </p>
+        <!-- End of Embedding Tableau  -->
+      </div>
+      <!--Tweet 7 day range data -->
+      <div class="row">
+        <section class=" 7 day impact header" id="7dayimpact">
+          <h1>Elon Musk Tweets</h1>
+          <p style=" font-size: 1em; font-weight: 100; letter-spacing: 5px; vertical-align: top;">7 Day Impact</p>
+        </section>
+        <p></p>
+        <div class="col-9">
+          <div class="card" style="height: 700px;">
+
+
+            <div class="card-header">
+              <h4>Elon Musk 7 day impact</h4>
+            </div>
+
+
+            <div class="card-body">
+              <form>
+                <div class="row form-group">
+                  <label for="date" class="col-sm-1">Enter Date:</label>
+                  <div class="col-sm-2">
+                    <div class="input-group date" id="datepicker">
+                      <input type="text" class="form-control" id="dateSelected" onchange="optionChanged(this.value)">
+                      <span class="input-group-append">
+                        <span class="input-group-text bg-white d-block">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-calendar" viewBox="0 0 16 16">
+                            <path
+                              d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                          </svg>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <label for="financeType" class="col-sm-6"> Choose a stock / coin:</label>
+                    <select name="financeType" id="financeType"
+                      onchange="selectorChanged(this.options[this.selectedIndex].value)">
+                      <option value="tesla">Tesla</option>
+                      <option value="twitter">Twitter</option>
+                      <option value="doge">Doge</option>
+                    </select>
+                  </div>
+                  <!-- <div class="col-sm-8"> -->
+                  <!-- <label for="financeType" class="col-sm-3"> Choose a stock/coin:</label>  -->
+                  <!-- <div class="input-group mb-3">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="financeType" data-bs-toggle="dropdown">
+                        Choose a stock/coin:
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="financeType">
+                        <li><a href="#" class="dropdown-item">Tesla</a></li>
+                        <li><a href="#" class="dropdown-item">Doge</a></li>
+                        <li><a href="#" class="dropdown-item">Twitter</a></li>
+                      </ul>
+                    </div>
+                  </div>     -->
+
+
+                </div>
+              </form>
+              <div id="myChartContent">
+                <canvas id="myChart" width="200" height="50"></canvas>
+                <div id="errorMessage"></div>
+              </div>
+              <div style="padding-top:20px">
+                <h6 style="font-style:inherit; box-sizing: border-box; font-weight:bold;">Stock Price and Volume Percent
+                  Change</h6>
+                <table id="percentsTable" class="table table-striped" style="border-style: groove;">
+                  <tr></tr>
+                  <thead>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+                <div id = "tableMessage"></div>
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-3">
+          <div class="card scroll" id="tweeter-timeline" style="height: 700px;display:block">
+
+
+            <h4 class="card-title card-header">Elon Musk Live Tweets Feeder</h4>
+            <div class="card-body ">
+              <label id="displayDateSelected"></label>
+              <a class="twitter-timeline" href="https://twitter.com/elonmusk?ref_src=twsrc%5Etfw">Tweets by elonmusk</a>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+
+              </script>
+
+            </div>
+          </div>
+          <div class="card scroll" id="selected-tweet" style="height: 700px;display:none;">
+
+            <div class="card title card-header">
+              <h4>Selected Tweet</h4>
+            </div>
+            <div class="card-body ">
+              <div id="tweet" tweetID=""></div>
+
+              <script sync src="https://platform.twitter.com/widgets.js"></script>
+
+              <script>
+                function tweetInfo(tweet_id) {
+                  var tweet = document.getElementById('tweet');
+                  var id = tweet_id;
+
+                  twttr.widgets
+                    .createTweet(id, tweet, {
+                      conversation: 'none', // or all
+                      cards: 'hidden', // or visible
+                      linkColor: '#cc0000', // default is blue
+                      theme: 'light', // or dark
+                    })
+                };
+              </script>
+
+
+
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+      <p></p>
+      <!--Sentiment Adjustclose relation-->
+      <div class="row">
+        <div class="col-12" style="height:550px">
+          <div class="card">
+
+            <div class="card-title card-header">
+              <h4>Adjusted Close value of Doge vs Sentiment Score</h4>
+            </div>
+
+            <div class="card-body">
+              <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#tabDoge">Doge</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tabTesla">Tesla</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tabTwitter">Twitter</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="tabDoge">
+                  <div class="row border g-0 rounded shadow-sm">
+                    <canvas id="dogeChart" width="200" height="50"> dfdsf</canvas>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tabTesla">
+                  <div class="row border g-0 rounded shadow-sm">
+                    <canvas id="teslaChart" width="200" height="50"> dfdsf</canvas>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tabTwitter">
+                  <div class="row border g-0 rounded shadow-sm">
+                    <canvas id="twitterChart" width="200" height="50"> dfdsf</canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!--Machine Learning-->
+       <div class="row">
+        <section class="ML header" id="machinelearning">
+          <h1>Machine Learning Visualized</h1>
+          <p style=" font-size: 1em; font-weight: 100; letter-spacing: 5px; vertical-align: top;">Model Predictions</p>
+        </section>
+        <p></p>
+        <div class="col-12" style="height:700px">
+          <div class="card">
+            <div class="card-title card-header">
+              <h4>Machine Learning Algos for Prediction</h4>
+            </div>
+            <div class="card-body">
+              <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#intro">Introduction</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#lr">Linear Regression</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#arima">Arima</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#lstm">LSTM</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="intro">
+                  <div class="row border g-0 rounded shadow-sm">
+                    <div class="col-6">
+                      <p>
+                        This tab pertains to the introduction of ML.
+                      </p>
+                    </div>
+                    <div class="col-auto">
+                      <img src="images/LR_graph.png" alt="LR Graph" width="500px" height="300px">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane" id="lr">
+                  <div class="row border g-0 rounded shadow-sm">
+
+                    <h3> Actual vs Predicted values by Linear Regression </h3>
+                    <div class="container">
+                      <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                          <div class="card text-center h-100">
+                            <div class="card-img">
+                              <a href="#" class="pop">
+                                <img class="img-fluid" id="img-zoom" alt="lr-doge" src="images/lr_doge.png"></img>
+                              </a>  
+                            </div>
+                            <div class="card-body">
+                              <h5>Doge-Actual vs Predicted</h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card text-center h-100">
+                            <div class="card-img">
+                              <a href="#" class="pop">
+                                <img class="img-fluid" alt="lr-tesla" src="images/lr_tesla.png"></img>
+                              </a>
+                            </div>
+                            <div class="card-body">
+                              <h5>Tesla-Actual vs Predicted</h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card text-center h-100">
+                            <div class="card-img">
+                              <a href="#" class="pop">
+                                <img class="img-fluid" alt="lr-twitter" src="images/lr_twitter.png"></img>
+                              </a>  
+                            </div>
+                            <div class="card-body">
+                              <h5>Twitter-Actual vs Predicted</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+                <div class="tab-pane" id="arima">
+                  <div class="row border g-0 rounded shadow-sm">
+                    <h3> Actual vs Predicted values by Arima </h3>
+                    <div class="container">
+                      <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                          <div class="card text-center h-100">
+                            <div class="card-img">
+                              <a href="#" class="pop">
+                                <img class="img-fluid" id="img-zoom" alt="arima-doge" src="images/arima_doge.png"></img>
+                              </a>  
+                            </div>
+                            <div class="card-body">
+                              <h5>Doge-Actual vs Predicted</h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card text-center h-100">
+                            <div class="card-img">
+                              <a href="#" class="pop">
+                                <img class="img-fluid" alt="arima-tesla" src="images/arima_tesla.png"></img>
+                              </a>
+                            </div>
+                            <div class="card-body">
+                              <h5>Tesla-Actual vs Predicted</h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card text-center h-100">
+                            <div class="card-img">
+                              <a href="#" class="pop">
+                                <img class="img-fluid" alt="arima-twitter" src="images/arima_twitter.png"></img>
+                              </a>  
+                            </div>
+                            <div class="card-body">
+                              <h5>Twitter-Actual vs Predicted</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+              
+                  </div>
+                </div>
+
+
+                <div class="tab-pane" id="lstm">
+                  <div class="row border g-0 rounded shadow-sm">
+                    <h3> Actual vs Predicted values by LSTM </h3>
+                    <div class="container">
+                      <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                          <div class="card text-center h-100">
+                            <div class="card-img">
+                              <a href="#" class="pop">
+                                <img class="img-fluid" id="img-zoom" alt="lstm-doge" src="images/lstm_doge.png"></img>
+                              </a>  
+                            </div>
+                            <div class="card-body">
+                              <h5>Doge-Actual vs Predicted</h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card text-center h-100">
+                            <div class="card-img">
+                              <a href="#" class="pop">
+                                <img class="img-fluid" alt="lstm-tesla" src="images/lstm_tesla.png"></img>
+                              </a>
+                            </div>
+                            <div class="card-body">
+                              <h5>Tesla-Actual vs Predicted</h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card text-center h-100">
+                            <div class="card-img">
+                              <a href="#" class="pop">
+                                <img class="img-fluid" alt="lstm-twitter" src="images/lstm_twitter.png"></img>
+                              </a>  
+                            </div>
+                            <div class="card-body">
+                              <h5>Twitter-Actual vs Predicted</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  <!-- Modal
+                  <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="images/lstm_twitter.png" class="modal-img" alt="modal img">
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                  
+                  
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                  </div>
+                </div>
+              </div>
+            </div>
+                  <!-- Modal -->
+                  <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="images/lstm_twitter.png" class="modal-img" alt="modal img">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!--Machine Learning with Sentiment Score-->
+      <div class="row">
+        <section class="ML header" id="machinelearning">
+          <h1>Machine Learning with Sentiment</h1>
+          <p style=" font-size: 1em; font-weight: 100; letter-spacing: 5px; vertical-align: top;">Model Predictions with sentiment</p>
+        </section>
+        <p></p>
+        <div class="col-12" style="height:700px">
+          <div class="card">
+            <h4 class="card-title">Machine Learning with Sentiment Score</h4>
+            <div class="card-body">
+              <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#sentiIntro">introduction</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#sentiLin">Linear Regression</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#sentiRand">Random Forest</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="sentiIntro">
+                  <div class="row border g-0 rounded shadow-sm">
+                    <!-- <canvas id="dogeChart" width="200" height="50"> dfdsf</canvas> -->
+                  </div>
+                </div>
+                <div class="tab-pane" id="sentiLin">
+                  <div class="row border g-0 rounded shadow-sm">
+                    <!-- <canvas id="teslaChart" width="200" height="50"> dfdsf</canvas> -->
+                  </div>
+                </div>  
+                <div class="tab-pane" id="sentiRand">
+                  <div class="row border g-0 rounded shadow-sm">
+                    <!-- <canvas id="twitterChart" width="200" height="50"> dfdsf</canvas> -->
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>        
+        </div>
+      </div>  
+      <p></p>
+
+    </div>
+  </section>
+
+
+
+  <!-- Our Team section -->
+  <section class="team" id="teaminfo">
+    <section class="header">
+      <h1>Our Team</h1>
+    </section>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-3 profile text-center">
+          <div class="img-box">
+            <img src="images/shreha.jpg" class="img-responsive img-circle" width="160px" height="150px" alt="shreha">
+            <ul>
+              <a href="https://github.com/shrehalko">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                  </svg>
+                </li>
+              </a>
+              <a href="https://www.linkedin.com/in/shreha-mittal/">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                  </svg>
+                </li>
+              </a>
+              <!-- <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a> -->
+            </ul>
+          </div>
+          <h3>Shreha Mittal</h3>
+        </div>
+        <div class="col-md-3 profile text-center">
+          <div class="img-box">
+            <img src="images/tamara.png" class="img-responsive" width="160px" height="150px" alt="tamara">
+            <ul>
+              <a href="https://github.com/tamiespinosa">
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                  </svg></li>
+              </a>
+              <a href="https://www.linkedin.com/in/tamara-espinosa-hagstrom-22928b30/">
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                  </svg></li>
+              </a>
+              <!-- <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a> -->
+            </ul>
+          </div>
+          <h3>Tamara Espinosa</h3>
+        </div>
+        <div class="col-md-3 profile text-center">
+          <div class="img-box">
+            <img src="images/deepa.png" class="img-responsive" width="160px" height="150px" alt="deepa">
+            <ul>
+              <a href="https://github.com/DeepaGheewala">
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                  </svg></li>
+              </a>
+              <a href="https://www.linkedin.com/in/deepa-gheewala/">
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                  </svg></li>
+              </a>
+              <!-- <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a> -->
+            </ul>
+          </div>
+          <h3>Deepa Gheewala</h3>
+        </div>
+        <div class="col-md-3 profile text-center">
+          <div class="img-box">
+            <img src="images/van.png" class="img-responsive" width="160px" height="150px" alt="van">
+            <ul>
+              <a href="https://github.com/VanAntworth">
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                  </svg></li>
+              </a>
+              <a href="#">
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                  </svg></li>
+              </a>
+              <!-- <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a> -->
+            </ul>
+          </div>
+          <h3>VanAntworth</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="static/js/chart.js"></script>
+  <script src="static/js/SentimentChart.js"></script>
+  <script>
+    document.addEventListener("click",function (e){
+      if(e.target.classList.contains("img-fluid")){
+        const src = e.target.getAttribute("src");
+        document.querySelector(".modal-img").src = src;
+        const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
+        myModal.show();
+      }
+    })
+  </script>
+</body>
+
+<style>
+    <!-- .tradingview-widget-copyright {
+    font-size: 13px !important;
+    line-height: 32px !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+    color: #9db2bd !important;
+    display: none !important;
+    }
+
+    
+ #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #a7b8ff;
+  color: white;
+  cursor: pointer;
+  padding-top: 5px;
+  border-radius: 4px;
+  font-weight: 900;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style> 
+
+</html>

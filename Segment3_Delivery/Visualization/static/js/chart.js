@@ -175,11 +175,9 @@ function update7Percentages(dateLogged,financeType, financeDates){
             tbody.html("");
 
             let head0 = thead.append("tr");
-            head_row = head0.append("th").text("No Record Message")
+            head_row = head0.append("th").text("No record to display")
 
-            let row2 = tbody.append("tr");
-            
-            let cell1_1 = row2.append("tr").text('Elon did not tweet about this Coin / Stock on this date.')
+
 
         } else if (percentPrice0_oc !== null) {
 
@@ -330,7 +328,7 @@ function update7DayChart(dateLogged,financeType){
             chartStatus1.clear()
             console.log('No Fincancial Records for date')
 
-            errorMessage = document.getElementById('errorMessage').innerHTML="Elon did not tweet about this Stock / Coin on this date.";
+            errorMessage = document.getElementById('errorMessage').innerHTML="<span style='font-size:30px'>Elon did not tweet about this Stock / Coin on this date.</span>";
 
         } else if (financeDates_oc.length > 0) {
             // console.log(financeDates_oc)

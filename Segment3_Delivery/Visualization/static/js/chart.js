@@ -1,42 +1,10 @@
 function buildTweet7Day(ctx1,date,financeDates,volume,adjustedClosed){
     console.log("test")
     console.log(date)
-    var date_tweet =new Date(date)
+    var date_tweet =new Date(date+ "T00:00:01")
 
     // var date_0 = financeDates[0]
     console.log(date_tweet)
-    // console.log(date_0)
-    // date_labels = []
-    // date_labels.push(date_0)
-
-    // var volume_transformed = []
-
-    // for (var i=0; i<financeDates.length; i++){
-    //     volume_transformed.push({t:financeDates[i], dollar:volume[i]})
-    // }
-    
-    // var adjustedC_transformed = []
-
-    // for (var i=0; i<financeDates.length; i++){
-    //     adjustedC_transformed.push({t:financeDates[i], y:adjustedClosed[i]})
-    // }
-
-    // console.log(volume_transformed)
-    // console.log(adjustedC_transformed)
-
-    // for(var i=1; i < 8; i++){
-
-    //     Date.prototype.addDays = function (days) {
-    //         const date = new Date(this.valueOf());
-    //         date.setDate(date.getDate() + days);
-    //         return date;
-    //     };
-    //     var date_2 = new Date()
-    //     date_2 = date_0.addDays(i)
-    //     date_labels.push(date_2)
-    // }
-
-    // console.log(date_labels)
 
     const dataset = {
         labels: financeDates,
@@ -86,6 +54,10 @@ function buildTweet7Day(ctx1,date,financeDates,volume,adjustedClosed){
                 x: {
                     display: true,
                     type: 'time',
+                    title:{
+                        display: true,
+                        text: 'Date'
+                    },
                     time: {
                       unit: 'day',
                       displayFormats: {
@@ -93,7 +65,6 @@ function buildTweet7Day(ctx1,date,financeDates,volume,adjustedClosed){
                       }
                       }
                     }
-                  }
                 ,               
                 y: {
                     beginAtZero: false,
@@ -112,7 +83,6 @@ function buildTweet7Day(ctx1,date,financeDates,volume,adjustedClosed){
                 }
             },
             plugins: {
-                autocolors:false,
                 annotation:{
                     drawTime: 'afterDatasetsDraw',
                     annotations: [{
@@ -120,12 +90,12 @@ function buildTweet7Day(ctx1,date,financeDates,volume,adjustedClosed){
                       mode: 'vertical',
                       scaleID: 'x',
                       value: date_tweet,
-                      borderColor: 'red',
-                      borderWidth: 1,
+                      borderColor: 'magenta',
+                      borderWidth: 2,
                       label: {
                         enabled: true,
                         position: "top",
-                        content: "somelabel"
+                        content: "Tweet Date"
                       }
                     }]
                   }
@@ -133,7 +103,7 @@ function buildTweet7Day(ctx1,date,financeDates,volume,adjustedClosed){
 
         }
        
-    );
+    });
 }
 
 /*Update Functions*/
@@ -361,7 +331,7 @@ function update7DayChart(dateLogged,financeType){
             console.log('No Fincancial Records for date')
 
         } else if (financeDates_oc.length > 0) {
-            console.log(financeDates_oc)
+            // console.log(financeDates_oc)
             console.log(financeDates)
             console.log(volumes_oc)
             console.log(adjustedClosed_oc)

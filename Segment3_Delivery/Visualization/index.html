@@ -444,8 +444,8 @@
         </div>
       </div>
 
-      <!--Machine Learning-->
-      <div class="row">
+       <!--Machine Learning-->
+       <div class="row">
         <section class="ML header" id="machinelearning">
           <h1>Machine Learning Visualized</h1>
           <p style=" font-size: 1em; font-weight: 100; letter-spacing: 5px; vertical-align: top;">Model Predictions</p>
@@ -476,39 +476,19 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="tab-pane" id="lr">
                   <div class="row border g-0 rounded shadow-sm">
-                    <div class="col-6">
-                      <p>
-                        This tab pertains to the info about Linear Regression.
-                      </p>
-                    </div>
-                    <div class="col-auto">
-                      <img src="images/LR_graph.png" alt="LR Graph" width="500px" height="300px">
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane" id="arima">
-                  <div class="row border g-0 rounded shadow-sm">
-                    <div class="col-6">
-                      <p>
-                        This tab pertains to the info about Arima.
-                      </p>
-                    </div>
-                    <div class="col-auto">
-                      <img src="images/LR_graph.png" alt="LR Graph" width="500px" height="300px">
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane" id="lstm">
-                  <div class="row border g-0 rounded shadow-sm">
-                    <h3> Actual vs Predicted values by LSTM </h3>
+
+                    <h3> Actual vs Predicted values by Linear Regression </h3>
                     <div class="container">
                       <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
                           <div class="card text-center h-100">
                             <div class="card-img">
-                              <img class="img-fluid" alt="lstm-doge" src="images/lstm_doge.png"></img>
+                              <a href="#" class="pop">
+                                <img class="img-fluid" id="img-zoom" alt="lr-doge" src="images/lr_doge.png"></img>
+                              </a>  
                             </div>
                             <div class="card-body">
                               <h5>Doge-Actual vs Predicted</h5>
@@ -518,7 +498,9 @@
                         <div class="col">
                           <div class="card text-center h-100">
                             <div class="card-img">
-                              <img class="img-fluid" alt="lstm-tesla" src="images/lstm_tesla.png"></img>
+                              <a href="#" class="pop">
+                                <img class="img-fluid" alt="lr-tesla" src="images/lr_tesla.png"></img>
+                              </a>
                             </div>
                             <div class="card-body">
                               <h5>Tesla-Actual vs Predicted</h5>
@@ -528,7 +510,9 @@
                         <div class="col">
                           <div class="card text-center h-100">
                             <div class="card-img">
-                              <img class="img-fluid" alt="lstm-twitter" src="images/lstm_twitter.png"></img>
+                              <a href="#" class="pop">
+                                <img class="img-fluid" alt="lr-twitter" src="images/lr_twitter.png"></img>
+                              </a>  
                             </div>
                             <div class="card-body">
                               <h5>Twitter-Actual vs Predicted</h5>
@@ -537,15 +521,186 @@
                         </div>
                       </div>
                     </div>
+
+                  </div>
+                </div>
+
+
+                <div class="tab-pane" id="arima">
+                  <div class="row border g-0 rounded shadow-sm">
+                    <h3> Actual vs Predicted values by Arima </h3>
+                    <div class="container">
+                      <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                          <div class="card text-center h-100">
+                            <div class="card-img">
+                              <a href="#" class="pop">
+                                <img class="img-fluid" id="img-zoom" alt="arima-doge" src="images/arima_doge.png"></img>
+                              </a>  
+                            </div>
+                            <div class="card-body">
+                              <h5>Doge-Actual vs Predicted</h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card text-center h-100">
+                            <div class="card-img">
+                              <a href="#" class="pop">
+                                <img class="img-fluid" alt="arima-tesla" src="images/arima_tesla.png"></img>
+                              </a>
+                            </div>
+                            <div class="card-body">
+                              <h5>Tesla-Actual vs Predicted</h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card text-center h-100">
+                            <div class="card-img">
+                              <a href="#" class="pop">
+                                <img class="img-fluid" alt="arima-twitter" src="images/arima_twitter.png"></img>
+                              </a>  
+                            </div>
+                            <div class="card-body">
+                              <h5>Twitter-Actual vs Predicted</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+              
+                  </div>
+                </div>
+
+
+                <div class="tab-pane" id="lstm">
+                  <div class="row border g-0 rounded shadow-sm">
+                    <h3> Actual vs Predicted values by LSTM </h3>
+                    <div class="container">
+                      <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                          <div class="card text-center h-100">
+                            <div class="card-img">
+                              <a href="#" class="pop">
+                                <img class="img-fluid" id="img-zoom" alt="lstm-doge" src="images/lstm_doge.png"></img>
+                              </a>  
+                            </div>
+                            <div class="card-body">
+                              <h5>Doge-Actual vs Predicted</h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card text-center h-100">
+                            <div class="card-img">
+                              <a href="#" class="pop">
+                                <img class="img-fluid" alt="lstm-tesla" src="images/lstm_tesla.png"></img>
+                              </a>
+                            </div>
+                            <div class="card-body">
+                              <h5>Tesla-Actual vs Predicted</h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card text-center h-100">
+                            <div class="card-img">
+                              <a href="#" class="pop">
+                                <img class="img-fluid" alt="lstm-twitter" src="images/lstm_twitter.png"></img>
+                              </a>  
+                            </div>
+                            <div class="card-body">
+                              <h5>Twitter-Actual vs Predicted</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  <!-- Modal
+                  <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="images/lstm_twitter.png" class="modal-img" alt="modal img">
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                  
+                  
+                      </div>
+                    </div>
+                  </div>
+                  
+
                   </div>
                 </div>
               </div>
             </div>
+                  <!-- Modal -->
+                  <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="images/lstm_twitter.png" class="modal-img" alt="modal img">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
           </div>
         </div>
       </div>
-    </div>
 
+      <!--Machine Learning with Sentiment Score-->
+      <div class="row">
+        <section class="ML header" id="machinelearning">
+          <h1>Machine Learning with Sentiment</h1>
+          <p style=" font-size: 1em; font-weight: 100; letter-spacing: 5px; vertical-align: top;">Model Predictions with sentiment</p>
+        </section>
+        <p></p>
+        <div class="col-12" style="height:700px">
+          <div class="card">
+            <h4 class="card-title">Machine Learning with Sentiment Score</h4>
+            <div class="card-body">
+              <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#sentiIntro">introduction</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#sentiLin">Linear Regression</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#sentiRand">Random Forest</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="sentiIntro">
+                  <div class="row border g-0 rounded shadow-sm">
+                    <!-- <canvas id="dogeChart" width="200" height="50"> dfdsf</canvas> -->
+                  </div>
+                </div>
+                <div class="tab-pane" id="sentiLin">
+                  <div class="row border g-0 rounded shadow-sm">
+                    <!-- <canvas id="teslaChart" width="200" height="50"> dfdsf</canvas> -->
+                  </div>
+                </div>  
+                <div class="tab-pane" id="sentiRand">
+                  <div class="row border g-0 rounded shadow-sm">
+                    <!-- <canvas id="twitterChart" width="200" height="50"> dfdsf</canvas> -->
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>        
+        </div>
+      </div>  
+      <p></p>
+
+    </div>
   </section>
 
 
@@ -661,6 +816,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="static/js/chart.js"></script>
   <script src="static/js/SentimentChart.js"></script>
+  <script>
+    document.addEventListener("click",function (e){
+      if(e.target.classList.contains("img-fluid")){
+        const src = e.target.getAttribute("src");
+        document.querySelector(".modal-img").src = src;
+        const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
+        myModal.show();
+      }
+    })
+  </script>
 </body>
 
 <style>

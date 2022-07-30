@@ -173,34 +173,7 @@
     vertical-align: center;
   }
 
- .card-img {
-    overflow:hidden;
- }
- .card-img img{
-  transition: all 1.3s ease;
- }
- .card-img:hover img{
-  transform: scale(1.2);
- }
-.main{
-  min-height: 100vh;
-  background:linear-gradient(to right top,);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-.glass{
-  background:rgb(10, 9, 9);
-  min-height: 20vh;
-  width:80%;
-  align-self: center;
-  background: linear-gradient(
-    to right bottom,
-    rgba(255,255,255,0.7),
-    rgba(255,255,255,0.3)
-  );
-  border:lightgray
-}
+ 
 
 .cardblur {
   backdrop-filter: blur(20px) saturate(160%);
@@ -253,4 +226,13 @@ h1,
  .btn-bgstroke:hover {
    background-color: white;
    color: #4EA199;
+ }
+
+ #gallery-modal .modal-img{
+  width: 100%;
+ }
+
+ .nav-tabs .nav-link:hover{
+  background-color: #5193DF;
+  color: #fff
  }

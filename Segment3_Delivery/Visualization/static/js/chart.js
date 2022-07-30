@@ -177,13 +177,15 @@ function update7Percentages(dateLogged,financeType, financeDates){
             let head0 = thead.append("tr");
             head_row = head0.append("th").text("No record to display")
 
-
+            clearTableMessage = document.getElementById('tableMessage').innerHTML=""
 
         } else if (percentPrice0_oc !== null) {
 
             console.log(percentPrice0_oc)
             console.log(percentVol0_oc)
 
+            tableMessage = document.getElementById('tableMessage').innerHTML="<span style='font-size:10px'>Percentages are calculated based on start date prices and trading volume.</span>"
+            
             var thead = d3.select("thead");
             thead.html("");
             var tbody = d3.select("tbody");

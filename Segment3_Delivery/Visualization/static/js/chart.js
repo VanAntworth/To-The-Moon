@@ -4,6 +4,9 @@ function buildTweet7Day(ctx1,date,financeDates,volume,adjustedClosed){
     var date_tweet =new Date(date+ "T00:00:01")
 
     // var date_0 = financeDates[0]
+    var date_0 = financeDates[0].setSeconds(0)
+    console.log(date_0)
+
     console.log(date_tweet)
 
     const dataset = {
@@ -54,6 +57,7 @@ function buildTweet7Day(ctx1,date,financeDates,volume,adjustedClosed){
                 x: {
                     display: true,
                     type: 'time',
+                    min: date_0,
                     title:{
                         display: true,
                         text: 'Date'

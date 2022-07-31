@@ -58,8 +58,8 @@ Does Elon Musk have the ability to sway the market in his favor? With our data a
 - Used the sentiment analysis imputs to build a model for predicting the impact of the tweets on the near future stock price.
 - Pull the data from database to create visualizations.
 
-<p align="center"> <img width ="45%" src ="Images/system.png"> </p>
-<p align="center"> <b> <i> Proposed System</i></b></p>
+<p align="center"> <img width ="70%" src ="Images/system.png"> </p>
+<p align="center"> <b> <i> Fig.1 Proposed System</i></b></p>
 
 ## <a name="DataExp"></a> Data Exploration Phase:
   
@@ -83,8 +83,8 @@ For our project we have prepared the data in the following ways:
 For our project, we are using a relational database - **Microsoft SQL Server**.
 Below is the ER Diagram of the database:
 
-<p align="center"> <img width ="45%" src ="Images/ERD_Diagram.png"> </p>
-<p align="center"> <b> <i> Entity–relationship Diagram</i></b></p>
+<p align="center"> <img width ="80%" src ="Images/ERD_Diagram.png"> </p>
+<p align="center"> <b> <i> Fig.2 Entity–relationship Diagram</i></b></p>
 
 **Stored procedures and SQL scripts** are used to populate, read/write to database. These stored Procedures helped us in reusing the code in every python program , without manually writing each command. 
 
@@ -119,7 +119,8 @@ After the preprocessing of the data we performed the following analysis:
 
 **One of the charts created in tableau to show sentiment scoring as well as the respective tweet(stacked tweets indicate multiple tweets on that particular day).**
 
-<p align="center"><img width ="50%" alt="Screen Shot 2022-07-29 at 2 25 08 PM" src="https://user-images.githubusercontent.com/99001393/181830431-c160ec05-cde4-4994-9e00-40160578de0d.png"></p>
+<p align="center"><img width ="70%" alt="Screen Shot 2022-07-29 at 2 25 08 PM" src="https://user-images.githubusercontent.com/99001393/181830431-c160ec05-cde4-4994-9e00-40160578de0d.png"></p>
+<p align="center"><b><i> Fig.3 Elon's Tweets for Doge,Tesla and Twitter</i></b></p>
 
 ## <a name="ML"></a> Machine Learning
 
@@ -149,16 +150,19 @@ After Linear Regression, we implemented a time series model – Arima. It is a f
 
 It is a variety of recurrent neural networks (RNNs) that are capable of learning long-term dependencies, especially in sequence prediction problems. LSTM has feedback connections, i.e., it is capable of processing the entire sequence of data, apart from single data points such as images. LSTMs help solve exploding and vanishing gradient problems.
 
-<p align="center"><img src = "Images/ml_comp.png" width = 50%></p>
-<p align="center"><b><i> Model Comparison for Stock Price Prdictions </i></b></p>
+<p align="center"><img src = "Images/ml_comp.png" width = 95%></p>
+<p align="center"><b><i> Fig.4 Model Comparison for Stock Price Prdictions </i></b></p>
 
 
 **Error Metric Comparison for all the Models:**
 
-<img src = "Images/error_doge.png" width = 33%> <img src = "Images/error_tesla.png" width = 33%> <img src = "Images/error_twitter.png" width = 33%>
+<p align="center"> <img src = "Images/error_doge.png" width = 40%> <img src = "Images/error_tesla.png" width =40%></p>
+<p align="center"> <img src = "Images/error_twitter.png" width = 40%></p>
 
-<img src = "Images/error_doge1.png" width = 33%> <img src = "Images/error_tesla1.png" width = 33%> <img src = "Images/error_twitter1.png" width = 33%>
-<p align="center"><b><i> MAE, MAPE, RMSE values comparison for Doge,Tesla,Twitter</i></b></p>
+<p align="center"><img src = "Images/error_doge1.png" width = 47%> <img src = "Images/error_tesla1.png" width = 47%></p>
+<p align="center"><img src = "Images/error_twitter1.png" width = 47%></p>
+
+<p align="center"><b><i> Fig.5 MAE, MAPE, RMSE values comparison for Doge,Tesla,Twitter</i></b></p>
 
 **Conclusion:**
 
@@ -193,56 +197,30 @@ We have deployed our website on Heroku and Github.
 
  ## <a name="Technologies"></a> Technologies
  
- <img width="745" alt="Screen Shot 2022-07-27 at 2 32 14 PM" src="https://user-images.githubusercontent.com/99001393/181356685-026f4361-dc5b-4ec6-a7e9-216ba3e09f22.png">
+ <img width=70% alt="Screen Shot 2022-07-27 at 2 32 14 PM" src="https://user-images.githubusercontent.com/99001393/181356685-026f4361-dc5b-4ec6-a7e9-216ba3e09f22.png">
 
 
 ## <a name="Resources"></a> Resources
 
-### Information Resources
+[1] **Data Files:** <br>
+- [Kaggle Data](Segment4_Delivery/Data_Resources) <br>
 
-Elon Musk Tweets
+[2]**SQL Server Scripts** <br>
+- [SQL Scripts for database](Segment4_Delivery/SQL_SERVER_Scripts) <br>
 
-Yahoo Finance data
+[3] **Scraping Codes:** <br>
+- [Twitter and Yahoo Scrape Code](Segment4_Delivery/Data_Scraping) <br>
 
-### <ins>Deliverable 1</ins>
+[4] **Data Preprocessing** <br>
+- [Jupyter Notebooks for preprocessing](Segment4_Delivery/Pre_Processing) <br>
 
-#### Code Used
+[5] **Machine Learning Codes** <br>
+- [Jupyter Notebooks for Machine Learning](Segment4_Delivery/Machine_Learning)<br>
 
-<a name="1">[1]</a> [Finance Scrapping Code](https://github.com/VanAntworth/To-The-Moon/blob/main/Segment1_Delivery/Data_Scraping/Finance_data.ipynb)
-
-<a name="2">[2]</a> [Twitter Scrapping Code](https://github.com/VanAntworth/To-The-Moon/blob/main/Segment1_Delivery/Data_Scraping/TwitterScrape_UserTimeLine.ipynb)
-
-<a name="3">[3]</a> [Data Pre-Processing Code](https://github.com/VanAntworth/To-The-Moon/blob/main/Segment1_Delivery/Pre_Processing/Elon_tweets_preprocessing.ipynb)
-
-<a name="4">[4]</a> [Sentiment Analysis Code](https://github.com/VanAntworth/To-The-Moon/blob/main/Segment1_Delivery/Pre_Processing/sentiment_analysis.ipynb)
-
-<a name="5">[5]</a> [Data Base - SQL Queries](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment1_Delivery/Sql_Scripts)
-
-#### Data Resources
-
-<a name="6">[6]</a> [Elon Tweets from Kaggle](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment1_Delivery/Data_Resources/elon_musk_kaggle)
-
-<a name="7">[7]</a> [Elon Tweets Scrapped](https://github.com/VanAntworth/To-The-Moon/blob/main/Segment1_Delivery/Data_Resources/elon_musk_kaggle/elon_tweets_2.csv)
-
-<a name="8">[8]</a> [Finance Data Scrapped](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment1_Delivery/Data_Resources/scrapped_data)
-
-### <ins>Deliverable 2</ins>
-
-#### Machine Learning
-
-<a name="9">[1]</a> [Machine Learning Code](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment2_Delivery/Machine_Learning)
-
-#### Data Base
-
-<a name="10">[2]</a> [Data Base Script](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment2_Delivery/SQL_SERVER_Scripts)
-
-#### Visualization
-
-
-
-
-<a name="10">[3]</a> [Visualization Discussion](https://github.com/VanAntworth/To-The-Moon/blob/main/Resources/Visualizations.docx)  
-<a name="10">[4]</a> [Visualization Dashboard](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment2_Delivery/Visualization)
+[6] **Visualization Codes** <br>
+- [Java Script and HTML File](Segment4_Delivery/Visualization) <br>
+- [Visualization Discussion](https://github.com/VanAntworth/To-The-Moon/blob/main/Resources/Visualizations.docx)  <br>
+- [Visualization Dashboard](https://github.com/VanAntworth/To-The-Moon/tree/main/Segment2_Delivery/Visualization) <br>
 
 
 

@@ -189,7 +189,7 @@ In this multivariable linear regression we attempted to predict the percentage i
 
 The first step to get this data analyzed required getting the percentage changes in the stock's closing price and the trading volume. This data was calculated by taking the closing price and volume records prior to the tweet occuring, and then getting the percentage change with respect to these values for the following week. In Figure 6 we can see the start date as the date from which the initial value ocurred. The model is built for predicting the value dor Day 2, Day 3 and Day 4. We did not build a model for Day 1 as the tweet time was not taken into consideration, so the tweet could have ocurred after the stock price was closed. Day 1's percentage is therefore used as an input as well. When we are predicting for Day 3, we take Day 1 &2 's price percentages as inputs. When we are predicting for Day 3, we take Day 1, 2 & 3's price percentages as inputs. 
 
-<p align="center"> <img src = "Images/TweetPercents.png" width = 40%>
+<p align="center"> <img src = "Images/TweetPercents.png" width = 90%>
 
 <p align="center"><b><i> Fig.6 Example of Tweet Price Percentage Table </i></b></p>
 

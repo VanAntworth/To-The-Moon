@@ -86,7 +86,9 @@ Below is the ER Diagram of the database:
 <p align="center"> <img width ="80%" src ="Images/ERD_Diagram.png"> </p>
 <p align="center"> <b> <i> Fig.2 Entity–relationship Diagram</i></b></p>
 
-**Stored procedures and SQL scripts** are used to populate, read/write to database. These stored Procedures helped us in reusing the code in every python program , without manually writing each command. 
+**Stored procedures and SQL scripts** are used to populate, read/write to database. 
+SQLConn.py - A wrapper class that interacts with Database and call these stored Procedures helps in reusing the code in every python program , without manually writing each command. Even If we have to change the database or extend the system to multiple databases, the only place we need to modify was a single file ie. SQLConn.py.
+Hence, this can scale to multiple database support.
 
 Click below to see the SQL Scripts :
 

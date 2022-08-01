@@ -119,61 +119,7 @@
     transition: all 0.5 ease-in-out 0s;
   }
 
-  .body{
-    background:blue;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-
-  }
-  .mytabs{
-    display: flex;
-    flex-wrap: wrap;
-   margin: 10px auto;
-  }
-
-  .mytabs input[type="radio"]{
-    display: none;
-  }
-
-  .mytabs label {
-    padding: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: rgb(238, 235, 234);
-    cursor: pointer;
-    color:blue;
-    border-color: grey;
-    border-radius: 8px 8px 0 0;
-    border-width: 2px;
-    height: 1px;
-    margin-bottom: 2px;
-    vertical-align:center;
-    
-    }
-  .mytabs .tab {
-    width: 100%;
-    background-color: white;
-    display: none;
-    border: lightgrey;
-    border-width: 1px;
-    order: 1;
-
-  }
-  .mytabs .tab h2{
-    font-size:3em;
-    border-width:2px;
-    border-color: grey;
-  }
-  .mytabs input[type="radio"]:checked + label + .tab{
-    display: block;
-
-  }
-
-  .mytabs input[type="radio"]:checked + label{
-    background-color: white;
-    border: grey;
-    vertical-align: center;
-  }
-
- 
+   
 
 .cardblur {
   backdrop-filter: blur(20px) saturate(160%);
@@ -236,3 +182,34 @@ h1,
   background-color: #5193DF;
   color: #fff
  }
+ <!-- .tradingview-widget-copyright {
+  font-size: 13px !important;
+  line-height: 32px !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+  color: #9db2bd !important;
+  display: none !important;
+  }
+
+  
+#myBtn {
+display: none;
+position: fixed;
+bottom: 10px;
+right: 10px;
+z-index: 99;
+font-size: 20px;
+border: none;
+outline: none;
+background-color: #a7b8ff;
+color: white;
+cursor: pointer;
+padding-top: 5px;
+border-radius: 4px;
+font-weight: 900;
+}
+
+#myBtn:hover {
+background-color: #555;
+}

@@ -185,7 +185,7 @@ Below is the link to all the Machine Learning notebooks:
 
 **Multi-Variable Linear Regression:**
 
-In this multivariable linear regression we attempted to predict the percentage increase and decrease of a stock based on the tweet's sentiment analysis, the tweet's data engagement such as the likes and retweets the tweet received.
+In this multivariable linear regression we attempted to predict the percentage increase and decrease of a stock or coin value based on the tweet's sentiment analysis, the tweet's data engagement such as the likes and retweets the tweet received, and the initial percentage change. 
 
 The first step to get this data analyzed required getting the percentage changes in the stock's closing price and the trading volume. This data was calculated by taking the closing price and volume records prior to the tweet occuring, and then getting the percentage change with respect to these values for the following week. In Figure 6 we can see the start date as the date from which the initial value ocurred. The model is built for predicting the value dor Day 2, Day 3 and Day 4. We did not build a model for Day 1 as the tweet time was not taken into consideration, so the tweet could have ocurred after the stock price was closed. Day 1's percentage is therefore used as an input as well. When we are predicting for Day 3, we take Day 1 &2 's price percentages as inputs. When we are predicting for Day 3, we take Day 1, 2 & 3's price percentages as inputs. 
 
@@ -195,7 +195,17 @@ The first step to get this data analyzed required getting the percentage changes
 
 In some cases, there were multiple tweets that had the same "Start Date". We took the average of the sentiment scores for those, and then had two different approaches for the tweet's likes and retweets. In one, we had the average of those variables and included a column with the count of tweets. In another, we added tweet likes together for all the tweets pertaining to those days, and added the retweet counts together as well. Finally we determined that the method with averaging the tweet likes, averaging the retweets and including the count of tweets worked the best. 
 
+Our data determined that there seems to be somewhat of a linear relationship, and therefore the percentages can be predicted, for Tesla and Twitter models as the coefficients of determination neared 1. This means that with an input of the initial percentage change, and the tweet's engagement and sentiment analysis we could determine a percentage change, and using that result, feed it to the next model to predict the following's day percentage change, and so on. 
 
+For Doge, the relationship did not seem to be as clearly shown, with the coefficient being erratic for the different dates. One of the reasons could be, how extreme the percentage changes have been at times for Doge, the other one could be sample size being much smaller than the other two coins. When the data for all stocks were combined, it resulted on the coefficients improving with respect to Doge's but getting worse with respect to Tesla's and Twitter's.
+
+<p align="center"> <img src = "Images/MultiLinearResults.png" width = 90%>
+
+<p align="center"><b><i> Fig.7 Multi - Linear Results </i></b></p>
+
+In the future, this model has to have the multilinear regression assumptions validated, including some potential data transformations. In a setting where we would have access to more monetary resources, other sources such as the overall twitter population, reddit data, and news data should be included in the model. Overall, this should not be considered a final model and should continue to be refined. Although linear regression might have been a good starting point for this model, there might be other machine learning models that would work better for this data.
+
+[Jupyter Notebook for Percentage Prediction with Sentiment Score and Twitter Engagement Data](Segment4_Delivery/Percentages)<br>
 
 **Random Forrest Classifier:**
 
@@ -234,6 +244,7 @@ We have deployed our website on Heroku and Github.
 
 [5] **Machine Learning Codes** <br>
 - [Jupyter Notebooks for Machine Learning](Segment4_Delivery/Machine_Learning)<br>
+- [Jupyter Notebook for Percentage Prediction with Sentiment Score and Twitter Engagement Data](Segment4_Delivery/Percentages)<br>
 
 [6] **Visualization Codes** <br>
 - [Java Script and HTML File](Segment4_Delivery/Visualization) <br>

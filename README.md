@@ -158,7 +158,7 @@ After Linear Regression, we implemented a time series model – Arima. It is a f
 It is a variety of recurrent neural networks (RNNs) that are capable of learning long-term dependencies, especially in sequence prediction problems. LSTM has feedback connections, i.e., it is capable of processing the entire sequence of data, apart from single data points such as images. LSTMs help solve exploding and vanishing gradient problems.
 
 <p align="center"><img src = "Images/ml_comp.png" width = 95%></p>
-<p align="center"><b><i> Fig.4 Model Comparison for Stock Price Prdictions </i></b></p>
+<p align="center"><b><i> Fig.4 Model Comparison for Stock Price Predictions </i></b></p>
 
 
 **Error Metric Comparison for all the Models:**
@@ -254,7 +254,7 @@ We can use this trained models in our website to run the predictions live. [we h
 **Combined Predication Results using both Models**
 <p align="center"> <img src = "Segment4_Delivery/Visualization/images/Combined-Predictions.png" width = 100% height=200px>
 
-<p align="center"><b><i> Fig.9 Combined Predication Results </i></b></p>
+<p align="center"><b><i> Fig.9 Combined Prediction Results </i></b></p>
 
 
 ## <a name="visual"></a> Visualization

@@ -223,18 +223,6 @@ Y - Will there be any impact on the price change, if yes what could it be likely
 
 Here we calculate Impact based on sentiment score and the percentage change for the first Day (more details explained above in linear regresssion model)
 
-```Python
- if (row["sentimentScore"] > 0.0 and row["percentPrice_1"] > 0.0):
-
-        impact.append(1) #impact assigned is 1
-    else:
-        if(row["sentimentScore"] < 0.0 and row["percentPrice_1"] < 0.0):
-            impact.append(1) #impact assigned is 1
-        else: 
-              impact.append(0) #impact assigned is 0
-```
-
-
 | Sentiment Score  | Percentage Change for Day1 |Impact|
 | -----------------| ---------------------------|------|
 |       0.8        |           2.45%            |  1   |
@@ -251,22 +239,17 @@ y = df_sentiment_percentage["impact"].values.reshape(-1,1)
 Next Step is to Scale the data using Sklearn.preprocessing.StandardScaler() library. This step is required as we have all different parameters on different scales. 
 Lets train RandomForestClassifier model with about X and Y with no. of estimators =128 and random_state=78.
 
-After training the models of RandomForestClassifier and StandardScaler, we here are storing these trained models to a file using Pickle library. 
+After training the models of RandomForestClassifier and StandardScaler, we here are storing these trained models to a file using **Pickle** library. 
 
 We can use this trained models in our website to run the predictions live. [we have used the pickled models into the python to predict our outcomes for different values, shown a little later in this section]
-```python
-# SAVE THE TRAINED MODEL
-import pickle
-filename = 'finalized_model.sav'
-pickle.dump(rfC_model, open(filename, 'wb'))
-filename1 = 'scaler_model.sav'
-pickle.dump(X_scaler, open(filename1, 'wb'))
-```
 
-Model Performance
-<img>
 
-Predication Results
+**Model Performance**
+<p align="center"> <img src = "Segment4_Delivery/Visualization/images/RFC_Report.jpg" width = 75% height=280px>
+
+<p align="center"><b><i> Fig.8 Random Forest Classifier Performance </i></b></p>
+
+**Combine Predication Results using both Models**
 
 
 ## <a name="visual"></a> Visualization

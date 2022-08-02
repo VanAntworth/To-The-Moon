@@ -79,9 +79,9 @@ Does Elon Musk have the ability to sway the market in his favor? With our data a
 
 For our project we have prepared the data in the following ways:
 
-- [Elon Musk Kaggle Data](Segment4_Delivery/Data_Resources) - Pulled the data from Kaggle, which contains a dump of Elon Musk tweets from 2010 to 2021. 
-- [Code for scraping Twitter data](Segment4_Delivery/Data_Scraping/TwitterScrape_UserTimeLine.ipynb) - Used **Twitter API - Tweepy**, to get the latest tweets of Elon Musk in 2022. 
-- [Code for scraping Stock price data from Yahoo Finance](Segment4_Delivery/Data_Scraping/Finance_data.ipynb) - Retrieved the stock price data for **Doge,Tesla,Twitter** using **Yahoo Finance API**.
+- <img width ="1%" src ="Images/csv.png">  [Elon Musk Kaggle Data](Segment4_Delivery/Data_Resources) - Pulled the data from Kaggle, which contains a dump of Elon Musk tweets from 2010 to 2021. 
+- <img width ="1%" src ="Images/jupyter.png">  [Code for scraping Twitter data](Segment4_Delivery/Data_Scraping/TwitterScrape_UserTimeLine.ipynb) - Used **Twitter API - Tweepy**, to get the latest tweets of Elon Musk in 2022. 
+- <img width ="1%" src ="Images/jupyter.png">  [Code for scraping Stock price data from Yahoo Finance](Segment4_Delivery/Data_Scraping/Finance_data.ipynb) - Retrieved the stock price data for **Doge,Tesla,Twitter** using **Yahoo Finance API**.
 
 ### <a name="dbDesign"></a> Database Design
 
@@ -97,7 +97,7 @@ Hence, this can scale to multiple database support.
 
 Click below to see the SQL Scripts :
 
-[SQL Scripts for populating the database](Segment4_Delivery/SQL_SERVER_Scripts)
+<img width ="1%" src = "Images/sql.png"> [SQL Scripts for populating the database](Segment4_Delivery/SQL_SERVER_Scripts)
 
 ### <a name="preprocessing"></a> Preprocessing of Data
 
@@ -113,7 +113,7 @@ The scraped data from Twitter and Yahoo Finance, was first stored in CSVs. We re
 
 Below is the link to the codes for preprocessing phase:
 
-[Python notebooks for Preprocessing](Segment4_Delivery/Pre_Processing) 
+<img width ="1%" src = "Images/jupyter.png"> [Python notebooks for Preprocessing](Segment4_Delivery/Pre_Processing) 
 
 
 ## <a name="Analysis"></a> Analysis Phase
@@ -183,10 +183,11 @@ The possible ways to improve every model is:
 
 Below is the link to all the Machine Learning notebooks:
 
-[Machine Learning Jupyter Notebooks](Segment4_Delivery/Machine_Learning)
+<img width ="1%" src = "Images/jupyter.png"> [Machine Learning Jupyter Notebooks](Segment4_Delivery/Machine_Learning)
 
 
 ### <a name="sentiPred"></a> Models used for Stock Prdiction with Sentiment Score and Twitter Engagement Data
+
 
 **Multi-Variable Linear Regression:**
 
@@ -210,10 +211,12 @@ For Doge, the relationship did not seem to be as clearly shown, with the coeffic
 
 In the future, this model has to have the multilinear regression assumptions validated, including some potential data transformations. In a setting where we would have access to more monetary resources, other sources such as the overall twitter population, reddit data, and news data should be included in the model. Overall, this should not be considered a final model and should continue to be refined. Although linear regression might have been a good starting point for this model, there might be other machine learning models that would work better for this data.
 
-[Jupyter Notebook for Calculating Percentages](Segment4_Delivery/Pre_Processing/Delta_Percentage_Analysis.ipynb)<br>
-[Jupyter Notebook for Percentage Prediction with Sentiment Score and Twitter Engagement Data](Segment4_Delivery/Percentages)<br>
+<img width ="1%" src = "Images/jupyter.png"> [Jupyter Notebook for Calculating Percentages](Segment4_Delivery/Pre_Processing/Delta_Percentage_Analysis.ipynb)<br>
+<img width ="1%" src = "Images/jupyter.png"> [Jupyter Notebook for Percentage Prediction with Sentiment Score and Twitter Engagement Data](Segment4_Delivery/Percentages)<br>
+
 
 **Random Forrest Classifier:**
+
 Using Random Forest Classifier here we are trying to predict if there is going to be any price change based on the trending tweet and sentiment score(using Vader)
 
 Training/ Testing dataset split - 60/40 
@@ -271,12 +274,12 @@ We have deployed our website on Heroku and Github.
 We worked as a team in every phase of the project. But to work effectively we used the following tools to regularly communicate to each other:
 - **Slack/Wattsapp** - Slack channel was our immediate way of messaging and communicating with each other.
 - **Github** - We created a repository on Github and created a branch for each member. Also we created a folder in the "Main" branch for each member to regularly put our updated codes and eventually merge them with the main branch.
-- **Zoom Calls** - We met regularly on zoom to update each other on the tasks each one of us was working on. This was the best time to motivate each other and also hvae some fun together. 
+- **Zoom Calls** - We met regularly on zoom to update each other on the tasks each one of us was working on. This was the best time to motivate each other and also have some fun together. 
 
 
  ## <a name="Technologies"></a> Technologies
  
- <img width=70% alt="Screen Shot 2022-07-27 at 2 32 14 PM" src="https://user-images.githubusercontent.com/99001393/181356685-026f4361-dc5b-4ec6-a7e9-216ba3e09f22.png">
+ <img width=70% src="Images/technologies.png">
 
 
 ## <a name="Resources"></a> Resources

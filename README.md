@@ -26,7 +26,7 @@
 It has been observed that Elon Musk tweets have been impacting the Stocks and Cryptocurrency market. We wanted to analyze the impact of the tweets and how long the impact was holding true.
 This project will predict the Stock/Crypto price for Tesla, Twitter and Dogecoin, and also show the impact of Elon's tweets on respective stock/crypto.
 
-<p align="center"> <img width ="5%" src ="Images/Tesla.png"> <img width ="5%" src ="Images/Twitter.png"> <img width ="5%" src ="Images/Doge.png"></p>
+<p align="center"> <img width ="5%" src = "Images/tesla.png"> <img width ="5%" src ="Images/twitter.png"> <img width ="5%" src ="Images/doge.png"></p>
 <!-- <p align="center"> <b> <i> </i></b></p> -->
 
 ### <a name="Background"></a> Background 
@@ -39,7 +39,7 @@ In 2020 and 2021 Twitter, Reddit and Robin Hood changed the dynamics of the stoc
 
 Therefore we are embarking on a quest to find the influence Elon Musk tweet's have had over **Dogecoin, Tesla stock, and Twitter stock**. In the process we are interested in understanding how the use of language by a single individual with a large following, can influence the price of stocks and coins. 
 
-<p align="center"> <img height="5%" src ="Images/TweetNews.png"></p>
+<p align="center"> <img width="45%" height = "30%" src ="Images/TweetNews.png"></p>
 
 ### <a name="Questions"></a> Questions we hope to answer with Data
 

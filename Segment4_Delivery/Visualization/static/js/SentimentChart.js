@@ -5,7 +5,7 @@ function buildDogeSentimentChart() {
         return response.json();
     }).then(data => {
         // Work with JSON data here
-        const mark1 = 7.7
+        const mark1 = 8
         const mark2 = 32
         const mark3 = 62
         const tweetText1 = "SpaceX launching satellite"
@@ -31,7 +31,7 @@ function buildDogeSentimentChart() {
         //  console.log(adjustedClose);
         //  console.log(sentimentScore);
         const ctx1 = document.getElementById('dogeChart').getContext('2d');
-        const annotation0 = {
+        const annotation1 = {
             type: 'label',
             backgroundColor: 'rgba(245,245,245)',
             callout: {
@@ -43,15 +43,15 @@ function buildDogeSentimentChart() {
                 size: 13
             },
             position: {
-                x: 7.7,
-                y: 'center'
+                x: 8,
+                y: 'bottom'
             },
-            xAdjust: -1,
+            xAdjust: +120,
             xValue: 8,
-            yAdjust: -0.2,
-            yValue: 0.5
-        };
-        const annotation1 = {
+            yAdjust: +10,
+            yValue: 0.2
+        }
+        const annotation2 = {
             type: 'label',
             backgroundColor: 'rgba(245,245,245)',
             callout: {
@@ -63,34 +63,15 @@ function buildDogeSentimentChart() {
                 size: 13
             },
             position: {
-                x: 10,
-                y: 'top'
+                x: 32,
+                y: 'bottom'
             },
-            xAdjust: 35,
-            xValue: 30,
-            yAdjust: 0.3,
+            xAdjust: -140,
+            xValue: 32,
+            yAdjust: -40,
             yValue: 0.4
         };
-        const annotation2 = {
-            type: 'label',
-            backgroundColor: 'rgba(245,245,245)',
-            callout: {
-                enabled: true,
-                borderColor: 'rgba(245,0,0)'
-            },
-            content: "Dogecoin is the people’s crypto",
-            font: {
-                size: 13
-            },
-            position: {
-                x: 7.7,
-                y: 'center'
-            },
-            xAdjust: -1,
-            xValue: 8,
-            yAdjust: -0.2,
-            yValue: 0.5
-        }
+       
         buildSentimentFinanceChart(ctx1, dateData, adjustedClose, sentimentScore, mark1, mark2, mark3, annotation1, annotation2)
 
 
@@ -187,8 +168,8 @@ function buildTeslaSentimentChart() {
         const mark1 = 25
         const mark2 = 430
         const mark3 = -1
-        const tweetText1 = "Am considering taking Tesla private at $420. Funding secured."
-        const tweetText2 = ""
+        const tweetText1 = "Am considering taking Tesla"
+        const tweetText2 = "private at $420. Funding secured."
         const tweetText3 = "As always, I am optimistic about Tesla long-term"
         // Work with JSON data here
         const dateData = data.map(
@@ -217,7 +198,7 @@ function buildTeslaSentimentChart() {
                 enabled: true,
                 borderColor: 'rgba(245,0,0)'
             },
-            content: tweetText1,
+            content: [tweetText1,tweetText2],
             font: {
                 size: 13
             },
@@ -225,9 +206,9 @@ function buildTeslaSentimentChart() {
                 x: 116,
                 y: 'center'
             },
-            xAdjust: +45,
+            xAdjust: +140,
             xValue: 25,
-            yAdjust: -60,
+            yAdjust: -40,
             yValue: 40
         };
         const annotation2 = {
@@ -245,7 +226,7 @@ function buildTeslaSentimentChart() {
                 x: 55,
                 y: 'top'
             },
-            xAdjust: -105,
+            xAdjust: -175,
             xValue: 430,
             yAdjust: -60,
             yValue: 40
@@ -314,7 +295,7 @@ function buildSentimentFinanceChart(ctx1, dateData, adjustedClose, sentimentScor
                     beginAtZero: true,
                     title: {
                         display: true,
-                        text: 'Adjusted Value'
+                        text: 'Adjusted Close ($)'
                     }
                 },
                 dollar: {

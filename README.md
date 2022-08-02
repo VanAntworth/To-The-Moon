@@ -204,12 +204,13 @@ Our data determined that there seems to be somewhat of a linear relationship, an
 
 For Doge, the relationship did not seem to be as clearly shown, with the coefficient being erratic for the different dates. One of the reasons could be, how extreme the percentage changes have been at times for Doge, the other one could be sample size being much smaller than the other two coins. When the data for all stocks were combined, it resulted on the coefficients improving with respect to Doge's but getting worse with respect to Tesla's and Twitter's.
 
-<p align="center"> <img src = "Images/MultiLinearResults.png" width = 90%>
+<p align="center"> <img src = "Images/MultiLinearResults.png" width = 100%>
 
 <p align="center"><b><i> Fig.7 Multi - Linear Results </i></b></p>
 
 In the future, this model has to have the multilinear regression assumptions validated, including some potential data transformations. In a setting where we would have access to more monetary resources, other sources such as the overall twitter population, reddit data, and news data should be included in the model. Overall, this should not be considered a final model and should continue to be refined. Although linear regression might have been a good starting point for this model, there might be other machine learning models that would work better for this data.
 
+[Jupyter Notebook for Calculating Percentages](Segment4_Delivery/Pre_Processing/Delta_Percentage_Analysis.ipynb)<br>
 [Jupyter Notebook for Percentage Prediction with Sentiment Score and Twitter Engagement Data](Segment4_Delivery/Percentages)<br>
 
 **Random Forrest Classifier:**

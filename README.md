@@ -17,14 +17,17 @@
   * [Models used for Stock Prdiction](#stockPred)
   * [Models used for Stock Prdiction with Sentiment Score](#sentiPred)
 - [Visualization](#visual)
+- [Communication Protocols](#comm)
 - [Technologies](#Technologies)
 - [Resources](#Resources)
 
 ## <a name="OverviewProject"></a> Project Overview
 
 It has been observed that Elon Musk tweets have been impacting the Stocks and Cryptocurrency market. We wanted to analyze the impact of the tweets and how long the impact was holding true.
-This project will predict the Stock or Cryptocurrencys (Tesla, Twitter and Dogecoin data) future value, and also show the impact of tweets for respective stock/crypto.
+This project will predict the Stock/Crypto price for Tesla, Twitter and Dogecoin, and also show the impact of Elon's tweets on respective stock/crypto.
 
+<p align="center"> <img width ="5%" src ="Images/Tesla.png"> <img width ="5%" src ="Images/Twitter.png"> <img width ="5%" src ="Images/Doge.png"></p>
+<!-- <p align="center"> <b> <i> </i></b></p> -->
 
 ### <a name="Background"></a> Background 
 
@@ -35,6 +38,8 @@ In November of 2020, one of our teammates' family invested $500 into Doge Coin. 
 In 2020 and 2021 Twitter, Reddit and Robin Hood changed the dynamics of the stock market and crypto currencies. Social media became a disruptive force in the economy. Yet **Doge could've just been one of many many crypto coins that did not rise in price, if it wasn't for one person that brought notoriety to this currency, Elon Musk.**  
 
 Therefore we are embarking on a quest to find the influence Elon Musk tweet's have had over **Dogecoin, Tesla stock, and Twitter stock**. In the process we are interested in understanding how the use of language by a single individual with a large following, can influence the price of stocks and coins. 
+
+<p align="center"> <img height="5%" src ="Images/TweetNews.png"></p>
 
 ### <a name="Questions"></a> Questions we hope to answer with Data
 
@@ -174,7 +179,7 @@ The possible ways to improve every model is:
 
 -	Implement a multivariate model for Linear Regression as the stock price is dependent on various other factors.
 -	Implement a multivariate LSTM model. Also, understand the learning rate and create a customized function for our model to work better.
--   Implement an ensemble model by integrating Arima and LSTM.
+- Implement an ensemble model by integrating Arima and LSTM.
 
 Below is the link to all the Machine Learning notebooks:
 
@@ -219,8 +224,12 @@ We have chosen the below technologies to showcase our project:
 
 We have deployed our website on Heroku and Github.
 
-## <a name="communication"></a> Communication Protocols
+## <a name="comm"></a> Communication Protocols
 
+We worked as a team in every phase of the project. But to work effectively we used the following tools to regularly communicate to each other:
+- **Slack/Wattsapp** - Slack channel was our immediate way of messaging and communicating with each other.
+- **Github** - We created a repository on Github and created a branch for each member. Also we created a folder in the "Main" branch for each member to regularly put our updated codes and eventually merge them with the main branch.
+- **Zoom Calls** - We met regularly on zoom to update each other on the tasks each one of us was working on. This was the best time to motivate each other and also hvae some fun together. 
 
 
  ## <a name="Technologies"></a> Technologies

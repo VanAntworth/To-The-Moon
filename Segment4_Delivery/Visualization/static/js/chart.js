@@ -334,6 +334,8 @@ function update7DayChart(dateLogged,financeType){
             chartStatus1.clear()
             console.log('No Fincancial Records for date')
 
+            clearExplanationMessage = document.getElementById('chartExplanationMessage').innerHTML=""
+
             errorMessage = document.getElementById('errorMessage').innerHTML="<span style='font-size:30px'>Elon did not tweet about this Stock / Coin on this date.</span>";
 
         } else if (financeDates_oc.length > 0) {
@@ -342,7 +344,7 @@ function update7DayChart(dateLogged,financeType){
             console.log(volumes_oc)
             console.log(adjustedClosed_oc)
             
-            
+            explanationMessage = document.getElementById('chartExplanationMessage').innerHTML="<span style='font-size:10px'>Adjusted Closed Price value is considered a more accurate price than just the stock price at the time of closure. It considers divident payouts, stocks splits, etc.</span>"
             clearErrorMessage = document.getElementById('errorMessage').innerHTML=""
             
             // JS - Destroy exiting Chart Instance to reuse <canvas> element

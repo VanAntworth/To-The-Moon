@@ -249,6 +249,8 @@ We can use this trained models in our website to run the predictions live. [we h
 
 <p align="center"><b><i> Fig.8 Random Forest Classifier Performance </i></b></p>
 
+[Jupyter Notebook for Random Forest Classifier](Segment4_Delivery/Machine_Learning/Sentiment_impact_predictor_ML.ipynb)
+
 **Combine Predication Results using both Models**
 
 

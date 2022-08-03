@@ -40,6 +40,7 @@ In 2020 and 2021 Twitter, Reddit and Robin Hood changed the dynamics of the stoc
 Therefore we are embarking on a quest to find the influence Elon Musk tweet's have had over **Dogecoin, Tesla stock, and Twitter stock**. In the process we are interested in understanding how the use of language by a single individual with a large following, can influence the price of stocks and coins. 
 
 <p align="center"> <img width="45%" height = "30%" src ="Images/TweetNews.png"></p>
+<p align="center"> <b> <i> Fig.1 Tweet/News Clippings pertaining to Elon</i></b></p>
 
 ### <a name="Questions"></a> Questions we hope to answer with Data
 
@@ -64,7 +65,7 @@ Does Elon Musk have the ability to sway the market in his favor? With our data a
 - Pull the data from database to create visualizations.
 
 <p align="center"> <img width ="70%" src ="Images/system.png"> </p>
-<p align="center"> <b> <i> Fig.1 Proposed System</i></b></p>
+<p align="center"> <b> <i> Fig.2 Proposed System</i></b></p>
 
 ## <a name="DataExp"></a> Data Exploration Phase:
   
@@ -79,9 +80,9 @@ Does Elon Musk have the ability to sway the market in his favor? With our data a
 
 For our project we have prepared the data in the following ways:
 
-- [Elon Musk Kaggle Data](Segment4_Delivery/Data_Resources) - Pulled the data from Kaggle, which contains a dump of Elon Musk tweets from 2010 to 2021. 
-- [Code for scraping Twitter data](Segment4_Delivery/Data_Scraping/TwitterScrape_UserTimeLine.ipynb) - Used **Twitter API - Tweepy**, to get the latest tweets of Elon Musk in 2022. 
-- [Code for scraping Stock price data from Yahoo Finance](Segment4_Delivery/Data_Scraping/Finance_data.ipynb) - Retrieved the stock price data for **Doge,Tesla,Twitter** using **Yahoo Finance API**.
+- <img width ="1.5%" src ="Images/csv.png">  [Elon Musk Kaggle Data](Segment4_Delivery/Data_Resources) - Pulled the data from Kaggle, which contains a dump of Elon Musk tweets from 2010 to 2021. 
+- <img width ="1.5%" src ="Images/jupyter.png">  [Code for scraping Twitter data](Segment4_Delivery/Data_Scraping/TwitterScrape_UserTimeLine.ipynb) - Used **Twitter API - Tweepy**, to get the latest tweets of Elon Musk in 2022. 
+- <img width ="1.5%" src ="Images/jupyter.png">  [Code for scraping Stock price data from Yahoo Finance](Segment4_Delivery/Data_Scraping/Finance_data.ipynb) - Retrieved the stock price data for **Doge,Tesla,Twitter** using **Yahoo Finance API**.
 
 ### <a name="dbDesign"></a> Database Design
 
@@ -89,7 +90,7 @@ For our project, we are using a relational database - **Microsoft SQL Server**.
 Below is the ER Diagram of the database:
 
 <p align="center"> <img width ="80%" src ="Images/ERD_Diagram.png"> </p>
-<p align="center"> <b> <i> Fig.2 Entity–relationship Diagram</i></b></p>
+<p align="center"> <b> <i> Fig.3 Entity–relationship Diagram</i></b></p>
 
 **Stored procedures and SQL scripts** are used to populate, read/write to database. 
 SQLConn.py - A wrapper class that interacts with Database and call these stored Procedures helps in reusing the code in every python program , without manually writing each command. Even If we have to change the database or extend the system to multiple databases, the only place we need to modify was a single file ie. SQLConn.py.
@@ -97,7 +98,7 @@ Hence, this can scale to multiple database support.
 
 Click below to see the SQL Scripts :
 
-[SQL Scripts for populating the database](Segment4_Delivery/SQL_SERVER_Scripts)
+<img width ="1.5%" src = "Images/sql.png"> [SQL Scripts for populating the database](Segment4_Delivery/SQL_SERVER_Scripts)
 
 ### <a name="preprocessing"></a> Preprocessing of Data
 
@@ -113,7 +114,7 @@ The scraped data from Twitter and Yahoo Finance, was first stored in CSVs. We re
 
 Below is the link to the codes for preprocessing phase:
 
-[Python notebooks for Preprocessing](Segment4_Delivery/Pre_Processing) 
+<img width ="1.5%" src = "Images/jupyter.png"> [Python notebooks for Preprocessing](Segment4_Delivery/Pre_Processing) 
 
 
 ## <a name="Analysis"></a> Analysis Phase
@@ -127,7 +128,7 @@ After the preprocessing of the data we performed the following analysis:
 **One of the charts created in tableau to show sentiment scoring as well as the respective tweet(stacked tweets indicate multiple tweets on that particular day).**
 
 <p align="center"><img width ="70%" alt="Screen Shot 2022-07-29 at 2 25 08 PM" src="https://user-images.githubusercontent.com/99001393/181830431-c160ec05-cde4-4994-9e00-40160578de0d.png"></p>
-<p align="center"><b><i> Fig.3 Elon's Tweets for Doge,Tesla and Twitter</i></b></p>
+<p align="center"><b><i> Fig.4 Elon's Tweets for Doge,Tesla and Twitter</i></b></p>
 
 ## <a name="ML"></a> Machine Learning
 
@@ -158,7 +159,7 @@ After Linear Regression, we implemented a time series model – Arima. It is a f
 It is a variety of recurrent neural networks (RNNs) that are capable of learning long-term dependencies, especially in sequence prediction problems. LSTM has feedback connections, i.e., it is capable of processing the entire sequence of data, apart from single data points such as images. LSTMs help solve exploding and vanishing gradient problems.
 
 <p align="center"><img src = "Images/ml_comp.png" width = 95%></p>
-<p align="center"><b><i> Fig.4 Model Comparison for Stock Price Prdictions </i></b></p>
+<p align="center"><b><i> Fig.5 Model Comparison for Stock Price Predictions </i></b></p>
 
 
 **Error Metric Comparison for all the Models:**
@@ -169,7 +170,7 @@ It is a variety of recurrent neural networks (RNNs) that are capable of learning
 <p align="center"><img src = "Images/error_doge1.png" width = 47%> <img src = "Images/error_tesla1.png" width = 47%></p>
 <p align="center"><img src = "Images/error_twitter1.png" width = 47%></p>
 
-<p align="center"><b><i> Fig.5 MAE, MAPE, RMSE values comparison for Doge,Tesla,Twitter</i></b></p>
+<p align="center"><b><i> Fig.6 MAE, MAPE, RMSE values comparison for Doge,Tesla,Twitter</i></b></p>
 
 **Conclusion:**
 
@@ -183,10 +184,11 @@ The possible ways to improve every model is:
 
 Below is the link to all the Machine Learning notebooks:
 
-[Machine Learning Jupyter Notebooks](Segment4_Delivery/Machine_Learning)
+<img width ="1.5%" src = "Images/jupyter.png"> [Machine Learning Jupyter Notebooks](Segment4_Delivery/Machine_Learning)
 
 
 ### <a name="sentiPred"></a> Models used for Stock Prdiction with Sentiment Score and Twitter Engagement Data
+
 
 **Multi-Variable Linear Regression:**
 
@@ -196,7 +198,7 @@ The first step to get this data analyzed required getting the percentage changes
 
 <p align="center"> <img src = "Images/TweetPercents.png" width = 90%>
 
-<p align="center"><b><i> Fig.6 Example of Tweet Price Percentage Table </i></b></p>
+<p align="center"><b><i> Fig.7 Example of Tweet Price Percentage Table </i></b></p>
 
 In some cases, there were multiple tweets that had the same "Start Date". We took the average of the sentiment scores for those, and then had two different approaches for the tweet's likes and retweets. In one, we had the average of those variables and included a column with the count of tweets. In another, we added tweet likes together for all the tweets pertaining to those days, and added the retweet counts together as well. Finally we determined that the method with averaging the tweet likes, averaging the retweets and including the count of tweets worked the best. 
 
@@ -206,14 +208,16 @@ For Doge, the relationship did not seem to be as clearly shown, with the coeffic
 
 <p align="center"> <img src = "Images/MultiLinearResults.png" width = 100%>
 
-<p align="center"><b><i> Fig.7 Multi - Linear Results </i></b></p>
+<p align="center"><b><i> Fig.8 Multi - Linear Results </i></b></p>
 
 In the future, this model has to have the multilinear regression assumptions validated, including some potential data transformations. In a setting where we would have access to more monetary resources, other sources such as the overall twitter population, reddit data, and news data should be included in the model. Overall, this should not be considered a final model and should continue to be refined. Although linear regression might have been a good starting point for this model, there might be other machine learning models that would work better for this data.
 
-[Jupyter Notebook for Calculating Percentages](Segment4_Delivery/Pre_Processing/Delta_Percentage_Analysis.ipynb)<br>
-[Jupyter Notebook for Percentage Prediction with Sentiment Score and Twitter Engagement Data](Segment4_Delivery/Percentages)<br>
+<img width ="1.5%" src = "Images/jupyter.png"> [Jupyter Notebook for Calculating Percentages](Segment4_Delivery/Pre_Processing/Delta_Percentage_Analysis.ipynb)<br>
+<img width ="1.5%" src = "Images/jupyter.png"> [Jupyter Notebook for Percentage Prediction with Sentiment Score and Twitter Engagement Data](Segment4_Delivery/Percentages)<br>
+
 
 **Random Forrest Classifier:**
+
 Using Random Forest Classifier here we are trying to predict if there is going to be any price change based on the trending tweet and sentiment score(using Vader)
 
 Training/ Testing dataset split - 60/40 
@@ -247,14 +251,14 @@ We can use this trained models in our website to run the predictions live. [we h
 **Model Performance**
 <p align="center"> <img src = "Segment4_Delivery/Visualization/images/RFC_Report.jpg" width = 75% height=280px>
 
-<p align="center"><b><i> Fig.8 Random Forest Classifier Performance </i></b></p>
+<p align="center"><b><i> Fig.9 Random Forest Classifier Performance </i></b></p>
 
-[Jupyter Notebook for Random Forest Classifier](Segment4_Delivery/Machine_Learning/Sentiment_impact_predictor_ML.ipynb)
+<img src="Images/jupyter.png" width=1.5%> [Jupyter Notebook for Random Forest Classifier](Segment4_Delivery/Machine_Learning/Sentiment_impact_predictor_ML.ipynb)
 
 **Combined Predication Results using both Models**
 <p align="center"> <img src = "Segment4_Delivery/Visualization/images/Combined-Predictions.png" width = 100% height=200px>
 
-<p align="center"><b><i> Fig.9 Combined Predication Results </i></b></p>
+<p align="center"><b><i> Fig.10 Combined Prediction Results </i></b></p>
 
 
 ## <a name="visual"></a> Visualization
@@ -271,13 +275,13 @@ We have deployed our website on Heroku and Github.
 We worked as a team in every phase of the project. But to work effectively we used the following tools to regularly communicate to each other:
 - **Slack/Wattsapp** - Slack channel was our immediate way of messaging and communicating with each other.
 - **Github** - We created a repository on Github and created a branch for each member. Also we created a folder in the "Main" branch for each member to regularly put our updated codes and eventually merge them with the main branch.
-- **Zoom Calls** - We met regularly on zoom to update each other on the tasks each one of us was working on. This was the best time to motivate each other and also hvae some fun together. 
+- **Zoom Calls** - We met regularly on zoom to update each other on the tasks each one of us was working on. This was the best time to motivate each other and also have some fun together. 
 
 
  ## <a name="Technologies"></a> Technologies
  
- <img width=70% alt="Screen Shot 2022-07-27 at 2 32 14 PM" src="https://user-images.githubusercontent.com/99001393/181356685-026f4361-dc5b-4ec6-a7e9-216ba3e09f22.png">
-
+ <p align="center"> <img width=70% src="Images/technologies.png"> </p>
+<p align="center"> <b> <i> Fig.11 Technologies used</i></b></p>
 
 ## <a name="Resources"></a> Resources
 

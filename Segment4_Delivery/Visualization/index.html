@@ -266,19 +266,19 @@
 
           </div>
           <p></p>
-          <div class="card" id="card-pie">
+          <div class="card" id="card-pie" >
             <div class="card-title card-header">
               <h4><b>
                   <p style="text-align:center"></p>Most Frequent words used by Elon in tweets</p>
                 </b> </h4>
             </div>
-            <img src="images/wordcloud.jpg" class="img-responsive">
+            <img src="images/wordcloud.jpg" class="img-responsive" style="height: 300px">
 
           </div>
         </div>
         <p></p>
         <p></p>
-        </p>
+
         <!-- End of Embedding Tableau  -->
       </div>
       <!--Tweet 7 day range data -->
@@ -772,7 +772,61 @@
     </div>
   </section>
 
+<section class="predications">  
+  <a class="btn btn-primary btn-lg active" id="dataReturn" role="button" onclick="runPredictions()">Run Predictions</a>
+  <div id="predContainer" style="border-radius: 2em; border: width 1em;; background-color: lightcyan; width: fit-content; height: fit-content;">
+  <!-- <div> <source id='voiceCtl' src='files/message-ringtone-magic.mp3' style='display:none'; type='audio/mpeg'> </div> -->
+</div>
 
+<style>
+
+.visible {
+  animation: movein 0.5s ease forwards, moveout 0.5s 6s ease forwards;
+}
+
+#predContainer {
+
+  position: fixed;
+  top: 300px;
+  left: -400px;
+}
+
+@keyframes movein {
+  from { left: -400px; }
+  to   { left: 10px; }
+}
+
+@keyframes moveout {
+  from { left: 10px; }
+  to   { left: -400px; }
+}
+</style>
+  <script>
+
+    function runPredictions(){
+
+      const divPred = document.getElementById("predContainer");      
+      var button = document.getElementById('dataReturn');
+      // var voice =  document.getElementById("voiceCtl");
+
+      divPred.innerHTML = "<img src='images/newTweet.png' style='height:100px; width:100px; vertical-align: top;'/>" + 
+      "<embed src='http://127.0.0.1:5000/runModel' width: 120px; height: 150px;>" 
+      //    +
+      // "<button id='btnClose' style='vertical-align: top; border-radius: 2em; border:none; background:lightcyan; height:20px; width:20px;' onClick='funcClose()'>X</button>";
+      // voice.play();
+     
+      divPred.classList.toggle('visible');
+
+    }
+    function funcClose(){
+      const divPred = document.getElementById("predContainer");
+      divPred.style.display = 'none';
+      divPred.innerHTML = "";
+     
+    }
+  </script>
+        <!-- <label id="dataReturn1"></label> -->
+</section>
 
   <!-- Our Team section -->
   <section class="team" id="teaminfo">
@@ -896,6 +950,7 @@
     })
   </script>
 </body>
+
 
 
 </html>

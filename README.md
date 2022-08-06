@@ -245,8 +245,10 @@ Lets train RandomForestClassifier model with about X and Y with no. of estimator
 
 After training the models of RandomForestClassifier and StandardScaler, we here are storing these trained models to a file using **Pickle** library. 
 
-We can use this trained models in our website to run the predictions live. [we have used the pickled models into the python to predict our outcomes for different values, shown a little later in this section]
+We use this trained models in our website to run the predictions for a given dataset. A popup appears with the message of likelyhood of impact on price.
+Website calls the API developed in Python and Flask and embeds the results in the popup.
 
+<p align="center"> <img src = "Images/popupPrediction.jpg" width = 75% height=280px>
 
 **Model Performance**
 <p align="center"> <img src = "Segment4_Delivery/Visualization/images/RFC_Report.jpg" width = 75% height=280px>
@@ -266,7 +268,7 @@ We can use this trained models in our website to run the predictions live. [we h
 We have chosen the below technologies to showcase our project:
 
 - Tableau
-- Website 
+- [Website](https://to-the-moonlive.herokuapp.com/)
 
 We have deployed our website on Heroku and Github.
 
